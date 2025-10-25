@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if title %}{{ title }} - {% endif %}Code Craft North</title>
+    <meta name="description" content="{{ description or 'Hand-built, lightning-fast websites, backed by ongoing support and honest expertise. Professional web design services for small businesses.' }}">
+    <meta name="keywords" content="web design, website development, small business websites, UK web design, fast websites, SEO">
+    <meta name="author" content="Code Craft North">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codecraftnorth.co.uk{{ page.url }}">
+    <meta property="og:title" content="{% if title %}{{ title }} - {% endif %}Code Craft North">
+    <meta property="og:description" content="{{ description or 'Hand-built, lightning-fast websites, backed by ongoing support and honest expertise.' }}">
+    <meta property="og:image" content="https://codecraftnorth.co.uk/img/CCN-logo-transparent-blue.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://codecraftnorth.co.uk{{ page.url }}">
+    <meta property="twitter:title" content="{% if title %}{{ title }} - {% endif %}Code Craft North">
+    <meta property="twitter:description" content="{{ description or 'Hand-built, lightning-fast websites, backed by ongoing support and honest expertise.' }}">
+    <meta property="twitter:image" content="https://codecraftnorth.co.uk/img/CCN-logo-transparent-blue.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/favicon-transparent.png">
+    <link rel="apple-touch-icon" href="/img/favicon-transparent.png">
+    <link rel="shortcut icon" href="/img/favicon-transparent.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+    <body class="font-sans bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+    {% include "header.njk" %}
+    
+    <main>
+        {{ content | safe }}
+    </main>
+    
+    {% include "footer.njk" %}
+
+    <!-- Scripts -->
+    <script src="/js/script.js"></script>
+</body>
+</html>
