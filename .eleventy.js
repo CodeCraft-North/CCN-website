@@ -1,4 +1,24 @@
 const { DateTime } = require("luxon");
+const Image = require("@11ty/eleventy-img");
+
+// Image shortcode for optimized images
+async function imageShortcode(src, alt, widths = [400, 800, 1200], classNames = "") {
+  let metadata = await Image(src, {
+    widths,
+    formats: ["webp", "jpeg"],
+    outputDir: "./dist/img/",
+    urlPath: "/img/"
+  });
+
+  let imageAttributes = {
+    alt: alt || "",
+    loading: "lazy",
+    decoding: "async",
+    class: classNames,
+  };
+
+  return Image.generateHTML(metadata, imageAttributes);
+}
 
 module.exports = function(eleventyConfig) {
   // Copy static assets
@@ -15,6 +35,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
   });
+
+  // Add shortcodes
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
   // Add collections
   eleventyConfig.addCollection("posts", function(collectionApi) {

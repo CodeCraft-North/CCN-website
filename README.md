@@ -167,6 +167,31 @@ Always use this format for consistency:
 </svg>
 ```
 
+## 🖼️ Using Images
+
+This site uses the `@11ty/eleventy-img` plugin for automatic image optimization.
+
+### Quick Usage
+
+```njk
+{% image "./src/img/blog/example.jpg", "Description", 800, "w-full rounded-lg" %}
+```
+
+### What It Does
+
+- ✅ Converts to WebP + JPEG automatically
+- ✅ Generates responsive srcsets for all screen sizes
+- ✅ Lazy loads images by default
+- ✅ Optimizes during build
+
+### Folder Structure
+
+- `src/img/blog/` - Blog post images
+- `src/img/logos/` - Brand logos
+- `src/img/hero/` - Hero section images
+
+See `docs/IMAGE_USAGE_EXAMPLES.md` for complete examples.
+
 ## ✍️ Adding New Blog Posts
 
 1. Create a new markdown file in `src/posts/`:

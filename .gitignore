@@ -4,6 +4,9 @@ node_modules/
 # Build output
 dist/
 
+# Optimized images (generated from src/img/)
+/dist/img/
+
 # Environment variables
 .env
 .env.local
