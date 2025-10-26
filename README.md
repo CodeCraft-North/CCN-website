@@ -8,14 +8,14 @@ Private repository for the CodeCraft North business website. Built with Eleventy
 - **Tailwind CSS v4** - Utility-first CSS framework (PostCSS-based)
 - **Nunjucks** - Templating engine
 - **Markdown** - Blog posts
-- **Dark/Light Mode** - Automatic theme switching
+- **Dark/Light Mode** - Manual toggle with semantic tokens
 - **Luxon** - Date formatting
 
 ## 📁 Project Structure
 
 ```
 ├── .eleventy.js           # Eleventy configuration
-├── postcss.config.js      # PostCSS configuration (Tailwind v4)
+├── postcss.config.cjs     # PostCSS configuration (Tailwind v4)
 ├── package.json           # Dependencies and scripts
 ├── .gitignore            # Git ignore rules
 │
@@ -122,10 +122,15 @@ Current color palette (defined in `src/css/input.css` using Tailwind v4 `@theme`
 See `docs/Colours.md` for full color specifications including light/dark mode variants.
 
 **Custom Utilities:**
-- `.bg-bg-primary` - White background (light) / Dark slate (dark)
-- `.bg-bg-section` - Light slate (light) / Dark slate (dark)
-- `.text-text-primary` - Dark text (light) / Light text (dark)
-- `.text-text-secondary` - Medium slate text with proper contrast
+- `.bg-bg-primary` - Page background (white/slate)
+- `.bg-bg-surface` - Card/surface background
+- `.bg-bg-section` - Section background
+- `.text-text-primary` - Primary text color
+- `.text-text-secondary` - Secondary text color
+- `.border-neutral-*` - Neutral border colors
+- `.bg-neutral-*` - Neutral background colors
+
+See `docs/TOKEN_SYSTEM.md` for the complete semantic token system.
 
 ## 🎯 Using Icons
 
@@ -262,11 +267,11 @@ If you need environment variables (for APIs, etc.):
 ## 📂 Key Files
 
 - **`.eleventy.js`** - Eleventy configuration (collections, filters, directories)
-- **`tailwind.config.js`** - Tailwind theme customization
+- **`postcss.config.cjs`** - PostCSS/Tailwind v4 configuration
 - **`package.json`** - Dependencies and npm scripts
 - **`src/_layouts/base.njk`** - HTML wrapper for all pages
 - **`src/_includes/header.njk`** - Navigation menu
-- **`src/css/input.css`** - Custom CSS components and Tailwind
+- **`src/css/input.css`** - Custom CSS components and Tailwind tokens
 
 ## 🎯 Site Pages
 
@@ -290,11 +295,11 @@ Site is optimized for speed:
 
 ## 🌙 Dark Mode
 
-Automatic dark mode based on system preferences:
+Manual dark mode toggle:
 - Toggle button in header
 - Preference saved to localStorage
 - All pages support dark mode
-- Uses Tailwind's `dark:` variants
+- Uses semantic token system (roles auto-adjust for light/dark)
 
 ## 📞 Support & Contact
 
