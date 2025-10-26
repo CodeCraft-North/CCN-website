@@ -1,0 +1,88 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://codecraftnorth.co.uk/</loc>
+        <lastmod>{{ page.date | htmlDateString }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://codecraftnorth.co.uk/about/</loc>
+        <lastmod>{{ page.date | htmlDateString }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://codecraftnorth.co.uk/services/</loc>
+        <lastmod>{{ page.date | htmlDateString }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://codecraftnorth.co.uk/services/essentials-website-subscription/</loc>
+        <lastmod>{{ page.date | htmlDateString }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://codecraftnorth.co.uk/services/growth-website-subscription/</loc>
+        <lastmod>{{ page.date | htmlDateString }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://codecraftnorth.co.uk/services/static-essentials-site/</loc>
+        <lastmod>{{ page.date | htmlDateString }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://codecraftnorth.co.uk/services/full-cms-website/</loc>
+        <lastmod>{{ page.date | htmlDateString }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://codecraftnorth.co.uk/resources/</loc>
+        <lastmod>{{ page.date | htmlDateString }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://codecraftnorth.co.uk/contact/</loc>
+        <lastmod>{{ page.date | htmlDateString }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    {% for post in collections.posts %}
+    <url>
+        <loc>https://codecraftnorth.co.uk{{ post.url }}</loc>
+        <lastmod>{{ post.date | htmlDateString }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    {% endfor %}
+    <url>
+        <loc>https://codecraftnorth.co.uk/privacy-policy/</loc>
+        <lastmod>{{ page.date | htmlDateString }}</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://codecraftnorth.co.uk/cookie-policy/</loc>
+        <lastmod>{{ page.date | htmlDateString }}</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://codecraftnorth.co.uk/terms-of-service/</loc>
+        <lastmod>{{ page.date | htmlDateString }}</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+</urlset>
+

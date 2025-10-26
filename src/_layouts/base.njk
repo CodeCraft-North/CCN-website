@@ -8,6 +8,9 @@
     <meta name="keywords" content="web design, website development, small business websites, UK web design, fast websites, SEO">
     <meta name="author" content="Code Craft North">
     
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codecraftnorth.co.uk{{ page.url }}">
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://codecraftnorth.co.uk{{ page.url }}">
@@ -35,7 +38,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="/css/styles.css">
 </head>
-    <body class="font-sans bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+    <body class="font-sans bg-bg-primary text-text-primary">
     {% include "header.njk" %}
     
     <main>
@@ -43,6 +46,36 @@
     </main>
     
     {% include "footer.njk" %}
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "CodeCraft North",
+      "description": "Professional web design and development services for small businesses in the UK",
+      "url": "https://codecraftnorth.co.uk",
+      "email": "hello@codecraftnorth.co.uk",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Wirral",
+        "addressRegion": "Merseyside",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "53.3727",
+        "longitude": "-3.0738"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Kingdom"
+      },
+      "priceRange": "££",
+      "openingHours": "Mo-Fr 09:00-17:00",
+      "sameAs": []
+    }
+    </script>
 
     <!-- Scripts -->
     <script src="/js/script.js"></script>

@@ -80,4 +80,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Auto-update copyright year
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
 });

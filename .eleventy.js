@@ -18,7 +18,8 @@ module.exports = function(eleventyConfig) {
 
   // Add collections
   eleventyConfig.addCollection("posts", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/posts/*.md");
+    return collectionApi.getFilteredByGlob("src/posts/*.md")
+      .sort((a, b) => b.date - a.date); // Newest first
   });
 
   // Set custom directories

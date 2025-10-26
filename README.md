@@ -5,7 +5,7 @@ Private repository for the CodeCraft North business website. Built with Eleventy
 ## 🚀 Tech Stack
 
 - **Eleventy (11ty)** - Static site generator
-- **Tailwind CSS** - Utility-first CSS framework
+- **Tailwind CSS v4** - Utility-first CSS framework (PostCSS-based)
 - **Nunjucks** - Templating engine
 - **Markdown** - Blog posts
 - **Dark/Light Mode** - Automatic theme switching
@@ -15,7 +15,7 @@ Private repository for the CodeCraft North business website. Built with Eleventy
 
 ```
 ├── .eleventy.js           # Eleventy configuration
-├── tailwind.config.js     # Tailwind configuration
+├── postcss.config.js      # PostCSS configuration (Tailwind v4)
 ├── package.json           # Dependencies and scripts
 ├── .gitignore            # Git ignore rules
 │
@@ -80,9 +80,9 @@ Private repository for the CodeCraft North business website. Built with Eleventy
    ```
    This installs Eleventy, Tailwind CSS, and all other dependencies listed in `package.json`.
 
-3. **Build the CSS:**
+3. **Build the CSS (required for first run):**
    ```bash
-   npm run css:build
+   npm run css:prod
    ```
 
 4. **Start development server:**
@@ -101,23 +101,66 @@ That's it! The site should be running locally.
 npm run dev          # Start dev server with hot reload (port 8080)
 npm run build        # Build site for production (outputs to dist/)
 npm run serve        # Build and serve production version
-npm run css:build    # Build Tailwind CSS with watch mode
-npm run css:prod     # Build optimized CSS for production
+npm run css:build    # Compile Tailwind CSS with watch mode (run in separate terminal)
+npm run css:prod     # Compile optimized Tailwind CSS for production
 ```
+
+**Important:** In Tailwind v4, CSS compilation is separate from HTML build. When developing:
+1. Run `npm run css:build` in one terminal (watches for CSS changes)
+2. Run `npm run dev` in another terminal (watches for HTML changes)
 
 ## 🎨 Brand Colors
 
-Current color palette (defined in `tailwind.config.js`):
+Current color palette (defined in `src/css/input.css` using Tailwind v4 `@theme` directive):
 
-```javascript
-colors: {
-  'brand-primary': '#2563eb',     // Primary Blue
-  'brand-secondary': '#4f46e5',   // Secondary Indigo
-  'brand-accent': '#f97316',      // Accent Orange
-}
+```css
+--color-brand-primary: #2563eb;     // Primary Blue
+--color-brand-secondary: #4f46e5;   // Secondary Indigo
+--color-brand-accent: #f97316;      // Accent Orange
 ```
 
 See `docs/Colours.md` for full color specifications including light/dark mode variants.
+
+**Custom Utilities:**
+- `.bg-bg-primary` - White background (light) / Dark slate (dark)
+- `.bg-bg-section` - Light slate (light) / Dark slate (dark)
+- `.text-text-primary` - Dark text (light) / Light text (dark)
+- `.text-text-secondary` - Medium slate text with proper contrast
+
+## 🎯 Using Icons
+
+This site uses **Heroicons** (created by the Tailwind CSS team) for all icons. These are reliable, well-tested SVG icons that work perfectly with Tailwind.
+
+### How to Add Icons
+
+1. **Browse icons:** Visit [heroicons.com](https://heroicons.com/)
+2. **Copy the SVG:** Click any icon and copy the SVG code
+3. **Paste into your template:** Use the outline style (not solid)
+
+### Icon Format
+
+Always use this format for consistency:
+
+```html
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+  <!-- path data from Heroicons -->
+</svg>
+```
+
+**Key points:**
+- Include `xmlns="http://www.w3.org/2000/svg"` attribute
+- Use `stroke="currentColor"` to inherit text color
+- Use Tailwind classes for sizing (`w-6 h-6`, `w-8 h-8`, etc.)
+- Keep `stroke-width="1.5"` for visual consistency
+
+### Example
+
+```html
+<!-- Lightning bolt icon from Heroicons -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+</svg>
+```
 
 ## ✍️ Adding New Blog Posts
 
@@ -141,7 +184,7 @@ See `docs/Colours.md` for full color specifications including light/dark mode va
 
 3. The post will automatically:
    - Appear on `/resources/`
-   - Get a URL like `/blog/your-post-title/`
+   - Get a URL like `/resources/your-post-title/`
    - Use the blog post template
 
 ## 🔄 Making Updates
@@ -234,7 +277,7 @@ If you need environment variables (for APIs, etc.):
 | Services | `/services/` | `src/services.njk` |
 | Resources (Blog) | `/resources/` | `src/resources.njk` |
 | Contact | `/contact/` | `src/contact.njk` |
-| Individual Posts | `/blog/post-slug/` | `src/posts/*.md` |
+| Individual Posts | `/resources/post-slug/` | `src/posts/*.md` |
 | Legal Pages | `/privacy-policy/` etc. | `src/*.njk` |
 
 ## 📈 Performance
