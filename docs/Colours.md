@@ -1,60 +1,79 @@
-# Code Craft North Brand Colours
+# CodeCraft North Colour System
+
+This document defines the final colour palette for CodeCraft North.  
+It maintains accessibility (WCAG AA), supports light and dark modes, and keeps the brand centred around a single primary blue.
+
+---
 
 ## Brand Colours (All Modes)
 
-These core brand colours are used across both light and dark modes:
-
 | Colour | Hex Code | Usage |
 |--------|----------|-------|
-| Primary Blue | `#2563eb` | Main CTAs, primary buttons, feature icons, brand elements |
-| Secondary Indigo | `#4f46e5` | Supporting elements, secondary pricing, hover states |
-| Accent Orange | `#f97316` | Special highlights, focus states (accessibility), CTAs |
-| Light Brand Tint | `#eff6ff` | Light backgrounds with brand tint |
-| Dark Brand Tint | `#1e40af` | Dark accents |
+| Primary Blue | `#2563eb` | Main brand colour. Used for CTAs, links and key UI elements. |
+| Light Brand Tint | `#e8f0ff` | Light tinted backgrounds and subtle highlight sections. |
+| Dark Brand Tint | `#1e3a8a` | Dark mode accent for depth and small UI touches. |
 
 ---
 
-## Light Mode
+# Light Mode
 
-### Backgrounds
-- `#ffffff` – Primary background (pure white)
-- `#f8fafc` – Section background (light blue-grey)
-- `#f1f5f9` – Card background (light slate)
+## Backgrounds
+- `#ffffff` – Main background.
+- `#f5f7fa` – Section background (soft neutral).
+- `#eef2f6` – Card and panel background.
 
-### Text
-- `#0f172a` – Primary text (dark slate)
-- `#475569` – Secondary text (medium slate)
-- `#94a3b8` – Light text (muted slate)
+## Text
+- `#0f172a` – Primary text.
+- `#475569` – Secondary text.
+- `#94a3b8` – Muted text.
 
-### Borders
-- `#e2e8f0` – Standard borders (slate-200)
-- `#cbd5e1` – Lighter borders (slate-300)
+## Borders
+- `#d8dee6` – Standard border.
+- `#c5ccd6` – Light border.
 
----
-
-## Dark Mode
-
-### Backgrounds
-- `#0f172a` – Primary background (slate-900)
-- `#1e293b` – Section background (slate-800)
-- `#1e293b` – Card background (slate-800)
-
-### Text
-- `#f1f5f9` – Primary text (light slate)
-- `#cbd5e1` – Secondary text (medium light slate)
-- `#94a3b8` – Light text (muted slate)
-
-### Borders
-- `#334155` – Standard borders (slate-700)
-- `#475569` – Lighter borders (slate-600)
+## Interactions
+- Hover: `#1d4ed8` (slightly darker blue).
+- Focus outline: `#2563eb` at 2px (accessible and on brand).
 
 ---
 
-## Accessibility
+# Dark Mode
 
-All colours maintain **WCAG AA** contrast standards for accessibility.
+## Backgrounds
+- `#0f172a` – Main background.
+- `#1e2533` – Section background.
+- `#1c2430` – Card and panel background.
 
-- Text on backgrounds meets minimum 4.5:1 contrast ratio
-- Focus states use the accent orange (`#f97316`) with 2px outline
-- Dark mode maintains equivalent contrast ratios to light mode
+## Text
+- `#eef2f6` – Primary text.
+- `#cbd5e1` – Secondary text.
+- `#94a3b8` – Muted text.
 
+## Borders
+- `#334155` – Standard border.
+- `#475569` – Light border.
+
+## Interactions
+- Hover: `#3b82f6` (lighter blue for visibility).
+- Dark brand tint: `#1e3a8a` for subtle depth.
+
+---
+
+# Accessibility
+
+This palette maintains WCAG AA contrast levels for:
+
+- Text
+- Buttons
+- UI elements
+- Both light and dark modes
+
+Focus states use the primary blue to keep a consistent brand experience across the interface.
+
+---
+
+# Summary
+
+This colour system keeps CodeCraft North consistent, accessible and clearly branded.  
+It uses a single primary hue, custom neutrals and balanced dark mode equivalents.  
+The result is a clean, modern, cohesive visual identity that is easy to maintain across all components and layouts.

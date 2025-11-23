@@ -2,17 +2,17 @@
 layout: base.njk
 ---
 
-<article class="py-24 bg-white dark:bg-gray-900">
+<article class="py-24 bg-[var(--color-bg-primary)] dark:bg-[var(--color-bg-primary-dark)]">
     <div class="max-w-4xl mx-auto px-6">
         <!-- Header -->
         <header class="mb-12 text-center">
             {% if category %}
-            <span class="inline-block px-4 py-2 text-sm font-semibold text-brand-primary bg-blue-50 dark:bg-blue-900/20 rounded-full mb-4">{{ category }}</span>
+            <span class="inline-block px-4 py-2 text-sm font-semibold text-brand-primary bg-brand-light rounded-full mb-4">{{ category }}</span>
             {% endif %}
             
-            <h1 class="text-4xl md:text-5xl font-black mb-6 text-slate-900 dark:text-white leading-tight">{{ title }}</h1>
+            <h1 class="text-4xl md:text-5xl font-black mb-6 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight">{{ title }}</h1>
             
-            <div class="flex items-center justify-center gap-4 text-gray-600 dark:text-gray-400">
+            <div class="flex items-center justify-center gap-4 text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)]">
                 <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
                 {% if readTime %}
                 <span>·</span>
@@ -29,12 +29,12 @@ layout: base.njk
         {% endif %}
 
         <!-- Content -->
-        <div class="prose prose-lg dark:prose-invert max-w-none prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-relaxed prose-a:text-brand-primary prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900 dark:prose-strong:text-white prose-ul:my-6 prose-li:my-2">
+        <div class="prose prose-lg dark:prose-invert max-w-none prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] prose-p:leading-relaxed prose-a:text-brand-primary prose-a:no-underline hover:prose-a:underline prose-strong:text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] prose-ul:my-6 prose-li:my-2">
             {{ content | safe }}
         </div>
 
         <!-- Back Link -->
-        <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+        <div class="mt-12 pt-8 border-t border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)]">
             <a href="/resources/" class="inline-flex items-center gap-2 text-brand-primary hover:underline font-medium">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>

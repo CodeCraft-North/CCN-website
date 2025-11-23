@@ -4,7 +4,10 @@ date: 2025-01-05
 category: "SEO"
 excerpt: "Cut through the confusion and learn the fundamentals of SEO that actually matter for small businesses."
 readTime: "7 min read"
+image: "/img/template-image.webp"
 ---
+
+{% image "./src/img/template-image.webp", "Template image placeholder", [800, 1200], "w-full rounded-lg shadow-lg mb-8" %}
 
 SEO (Search Engine Optimization) doesn't have to be complicated. While there are hundreds of factors Google considers, focusing on the basics will get you 90% of the way there.
 
@@ -93,6 +96,8 @@ Use tools like:
 - AnswerThePublic for question-based queries
 
 ## Content strategy that works
+
+{% image "./src/img/template-image.webp", "Template image placeholder", [600, 900], "w-full rounded-lg shadow-lg my-8" %}
 
 You don't need a blog (unless you want one). What you do need:
 

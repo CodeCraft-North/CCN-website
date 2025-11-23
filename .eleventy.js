@@ -21,6 +21,9 @@ async function imageShortcode(src, alt, widths = [400, 800, 1200], classNames = 
 }
 
 module.exports = function(eleventyConfig) {
+  // Ignore README files (they contain example code that shouldn't be processed)
+  eleventyConfig.ignores.add("**/README.md");
+  
   // Copy static assets
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/css");

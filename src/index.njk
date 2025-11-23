@@ -5,18 +5,21 @@ description: "Hand-built, lightning-fast websites, backed by ongoing support and
 ---
 
 <!-- Hero Section -->
-<section class="py-24 text-center relative overflow-hidden bg-bg-primary">
+<section class="py-24 text-center relative overflow-hidden bg-[var(--color-bg-primary)] dark:bg-[var(--color-bg-primary-dark)]">
     <div class="max-w-6xl mx-auto px-6 relative z-10">
         <div class="max-w-4xl mx-auto">
-            <h1 class="text-5xl md:text-6xl font-black mb-6 text-text-primary leading-tight pt-6">Websites that help your business grow.</h1>
+            <h1 class="text-5xl md:text-6xl font-black mb-6 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight pt-6">Websites that help your business grow.</h1>
             <p class="text-2xl font-semibold text-brand-primary mb-6 leading-snug">Hand-built, lightning-fast websites, backed by ongoing support and honest expertise.</p>
-            <p class="text-lg mb-8 text-text-secondary leading-relaxed max-w-2xl mx-auto">
+            <div class="mb-8 max-w-3xl mx-auto">
+                {% image "./src/img/test-img3.svg", "Template image placeholder", [800, 1200], "w-full rounded-lg" %}
+            </div>
+            <p class="text-lg mb-8 text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed max-w-2xl mx-auto">
                 At CodeCraft North we build more than websites. We create fast, dependable foundations for growth. 
                 Every site is crafted for speed, clarity and SEO, without bloated page builders. We host it, 
-                secure it, update it, and stay with you as a partner, so you can focus on running the business.
+                secure it, update it and stay with you as a partner, so you can focus on running the business.
             </p>
             <div class="flex gap-6 justify-center flex-wrap">
-                <a href="/contact/" class="btn btn--primary">Book a free consultation</a>
+                <a href="/contact/" class="btn btn--primary">Get in touch</a>
                 <a href="/services/" class="btn btn--secondary">View services</a>
             </div>
         </div>
@@ -24,32 +27,32 @@ description: "Hand-built, lightning-fast websites, backed by ongoing support and
 </section>
 
 <!-- Pricing Teaser -->
-<section class="py-16 bg-neutral-50 text-center relative">
+<section class="py-16 bg-[var(--color-bg-section)] dark:bg-[var(--color-bg-section-dark)] text-left relative">
     <div class="max-w-6xl mx-auto px-6 relative z-10">
         <div>
-            <h2 class="text-4xl md:text-5xl font-black mb-6 text-text-primary leading-tight">Simple, flexible website plans built around your business</h2>
+            <h2 class="text-4xl md:text-5xl font-black mb-6 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight text-center">Simple, flexible website plans built around your business</h2>
             <div class="w-16 h-px bg-brand-primary mx-auto mb-8"></div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 max-w-5xl mx-auto">
-                <div class="bg-bg-surface rounded-lg p-6 shadow-lg border-2 border-transparent transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-brand-primary">
+                <div class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg p-6 shadow-lg border-2 border-transparent transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-brand-primary">
                     <div class="mb-4">
-                        <h4 class="text-xl font-bold text-text-primary mb-4">Essentials Static</h4>
-                        <div class="text-3xl font-bold text-brand-primary mb-4">from £125<span class="text-lg font-medium text-text-secondary">/month</span></div>
+                        <h4 class="text-xl font-bold text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] mb-4">Essentials Subscription</h4>
+                        <div class="text-3xl font-bold text-brand-primary mb-4">from £125<span class="text-lg font-medium text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)]">/month</span></div>
                     </div>
-                    <p class="text-text-secondary text-lg leading-relaxed">Managed 5-page static website, built for speed, security, and simplicity</p>
+                    <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] text-lg leading-relaxed text-left">5 pages plus legal pages, hosting, updates, and unlimited small content changes</p>
                 </div>
-                <div class="bg-bg-surface rounded-lg p-6 shadow-lg border-2 border-transparent transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-brand-primary">
+                <div class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg p-6 shadow-lg border-2 border-transparent transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-brand-primary">
                     <div class="mb-4">
-                        <h4 class="text-xl font-bold text-text-primary mb-4">Growth Website</h4>
-                        <div class="text-3xl font-bold text-brand-primary mb-4">from £199<span class="text-lg font-medium text-text-secondary">/month</span></div>
+                        <h4 class="text-xl font-bold text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] mb-4">Growth Subscription</h4>
+                        <div class="text-3xl font-bold text-brand-primary mb-4">from £199<span class="text-lg font-medium text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)]">/month</span></div>
                     </div>
-                    <p class="text-text-secondary text-lg leading-relaxed">Managed 7-page static site with blog, content publishing, and ongoing support</p>
+                    <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] text-lg leading-relaxed">7 pages plus articles section, fully managed blog and monthly strategy advice</p>
                 </div>
-                <div class="bg-bg-surface rounded-lg p-6 shadow-lg border-2 border-transparent transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-brand-accent">
+                <div class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg p-6 shadow-lg border-2 border-transparent transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-brand-primary">
                     <div class="mb-4">
-                        <h4 class="text-xl font-bold text-text-primary mb-4">One-off Builds</h4>
-                        <div class="text-3xl font-bold text-brand-accent mb-4">from £1,250</div>
+                        <h4 class="text-xl font-bold text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] mb-4">One-Off Build</h4>
+                        <div class="text-3xl font-bold text-brand-primary mb-4">from £1,250</div>
                     </div>
-                    <p class="text-text-secondary text-lg leading-relaxed">Single project build, delivered ready to host or maintain yourself</p>
+                    <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] text-lg leading-relaxed">5 pages plus legal pages, you own it outright with optional add-ons</p>
                 </div>
             </div>
         </div>
@@ -57,10 +60,10 @@ description: "Hand-built, lightning-fast websites, backed by ongoing support and
 </section>
 
 <!-- Features Section -->
-<section class="features section-padding-lg bg-bg-primary relative" id="services">
+<section class="features section-padding-lg bg-[var(--color-bg-primary)] dark:bg-[var(--color-bg-primary-dark)] relative" id="services">
     <div class="container relative z-10">
-        <h2 class="features__title text-4xl md:text-5xl font-black text-center mb-6 text-text-primary leading-tight">Everything you need.<br>Nothing you don't.</h2>
-        <p class="features__subtitle text-lg font-medium text-center text-text-secondary mb-12 max-w-3xl mx-auto leading-relaxed">
+        <h2 class="features__title text-4xl md:text-5xl font-black text-center mb-6 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight">Everything you need.<br>Nothing you don't.</h2>
+        <p class="features__subtitle text-lg font-medium text-center text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] mb-12 max-w-3xl mx-auto leading-relaxed">
             Your website should work hard for your business, without the unnecessary complexity. Every CodeCraft North build includes the essentials that matter most for performance, reliability, and long-term growth.
         </p>
         <ul class="features__list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -71,30 +74,30 @@ description: "Hand-built, lightning-fast websites, backed by ongoing support and
                     </svg>
                 </div>
                 <div class="feature__content">
-                    <h3 class="feature__title text-xl font-bold mb-4 text-center text-text-primary leading-tight">Fast, secure UK hosting with SSL and daily backups.</h3>
-                    <p class="feature__description text-text-secondary leading-relaxed text-center">Your site is hosted on high-performance UK servers with full SSL encryption, daily automated backups, and uptime monitoring — so it stays fast, safe, and available around the clock.</p>
+                    <h3 class="feature__title text-xl font-bold mb-4 text-left text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight">Fast, secure UK hosting with SSL and daily backups.</h3>
+                    <p class="feature__description text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed text-left">Your site is hosted on high-performance UK servers with full SSL encryption, daily automated backups and uptime monitoring. <br> It stays fast, safe, and available around the clock.</p>
                 </div>
             </li>
             <li class="feature">
                 <div class="flex justify-center mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-brand-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-brand-primary">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
                     </svg>
                 </div>
                 <div class="feature__content">
-                    <h3 class="feature__title text-xl font-bold mb-4 text-center text-text-primary leading-tight">Clean, lightweight builds</h3>
-                    <p class="feature__description text-text-secondary leading-relaxed text-center">We hand-craft every line of code for performance and search visibility. No bloated themes or page builders.</p>
+                    <h3 class="feature__title text-xl font-bold mb-4 text-left text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight">Clean, lightweight builds</h3>
+                    <p class="feature__description text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed text-left">We hand-craft every line of code for performance and search visibility. No bloated themes or page builders.</p>
                 </div>
             </li>
             <li class="feature">
                 <div class="flex justify-center mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-brand-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-brand-primary">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
                     </svg>
                 </div>
                 <div class="feature__content">
-                    <h3 class="feature__title text-xl font-bold mb-4 text-center text-text-primary leading-tight">Unlimited small edits</h3>
-                    <p class="feature__description text-text-secondary leading-relaxed text-center">Need a text change, a new photo, or an updated service? Managed clients get unlimited small edits included each month.</p>
+                    <h3 class="feature__title text-xl font-bold mb-4 text-left text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight">Unlimited edits</h3>
+                    <p class="feature__description text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed text-left">Need a text change, a new photo, or an updated service? Managed clients get unlimited edits included each month.</p>
                 </div>
             </li>
             <li class="feature">
@@ -104,30 +107,30 @@ description: "Hand-built, lightning-fast websites, backed by ongoing support and
                     </svg>
                 </div>
                 <div class="feature__content">
-                    <h3 class="feature__title text-xl font-bold mb-4 text-center text-text-primary leading-tight">Performance reporting</h3>
-                    <p class="feature__description text-text-secondary leading-relaxed text-center">We don't just build and disappear. Each month, you'll receive a clear performance report and a short strategy call.</p>
+                    <h3 class="feature__title text-xl font-bold mb-4 text-left text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight">Performance reporting</h3>
+                    <p class="feature__description text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed text-left">We don't just build and disappear. Each month, you'll receive a clear performance report and a short strategy call.</p>
                 </div>
             </li>
             <li class="feature">
                 <div class="flex justify-center mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-brand-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-brand-primary">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
                     </svg>
                 </div>
                 <div class="feature__content">
-                    <h3 class="feature__title text-xl font-bold mb-4 text-center text-text-primary leading-tight">Plain-English advice from a developer who cares about outcomes.</h3>
-                    <p class="feature__description text-text-secondary leading-relaxed text-center">You won't get jargon or sales talk — just straightforward advice from someone who genuinely wants your website to deliver results for your business.</p>
+                    <h3 class="feature__title text-xl font-bold mb-4 text-left text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight">Plain English advice from a developer who cares about outcomes.</h3>
+                    <p class="feature__description text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed text-left">You won't get jargon or sales talk, just straightforward advice from someone who genuinely wants your website to deliver results for your business.</p>
                 </div>
             </li>
             <li class="feature">
                 <div class="flex justify-center mb-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-brand-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-brand-primary">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
                     </svg>
                 </div>
                 <div class="feature__content">
-                    <h3 class="feature__title text-xl font-bold mb-4 text-center text-text-primary leading-tight">Ongoing support that grows with your business.</h3>
-                    <p class="feature__description text-text-secondary leading-relaxed text-center">As your goals evolve, so does your website. From adding new pages to refining your SEO or introducing new features, we stay with you every step of the way to keep things running smoothly.</p>
+                    <h3 class="feature__title text-xl font-bold mb-4 text-left text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight">Ongoing support that grows with your business.</h3>
+                    <p class="feature__description text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed text-left">As your goals evolve, so does your website. From adding new pages to refining your SEO or introducing new features, we stay with you every step of the way to keep things running smoothly.</p>
                 </div>
             </li>
         </ul>
@@ -135,57 +138,60 @@ description: "Hand-built, lightning-fast websites, backed by ongoing support and
 </section>
 
 <!-- How We Work Section -->
-<section class="process section-padding bg-bg-section relative">
+<section class="process section-padding bg-[var(--color-bg-section)] dark:bg-[var(--color-bg-section-dark)] relative">
     <div class="container relative z-10">
-        <h2 class="process__title text-4xl md:text-5xl font-black text-center mb-6 text-text-primary leading-tight">How we work</h2>
-        <p class="process__description text-lg font-medium max-w-4xl mx-auto mb-8 text-text-secondary leading-relaxed text-center">
+        <h2 class="process__title text-4xl md:text-5xl font-black text-center mb-6 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight">How we work</h2>
+        <p class="process__description text-lg font-medium max-w-4xl mx-auto mb-8 text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed text-center">
             We start with a short call to understand your goals, audience and offer. Then we design a clear site structure, 
             build the core pages, and launch on fast UK hosting. After launch we handle updates, improvements and ongoing support. 
             You get a responsive partner, not a ticket queue.
         </p>
         <div class="process__cta text-center">
-            <a href="#contact" class="btn btn--primary">Book a free consultation</a>
+            <a href="#contact" class="btn btn--primary">Get in touch</a>
         </div>
     </div>
 </section>
 
 <!-- About Section -->
-<section class="about section-padding bg-bg-primary">
+<section class="about section-padding bg-[var(--color-bg-primary)] dark:bg-[var(--color-bg-primary-dark)]">
     <div class="container">
-        <h2 class="about__title text-4xl md:text-5xl font-black text-center mb-8 text-text-primary leading-tight">Built for performance.<br>Backed by partnership.</h2>
+        <h2 class="about__title text-4xl md:text-5xl font-black text-center mb-8 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight">Built for performance.<br>Backed by partnership.</h2>
         <div class="about__content max-w-4xl mx-auto text-center">
-            <div class="about__text mb-8">
-                <p class="text-lg text-text-secondary mb-6 leading-relaxed">I'm Carl, the developer behind Code Craft North. I build fast, reliable websites that help businesses grow.</p>
-                <p class="text-lg text-text-secondary mb-6 leading-relaxed">Your website should be the focal point of your business. It is where customers discover you, learn what you offer and decide to take action. My job is to make sure that happens.</p>
-                <p class="text-lg text-text-secondary mb-6 leading-relaxed">I combine clean, high-performance builds with ongoing guidance to help you get the most from your site. From hosting and SEO to analytics and strategy, you will have one trusted partner focused on results.</p>
+            <div class="mb-8 max-w-2xl mx-auto">
+                {% image "./src/img/partnership.svg", "Partnership image", [600, 900], "w-full rounded-lg" %}
             </div>
-            <blockquote class="text-2xl italic text-text-primary my-8 p-8 bg-neutral-50 border border-neutral-200 rounded-lg relative">
+            <div class="about__text mb-8">
+                <p class="text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] mb-6 leading-relaxed">I'm Carl, the developer behind Code Craft North. I build fast, reliable websites that help businesses grow.</p>
+                <p class="text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] mb-6 leading-relaxed">Your website should be the focal point of your business. It is where customers discover you, learn what you offer and decide to take action. My job is to make sure that happens.</p>
+                <p class="text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] mb-6 leading-relaxed">I combine clean, high-performance builds with ongoing guidance to help you get the most from your site. From hosting and SEO to analytics and strategy, you will have one trusted partner focused on results.</p>
+            </div>
+            <blockquote class="text-2xl italic text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] my-8 p-8 bg-[var(--color-bg-section)] dark:bg-[var(--color-bg-section-dark)] border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] rounded-lg relative">
                 "Every site is made to load fast, read clearly and drive action. The aim is not a website, it is growth."
             </blockquote>
             <div class="about__cta">
-                <a href="#contact" class="btn btn--primary">Book a free consultation</a>
+                <a href="#contact" class="btn btn--primary">Book a consultation</a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- FAQ Section -->
-<section class="faq section-padding bg-bg-section relative">
+<section class="faq section-padding bg-[var(--color-bg-section)] dark:bg-[var(--color-bg-section-dark)] relative">
     <div class="container relative z-10">
-        <h2 class="faq__title text-4xl md:text-5xl font-black text-center mb-4 text-text-primary leading-tight">Questions we often get</h2>
+        <h2 class="faq__title text-4xl md:text-5xl font-black text-center mb-4 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight">Questions we often get</h2>
         <div class="w-16 h-px bg-brand-primary mx-auto mb-12"></div>
         <div class="faq__list max-w-4xl mx-auto space-y-4">
-            <div class="faq__item bg-bg-surface rounded-xl p-8 shadow-lg border border-neutral-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <h3 class="faq__question text-xl font-bold mb-4 text-text-primary">How long does a typical build take?</h3>
-                <p class="faq__answer text-lg text-text-secondary leading-relaxed">Most builds go live in weeks, not months. Timelines depend on content readiness and scope.</p>
+            <div class="faq__item bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-xl p-8 shadow-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <h3 class="faq__question text-xl font-bold mb-4 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">How long does a typical build take?</h3>
+                <p class="faq__answer text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">Most builds go live in weeks, not months. Timelines depend on content readiness and scope.</p>
             </div>
-            <div class="faq__item bg-bg-surface rounded-xl p-8 shadow-lg border border-neutral-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <h3 class="faq__question text-xl font-bold mb-4 text-text-primary">Do you use WordPress or custom code?</h3>
-                <p class="faq__answer text-lg text-text-secondary leading-relaxed">We choose the best fit for your goals. CMS for teams that want to publish, or fast static builds when simplicity matters.</p>
+            <div class="faq__item bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-xl p-8 shadow-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <h3 class="faq__question text-xl font-bold mb-4 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">Do you use WordPress or custom code?</h3>
+                <p class="faq__answer text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">We choose the best fit for your goals. CMS for teams that want to publish, or fast static builds when simplicity matters.</p>
             </div>
-            <div class="faq__item bg-bg-surface rounded-xl p-8 shadow-lg border border-neutral-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <h3 class="faq__question text-xl font-bold mb-4 text-text-primary">What happens after launch?</h3>
-                <p class="faq__answer text-lg text-text-secondary leading-relaxed">We keep your site secure, updated and improving, with reports and strategy check-ins on managed plans.</p>
+            <div class="faq__item bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-xl p-8 shadow-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <h3 class="faq__question text-xl font-bold mb-4 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">What happens after launch?</h3>
+                <p class="faq__answer text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">We keep your site secure, updated and improving, with reports and strategy check-ins on managed plans.</p>
             </div>
         </div>
     </div>

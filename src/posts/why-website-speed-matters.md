@@ -4,7 +4,10 @@ date: 2025-01-15
 category: "Performance"
 excerpt: "A slow website costs you customers. Learn why speed matters and what you can do about it."
 readTime: "5 min read"
+image: "/img/template-image.webp"
 ---
+
+{% image "./src/img/template-image.webp", "Template image placeholder", [800, 1200], "w-full rounded-lg shadow-lg mb-8" %}
 
 Your website's loading speed isn't just a technical metric — it's a business metric. Every second counts when it comes to keeping visitors engaged and converting them into customers.
 
@@ -46,6 +49,8 @@ The good news? Most speed issues are fixable:
 - **Regular maintenance**: Keep your CMS, themes, and plugins updated
 
 ## The static site advantage
+
+{% image "./src/img/template-image.webp", "Template image placeholder", [600, 900], "w-full rounded-lg shadow-lg my-8" %}
 
 One of the most effective ways to guarantee fast load times is to use a static site generator like Eleventy. Static sites:
 

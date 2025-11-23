@@ -1,54 +1,48 @@
 @import "tailwindcss";
+@source "../tokens.json";
 
 @theme {
-  /* Dark Mode Configuration */
-  --color-scheme: dark;
-  
-  /* Brand Colors */
+  /* CSS Custom Properties for use with var() - these match tokens.json */
   --color-brand-primary: #2563eb;
-  --color-brand-secondary: #4f46e5;
-  --color-brand-accent: #f97316;
-  --color-brand-light: #eff6ff;
-  --color-brand-dark: #1e40af;
+  --color-brand-light: #e8f0ff;
+  --color-brand-dark: #1e3a8a;
   
-  /* Gray Scale */
-  --color-gray-50: #f9fafb;
-  --color-gray-100: #f3f4f6;
-  --color-gray-200: #e5e7eb;
-  --color-gray-300: #d1d5db;
-  --color-gray-400: #9ca3af;
-  --color-gray-500: #6b7280;
-  --color-gray-600: #4b5563;
-  --color-gray-700: #374151;
-  --color-gray-800: #1f2937;
-  --color-gray-900: #111827;
+  --color-bg-primary: #ffffff;
+  --color-bg-primary-dark: #0f172a;
+  --color-bg-section: #f5f7fa;
+  --color-bg-section-dark: #1e2533;
+  --color-bg-card: #eef2f6;
+  --color-bg-card-dark: #1c2430;
+  --color-bg-surface: #ffffff;
+  --color-bg-surface-dark: #1c2430;
   
-  /* Slate Scale */
-  --color-slate-50: #f8fafc;
-  --color-slate-100: #f1f5f9;
-  --color-slate-200: #e2e8f0;
-  --color-slate-300: #cbd5e1;
-  --color-slate-400: #94a3b8;
-  --color-slate-500: #64748b;
-  --color-slate-600: #475569;
-  --color-slate-700: #334155;
-  --color-slate-800: #1e293b;
-  --color-slate-900: #0f172a;
+  --color-text-primary: #0f172a;
+  --color-text-primary-dark: #eef2f6;
+  --color-text-secondary: #475569;
+  --color-text-secondary-dark: #cbd5e1;
+  --color-text-light: #94a3b8;
   
-  /* Font Family */
+  --color-border-standard: #d8dee6;
+  --color-border-standard-dark: #334155;
+  --color-border-light: #c5ccd6;
+  --color-border-light-dark: #475569;
+  
+  --color-interaction-hover: #1d4ed8;
+  --color-interaction-hover-dark: #3b82f6;
+  --color-interaction-focus: #2563eb;
+  
   --font-family-sans: Inter, system-ui, sans-serif;
   
-  /* Animations */
   --animate-float: float 6s ease-in-out infinite;
-  
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-  }
 }
 
-/* Enable class-based dark mode */
-@variant dark (&:where(.dark, .dark *));
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Enable class-based dark mode for Tailwind v4 */
+@custom-variant dark (&:where(.dark, .dark *));
 
 /* Custom components - keeping the working styles */
 @layer components {
@@ -57,9 +51,14 @@
     scroll-behavior: smooth;
   }
   
+  /* Body dark mode background */
+  body {
+    background-color: var(--color-bg-primary);
+  }
+  
   /* Focus styles for accessibility */
   *:focus {
-    outline: 2px solid #f97316;
+    outline: 2px solid var(--color-interaction-focus);
     outline-offset: 2px;
   }
 
@@ -91,46 +90,50 @@
   }
   
   .btn--primary {
-    background-color: #2563eb;
+    background-color: var(--color-brand-primary);
     color: white;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   }
   .btn--primary:hover {
+    background-color: var(--color-interaction-hover);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
+  }
+  .dark .btn--primary:hover {
+    background-color: var(--color-interaction-hover-dark);
   }
   
   .btn--secondary {
     background-color: white;
-    color: #2563eb;
-    border: 1px solid #cbd5e1;
+    color: var(--color-brand-primary);
+    border: 1px solid var(--color-border-standard);
   }
   .btn--secondary:hover {
-    background-color: #2563eb;
+    background-color: var(--color-interaction-hover);
     color: white;
     transform: translateY(-2px);
   }
   .dark .btn--secondary {
-    background-color: #1e293b;
-    border-color: #475569;
-    color: white;
+    background-color: var(--color-bg-surface-dark);
+    border-color: var(--color-border-standard-dark);
+    color: var(--color-text-primary-dark);
   }
   .dark .btn--secondary:hover {
-    background-color: #2563eb;
+    background-color: var(--color-interaction-hover-dark);
   }
 
-  /* Feature components (Palette 1 optimized) */
+  /* Feature components */
   .feature {
     background-color: white;
     border-radius: 0.5rem;
     padding: 1.5rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--color-border-standard);
     transition: all 0.3s;
   }
   .dark .feature {
-    background-color: #1e293b;
-    border-color: #334155;
+    background-color: var(--color-bg-surface-dark);
+    border-color: var(--color-border-standard-dark);
   }
   .feature:hover {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
@@ -146,114 +149,98 @@
     font-weight: 700;
     margin-bottom: 1rem;
     text-align: center;
-    color: #0f172a;
+    color: var(--color-text-primary);
     line-height: 1.25;
   }
   .dark .feature__title {
-    color: #f1f5f9;
+    color: var(--color-text-primary-dark);
   }
   
   .feature__description {
-    color: #475569;
+    color: var(--color-text-secondary);
     line-height: 1.625;
   }
   .dark .feature__description {
-    color: #cbd5e1;
+    color: var(--color-text-secondary-dark);
   }
 
-  /* Section backgrounds (Palette 1 optimized) */
+  /* Section backgrounds - using Tailwind dark: utilities */
   .bg-bg-primary {
-    background-color: white;
-  }
-  .dark .bg-bg-primary {
-    background-color: #0f172a;
+    background-color: var(--color-bg-primary);
   }
   
   .bg-bg-surface {
-    background-color: white;
-  }
-  .dark .bg-bg-surface {
-    background-color: #1e293b;
+    background-color: var(--color-bg-surface);
   }
   
   .bg-bg-card {
-    background-color: #f8fafc;
-  }
-  .dark .bg-bg-card {
-    background-color: #1e293b;
+    background-color: var(--color-bg-card);
   }
   
   .bg-bg-section {
-    background-color: #f1f5f9;
-  }
-  .dark .bg-bg-section {
-    background-color: #1e293b;
+    background-color: var(--color-bg-section);
   }
 
   /* Neutral colors for backgrounds and borders */
   .bg-neutral-50 {
-    background-color: #f8fafc;
+    background-color: var(--color-bg-section);
   }
-  .dark .bg-neutral-50 {
-    background-color: #1e293b;
+  .dark .bg-neutral-50,
+  html.dark .bg-neutral-50 {
+    background-color: var(--color-bg-section-dark);
   }
 
   .bg-neutral-200 {
-    background-color: #e2e8f0;
+    background-color: var(--color-bg-card);
   }
-  .dark .bg-neutral-200 {
-    background-color: #334155;
+  .dark .bg-neutral-200,
+  html.dark .bg-neutral-200 {
+    background-color: var(--color-bg-card-dark);
   }
 
   .bg-neutral-700 {
-    background-color: #334155;
+    background-color: var(--color-border-standard-dark);
   }
-  .dark .bg-neutral-700 {
-    background-color: #475569;
+  .dark .bg-neutral-700,
+  html.dark .bg-neutral-700 {
+    background-color: var(--color-border-light-dark);
   }
 
   .border-neutral-200 {
-    border-color: #e2e8f0;
+    border-color: var(--color-border-standard);
   }
-  .dark .border-neutral-200 {
-    border-color: #334155;
+  .dark .border-neutral-200,
+  html.dark .border-neutral-200 {
+    border-color: var(--color-border-standard-dark);
   }
 
   .border-muted {
-    border-color: #e2e8f0;
+    border-color: var(--color-border-standard);
   }
-  .dark .border-muted {
-    border-color: #334155;
+  .dark .border-muted,
+  html.dark .border-muted {
+    border-color: var(--color-border-standard-dark);
   }
 
-  /* Text colors (Palette 1 optimized) */
+  /* Text colors */
   .text-text-primary {
-    color: #0f172a;
-  }
-  .dark .text-text-primary {
-    color: #f1f5f9;
+    color: var(--color-text-primary);
   }
   
   .text-text-secondary {
-    color: #475569;
-  }
-  .dark .text-text-secondary {
-    color: #cbd5e1;
+    color: var(--color-text-secondary);
   }
   
   .text-text-light {
-    color: #64748b;
-  }
-  .dark .text-text-light {
-    color: #94a3b8;
+    color: var(--color-text-light);
   }
 
   /* Brand color utilities */
   .bg-brand-light {
-    background-color: #eff6ff;
+    background-color: var(--color-brand-light);
   }
   .dark .bg-brand-light {
-    background-color: #1e3a8a;
+    background-color: var(--color-brand-dark);
   }
 
   /* Brand color utilities - using direct colors to avoid circular dependencies */

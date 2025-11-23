@@ -4,7 +4,10 @@ date: 2025-01-10
 category: "Business"
 excerpt: "Understanding the pros and cons of each approach to help you make the right choice for your business."
 readTime: "6 min read"
+image: "/img/template-image.webp"
 ---
+
+{% image "./src/img/template-image.webp", "Template image placeholder", [800, 1200], "w-full rounded-lg shadow-lg mb-8" %}
 
 When it comes to getting a professional website, you generally have two options: a subscription-based managed service or a one-off build. Both have their place, but which is right for your business?
 
@@ -66,6 +69,8 @@ One-off projects are ideal if you:
 - Prefer to manage your own hosting and technical infrastructure
 
 ## The hybrid approach
+
+{% image "./src/img/template-image.webp", "Template image placeholder", [600, 900], "w-full rounded-lg shadow-lg my-8" %}
 
 At CodeCraft North, we also offer one-off static builds with optional hosting. You get:
 
