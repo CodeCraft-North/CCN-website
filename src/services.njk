@@ -11,7 +11,7 @@ description: "Professional web design services UK for small businesses. Choose b
             <h1 class="text-5xl md:text-6xl font-black mb-6 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight pt-6">Small business website services UK</h1>
             <p class="text-2xl font-semibold text-brand-primary mb-6 leading-snug">Professional websites for every need and budget. Choose between a fully managed subscription or a one-off custom build.</p>
             <div class="mb-8 max-w-3xl mx-auto">
-                {% image "./src/img/template-image.webp", "Template image placeholder", [800, 1200], "w-full rounded-lg shadow-lg" %}
+                {% image "./src/img/services.svg", "Template image placeholder", [800, 1200], "w-full rounded-lg" %}
             </div>
             <p class="text-lg mb-8 text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed max-w-3xl mx-auto">
                 We handle everything, hosting, maintenance, updates and growth. You can focus on running your business. No inflated agency fees, no technical overwhelm, just clean, fast websites that work.
@@ -49,9 +49,9 @@ description: "Professional web design services UK for small businesses. Choose b
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 items-stretch">
                 <!-- Essentials Subscription -->
-                <div class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-xl p-8 shadow-xl border-2 border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] hover:border-brand-primary transition-all duration-300">
+                <div class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-xl p-8 shadow-xl border-2 border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] hover:border-brand-primary transition-all duration-300 flex flex-col h-full">
                     <div class="mb-6">
                         <h3 class="text-2xl font-bold text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] mb-2">Essentials Website Subscription</h3>
                         <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] mb-4">Perfect for businesses that need a professional online presence with ongoing support</p>
@@ -59,7 +59,7 @@ description: "Professional web design services UK for small businesses. Choose b
                         <p class="text-sm text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)]">12-month minimum, no setup fee</p>
                     </div>
 
-                    <div class="space-y-3 mb-8">
+                    <div class="space-y-3 mb-8 flex-grow">
                         <div class="flex items-start gap-3">
                             <div class="w-6 h-6 flex items-center justify-center bg-[var(--color-brand-light)] dark:bg-[var(--color-brand-dark)] rounded-full text-brand-primary dark:text-[var(--color-interaction-hover-dark)] flex-shrink-0 mt-1">✓</div>
                             <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)]">5 pages plus legal pages</p>
@@ -82,11 +82,11 @@ description: "Professional web design services UK for small businesses. Choose b
                         </div>
                     </div>
 
-                    <a href="/services/essentials-website-subscription/" class="btn btn--primary w-full text-center">View Essentials plan</a>
+                    <a href="/services/essentials-website-subscription/" class="btn btn--primary w-full text-center mt-auto">View Essentials plan</a>
                 </div>
 
                 <!-- Growth Subscription -->
-                <div class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-xl p-8 shadow-xl border-2 border-brand-primary relative overflow-hidden">
+                <div class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-xl p-8 shadow-xl border-2 border-brand-primary relative overflow-hidden flex flex-col h-full">
                     <div class="absolute top-0 right-0 bg-brand-primary text-white px-4 py-1 text-sm font-semibold">
                         Most Popular
                     </div>
@@ -97,7 +97,7 @@ description: "Professional web design services UK for small businesses. Choose b
                         <p class="text-sm text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)]">12-month minimum, no setup fee</p>
                     </div>
 
-                    <div class="space-y-3 mb-8">
+                    <div class="space-y-3 mb-8 flex-grow">
                         <div class="flex items-start gap-3">
                             <div class="w-6 h-6 flex items-center justify-center bg-[var(--color-brand-light)] dark:bg-[var(--color-brand-dark)] rounded-full text-brand-primary dark:text-[var(--color-interaction-hover-dark)] flex-shrink-0 mt-1">✓</div>
                             <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)]">7 pages plus articles section & legal pages</p>
@@ -128,7 +128,7 @@ description: "Professional web design services UK for small businesses. Choose b
                         </div>
                     </div>
 
-                    <a href="/services/growth-website-subscription/" class="inline-block w-full text-center px-6 py-3 rounded-lg font-semibold text-base transition-all duration-300 border-0 cursor-pointer bg-brand-primary text-white shadow-lg hover:shadow-xl hover:-translate-y-0.5">View Growth plan</a>
+                    <a href="/services/growth-website-subscription/" class="inline-block w-full text-center px-6 py-3 rounded-lg font-semibold text-base transition-all duration-300 border-0 cursor-pointer bg-brand-primary text-white shadow-lg hover:shadow-xl hover:-translate-y-0.5 mt-auto">View Growth plan</a>
                 </div>
             </div>
 
@@ -411,22 +411,5 @@ description: "Professional web design services UK for small businesses. Choose b
     </div>
 </section>
 
-<!-- Final CTA -->
-<section class="section-padding bg-brand-primary text-white text-center relative">
-    <div class="container relative z-10">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-black mb-6 leading-tight">Ready to get started?</h2>
-            <p class="text-xl mb-8 leading-relaxed">
-                Book a free consultation and we'll help you choose the right web design service for your business. No pressure, just honest advice.
-            </p>
-            <a href="#contact" class="inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] text-brand-primary rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
-                Book your free consultation
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-            </a>
-        </div>
-    </div>
-</section>
+
 

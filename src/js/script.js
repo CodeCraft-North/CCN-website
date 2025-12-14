@@ -1,18 +1,49 @@
-// Simple Dark Mode Toggle - Tailwind Standard
+// Dark Mode Toggle with Device Preference Support
 document.addEventListener('DOMContentLoaded', function() {
     const themeToggle = document.getElementById('theme-toggle');
     const html = document.documentElement;
     
-    // Get saved theme or default to light
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    // Function to get initial theme preference
+    function getInitialTheme() {
+        // Check for saved manual preference first
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            return savedTheme;
+        }
+        
+        // If no saved preference, check device setting
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark';
+        }
+        
+        // Default to light
+        return 'light';
+    }
     
-    // Apply saved theme
-    if (savedTheme === 'dark') {
-        html.classList.add('dark');
-        themeToggle.innerHTML = '<span class="text-lg">☀️</span>';
-    } else {
-        html.classList.remove('dark');
-        themeToggle.innerHTML = '<span class="text-lg">🌙</span>';
+    // Function to apply theme
+    function applyTheme(theme) {
+        if (theme === 'dark') {
+            html.classList.add('dark');
+            themeToggle.innerHTML = '<span class="text-lg">☀️</span>';
+        } else {
+            html.classList.remove('dark');
+            themeToggle.innerHTML = '<span class="text-lg">🌙</span>';
+        }
+    }
+    
+    // Apply initial theme
+    const initialTheme = getInitialTheme();
+    applyTheme(initialTheme);
+    
+    // Listen for device preference changes (if no manual override)
+    if (window.matchMedia) {
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        mediaQuery.addEventListener('change', function(e) {
+            // Only auto-switch if user hasn't manually set a preference
+            if (!localStorage.getItem('theme')) {
+                applyTheme(e.matches ? 'dark' : 'light');
+            }
+        });
     }
     
     // Toggle theme on click
@@ -52,6 +83,57 @@ document.addEventListener('DOMContentLoaded', function() {
                 const icon = mobileMenuToggle.querySelector('svg path');
                 icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16'); // Reset to hamburger
             }
+        });
+    }
+    
+    // Desktop services dropdown toggle
+    const desktopServicesToggle = document.getElementById('desktop-services-toggle');
+    const desktopServicesMenu = document.getElementById('desktop-services-menu');
+    const desktopServicesArrow = document.getElementById('desktop-services-arrow');
+    
+    if (desktopServicesToggle && desktopServicesMenu && desktopServicesArrow) {
+        desktopServicesToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const isOpen = !desktopServicesMenu.classList.contains('opacity-0');
+            
+            if (isOpen) {
+                // Close dropdown
+                desktopServicesMenu.classList.add('opacity-0', 'invisible', 'scale-95');
+                desktopServicesMenu.classList.remove('opacity-100', 'visible', 'scale-100');
+                desktopServicesArrow.classList.remove('rotate-180');
+                desktopServicesToggle.setAttribute('aria-expanded', 'false');
+            } else {
+                // Open dropdown
+                desktopServicesMenu.classList.remove('opacity-0', 'invisible', 'scale-95');
+                desktopServicesMenu.classList.add('opacity-100', 'visible', 'scale-100');
+                desktopServicesArrow.classList.add('rotate-180');
+                desktopServicesToggle.setAttribute('aria-expanded', 'true');
+            }
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!desktopServicesToggle.contains(e.target) && !desktopServicesMenu.contains(e.target)) {
+                desktopServicesMenu.classList.add('opacity-0', 'invisible', 'scale-95');
+                desktopServicesMenu.classList.remove('opacity-100', 'visible', 'scale-100');
+                desktopServicesArrow.classList.remove('rotate-180');
+                desktopServicesToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
+    
+    // Mobile services submenu toggle
+    const mobileServicesToggle = document.getElementById('mobile-services-toggle');
+    const mobileServicesMenu = document.getElementById('mobile-services-menu');
+    const mobileServicesArrow = document.getElementById('mobile-services-arrow');
+    
+    if (mobileServicesToggle && mobileServicesMenu && mobileServicesArrow) {
+        mobileServicesToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            mobileServicesMenu.classList.toggle('hidden');
+            mobileServicesArrow.classList.toggle('rotate-180');
         });
     }
 

@@ -6,8 +6,7 @@ Organize your images by purpose for better maintainability.
 
 - **`logos/`** - Brand logos and favicons
 - **`blog/`** - Blog post images  
-- **`hero/`** - Hero section images
-- **`icons/`** - Icon images (if not using SVG)
+- **Root folder** - All other images (hero images, icons, general images)
 
 ## 🎯 Adding Images
 

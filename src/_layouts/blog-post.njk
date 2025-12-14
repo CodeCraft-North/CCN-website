@@ -1,5 +1,6 @@
 ---
 layout: base.njk
+description: "{{ excerpt or title }}"
 ---
 
 <article class="py-24 bg-[var(--color-bg-primary)] dark:bg-[var(--color-bg-primary-dark)]">
@@ -24,12 +25,12 @@ layout: base.njk
         <!-- Featured Image -->
         {% if image %}
         <div class="mb-12 rounded-xl overflow-hidden shadow-lg">
-            <img src="{{ image }}" alt="{{ title }}" class="w-full h-auto">
+            <img src="{{ image }}" alt="{{ title }}" class="w-full h-auto" loading="eager" width="1200" height="630">
         </div>
         {% endif %}
 
         <!-- Content -->
-        <div class="prose prose-lg dark:prose-invert max-w-none prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] prose-p:leading-relaxed prose-a:text-brand-primary prose-a:no-underline hover:prose-a:underline prose-strong:text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] prose-ul:my-6 prose-li:my-2">
+        <div class="prose max-w-none">
             {{ content | safe }}
         </div>
 
@@ -44,4 +45,34 @@ layout: base.njk
         </div>
     </div>
 </article>
+
+<!-- Article Structured Data (Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ title }}",
+  "description": "{{ excerpt or title }}",
+  "image": "{% if image %}https://codecraftnorth.co.uk{{ image }}{% else %}https://codecraftnorth.co.uk/img/logos/CCN-logo-transparent-blue.webp{% endif %}",
+  "datePublished": "{{ date | htmlDateString }}",
+  "dateModified": "{{ date | htmlDateString }}",
+  "author": {
+    "@type": "Person",
+    "name": "Carl Ball",
+    "url": "https://codecraftnorth.co.uk/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CodeCraft North",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://codecraftnorth.co.uk/img/logos/CCN-logo-transparent-blue.webp"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://codecraftnorth.co.uk{{ page.url }}"
+  }
+}
+</script>
 

@@ -2,13 +2,33 @@
 <header class="fixed top-0 left-0 right-0 z-50 bg-[var(--color-bg-primary)]/80 dark:bg-[var(--color-bg-primary-dark)]/80 backdrop-blur-md border-b border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)]">
     <nav class="max-w-6xl mx-auto px-6 flex justify-between items-center py-4">
         <a href="/" class="relative block">
-            <img src="/img/CCN-logo-transparent-blue.webp" alt="Code Craft North" class="h-10 w-auto transition-opacity duration-300 dark:opacity-0 absolute" width="120" height="40">
-            <img src="/img/header_dark_logo.webp" alt="Code Craft North" class="h-10 w-auto transition-opacity duration-300 opacity-0 dark:opacity-100" width="120" height="40">
+            <img src="/img/logos/CCN-logo-transparent-blue.webp" alt="Code Craft North" class="h-10 w-auto transition-opacity duration-300 dark:opacity-0 absolute" width="120" height="40">
+            <img src="/img/logos/header_dark_logo.webp" alt="Code Craft North" class="h-10 w-auto transition-opacity duration-300 opacity-0 dark:opacity-100" width="120" height="40">
         </a>
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center space-x-8">
             <a href="/about/" class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] hover:text-brand-primary transition-colors font-medium">About</a>
-            <a href="/services/" class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] hover:text-brand-primary transition-colors font-medium">Services</a>
+            
+            <!-- Services Dropdown -->
+            <div class="relative">
+                <div class="flex items-center">
+                    <a href="/services/" class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] hover:text-brand-primary transition-colors font-medium">Services</a>
+                    <button id="desktop-services-toggle" class="ml-1 p-1 text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] hover:text-brand-primary transition-colors" aria-label="Toggle services menu" aria-expanded="false" aria-haspopup="true">
+                        <svg id="desktop-services-arrow" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="desktop-services-menu" class="absolute top-full left-0 mt-2 w-64 bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg shadow-xl border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] opacity-0 invisible scale-95 transition-all duration-200 z-50">
+                    <div class="py-2">
+                        <a href="/services/" class="block px-4 py-2 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] hover:bg-[var(--color-bg-section)] dark:hover:bg-[var(--color-bg-section-dark)] transition-colors">All Services</a>
+                        <a href="/services/essentials-website-subscription/" class="block px-4 py-2 text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] hover:bg-[var(--color-bg-section)] dark:hover:bg-[var(--color-bg-section-dark)] hover:text-brand-primary transition-colors">Essentials Subscription</a>
+                        <a href="/services/growth-website-subscription/" class="block px-4 py-2 text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] hover:bg-[var(--color-bg-section)] dark:hover:bg-[var(--color-bg-section-dark)] hover:text-brand-primary transition-colors">Growth Subscription</a>
+                        <a href="/services/one-off-website-build/" class="block px-4 py-2 text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] hover:bg-[var(--color-bg-section)] dark:hover:bg-[var(--color-bg-section-dark)] hover:text-brand-primary transition-colors">One-Off Build</a>
+                    </div>
+                </div>
+            </div>
+            
             <a href="/resources/" class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] hover:text-brand-primary transition-colors font-medium">Resources</a>
             <a href="/contact/" class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] hover:text-brand-primary transition-colors font-medium">Contact</a>
         </div>
@@ -29,10 +49,26 @@
         </div>
         
         <!-- Mobile Navigation -->
-        <div class="md:hidden absolute top-full left-0 right-0 bg-[--color-bg-primary] dark:bg-[--color-bg-primary-dark] border-b border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] shadow-lg hidden" id="mobile-menu">
+        <div class="md:hidden absolute top-full left-0 right-0 bg-[var(--color-bg-primary)] dark:bg-[var(--color-bg-primary-dark)] border-b border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] shadow-lg hidden" id="mobile-menu">
             <div class="px-6 py-4 space-y-4">
                 <a href="/about/" class="block text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] hover:text-brand-primary transition-colors font-medium py-2">About</a>
-                <a href="/services/" class="block text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] hover:text-brand-primary transition-colors font-medium py-2">Services</a>
+                
+                <!-- Mobile Services Submenu -->
+                <div>
+                    <button class="w-full flex items-center justify-between text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] hover:text-brand-primary transition-colors font-medium py-2" id="mobile-services-toggle">
+                        <span>Services</span>
+                        <svg class="w-5 h-5 transition-transform" id="mobile-services-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="hidden pl-4 space-y-2 mt-2" id="mobile-services-menu">
+                        <a href="/services/" class="block text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] hover:text-brand-primary transition-colors py-2">All Services</a>
+                        <a href="/services/essentials-website-subscription/" class="block text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] hover:text-brand-primary transition-colors py-2">Essentials Subscription</a>
+                        <a href="/services/growth-website-subscription/" class="block text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] hover:text-brand-primary transition-colors py-2">Growth Subscription</a>
+                        <a href="/services/one-off-website-build/" class="block text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] hover:text-brand-primary transition-colors py-2">One-Off Build</a>
+                    </div>
+                </div>
+                
                 <a href="/resources/" class="block text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] hover:text-brand-primary transition-colors font-medium py-2">Resources</a>
                 <a href="/contact/" class="block text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] hover:text-brand-primary transition-colors font-medium py-2">Contact</a>
                 <a href="/contact/" class="btn btn--primary w-full text-center mt-4">Get Started</a>

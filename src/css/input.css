@@ -277,4 +277,148 @@
   .dark .footer-logo--dark {
     @apply opacity-100;
   }
+
+  /* Prose/Typography styles for blog posts */
+  .prose {
+    color: var(--color-text-secondary);
+    max-width: 65ch;
+  }
+  
+  .dark .prose {
+    color: var(--color-text-secondary-dark);
+  }
+
+  .prose p {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    line-height: 1.75;
+    color: var(--color-text-secondary);
+  }
+  
+  .dark .prose p {
+    color: var(--color-text-secondary-dark);
+  }
+
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4 {
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-top: 2em;
+    margin-bottom: 1em;
+    line-height: 1.2;
+  }
+  
+  .dark .prose h1,
+  .dark .prose h2,
+  .dark .prose h3,
+  .dark .prose h4 {
+    color: var(--color-text-primary-dark);
+  }
+
+  .prose h1 {
+    font-size: 2.25em;
+    margin-top: 0;
+  }
+
+  .prose h2 {
+    font-size: 1.875em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  .prose h3 {
+    font-size: 1.5em;
+    margin-top: 1.6em;
+    margin-bottom: 0.8em;
+  }
+
+  .prose h4 {
+    font-size: 1.25em;
+  }
+
+  .prose ul,
+  .prose ol {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    padding-left: 1.625em;
+  }
+
+  .prose li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .prose ul > li {
+    position: relative;
+    padding-left: 0.375em;
+  }
+
+  .prose ul > li::before {
+    content: "";
+    position: absolute;
+    background-color: var(--color-text-secondary);
+    border-radius: 50%;
+    width: 0.375em;
+    height: 0.375em;
+    top: calc(0.875em - 0.1875em);
+    left: -1.25em;
+  }
+  
+  .dark .prose ul > li::before {
+    background-color: var(--color-text-secondary-dark);
+  }
+
+  .prose ol > li {
+    counter-increment: list-counter;
+  }
+
+  .prose ol {
+    counter-reset: list-counter;
+  }
+
+  .prose ol > li::before {
+    content: counter(list-counter) ".";
+    position: absolute;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+    left: 0;
+  }
+  
+  .dark .prose ol > li::before {
+    color: var(--color-text-secondary-dark);
+  }
+
+  .prose strong {
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+  
+  .dark .prose strong {
+    color: var(--color-text-primary-dark);
+  }
+
+  .prose a {
+    color: var(--color-brand-primary);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .prose a:hover {
+    text-decoration: underline;
+  }
+
+  .prose img {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .prose > :first-child {
+    margin-top: 0;
+  }
+
+  .prose > :last-child {
+    margin-bottom: 0;
+  }
 }
