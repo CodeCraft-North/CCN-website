@@ -1,0 +1,100 @@
+---
+layout: base.njk
+title: "Page Not Found"
+description: "The page you're looking for doesn't exist. Return to CodeCraft North homepage or explore our website services."
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+
+<!-- Hero Section -->
+<section class="py-24 text-center bg-[var(--color-bg-primary)] dark:bg-[var(--color-bg-primary-dark)]">
+    <div class="container">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-8">
+                <h1 class="text-6xl md:text-8xl font-black mb-4 text-brand-primary dark:text-brand-primary">404</h1>
+                <div class="w-16 h-px bg-brand-primary mx-auto mb-8"></div>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-black mb-6 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight">Page not found</h2>
+            <p class="text-xl mb-8 text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed max-w-2xl mx-auto text-left">
+                The page you're looking for doesn't exist or may have been moved. Don't worry, we can help you find what you need.
+            </p>
+            <div class="flex gap-6 justify-center flex-wrap mb-12">
+                <a href="/" class="btn btn--primary">Go to homepage</a>
+                <a href="/services/" class="btn btn--secondary">View services</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Helpful Links Section -->
+<section class="section-padding bg-[var(--color-bg-section)] dark:bg-[var(--color-bg-section-dark)]">
+    <div class="container">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-black mb-8 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight text-center">Where would you like to go?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <a href="/services/" class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg p-6 shadow-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-12 h-12 flex items-center justify-center bg-brand-primary rounded-lg text-white mb-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">Our Services</h3>
+                    <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">Explore our website subscriptions and one-off builds</p>
+                </a>
+
+                <a href="/about/" class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg p-6 shadow-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-12 h-12 flex items-center justify-center bg-brand-primary rounded-lg text-white mb-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">About Us</h3>
+                    <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">Learn about CodeCraft North and our approach</p>
+                </a>
+
+                <a href="/resources/" class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg p-6 shadow-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-12 h-12 flex items-center justify-center bg-brand-primary rounded-lg text-white mb-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">Resources</h3>
+                    <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">Browse our guides and insights for small businesses</p>
+                </a>
+
+                <a href="/contact/" class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg p-6 shadow-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-12 h-12 flex items-center justify-center bg-brand-primary rounded-lg text-white mb-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">Get in Touch</h3>
+                    <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">Start a conversation about your website project</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Popular Services Section -->
+<section class="section-padding bg-[var(--color-bg-primary)] dark:bg-[var(--color-bg-primary-dark)]">
+    <div class="container">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-black mb-6 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight">Popular pages</h2>
+            <div class="w-16 h-px bg-brand-primary mx-auto mb-8"></div>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="/services/essentials-website-subscription/" class="px-6 py-3 bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] hover:border-brand-primary hover:shadow-lg transition-all text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] font-medium">Essentials Subscription</a>
+                <a href="/services/growth-website-subscription/" class="px-6 py-3 bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] hover:border-brand-primary hover:shadow-lg transition-all text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] font-medium">Growth Subscription</a>
+                <a href="/services/one-off-website-build/" class="px-6 py-3 bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] hover:border-brand-primary hover:shadow-lg transition-all text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] font-medium">One-Off Build</a>
+            </div>
+        </div>
+    </div>
+</section>

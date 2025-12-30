@@ -10,11 +10,17 @@ async function imageShortcode(src, alt, widths = [400, 800, 1200], classNames = 
     urlPath: "/img/"
   });
 
+  // Get dimensions from the first format's first width for aspect ratio
+  const firstFormat = Object.keys(metadata)[0];
+  const firstWidth = metadata[firstFormat][0];
+  
   let imageAttributes = {
     alt: alt || "",
     loading: "lazy",
     decoding: "async",
     class: classNames,
+    width: firstWidth.width,
+    height: firstWidth.height,
   };
 
   return Image.generateHTML(metadata, imageAttributes);

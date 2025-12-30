@@ -14,10 +14,10 @@ description: "Get a professional business website with hosting, updates and supp
             <h1 class="text-5xl md:text-6xl font-black mb-6 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight pt-6">Pay monthly business website for UK SMEs</h1>
             <div class="w-16 h-px bg-brand-primary mx-auto mb-8"></div>
             <p class="text-xl mb-8 text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed max-w-3xl mx-auto text-left">
-                For many small businesses, the hardest part of getting a website is managing it after launch. The Essentials Website Subscription makes it simple: one predictable monthly fee covers everything — design, hosting, security, updates and support. You focus on running your business while we take care of your website.
+                For many small businesses, the hardest part of getting a website is managing it after launch. The Essentials Website Subscription makes it simple: one predictable monthly fee covers everything, design, hosting, security, updates and support. You focus on running your business while we take care of your website.
             </p>
             <div class="mb-8 flex justify-center">
-                {% image "./src/img/essentials-subscription.svg", "Template image placeholder", [400, 600], "w-1/3 rounded-lg" %}
+                {% image "./src/img/essentials-subscription.svg", "Essentials website subscription service for UK small businesses", [400, 600], "w-1/3 rounded-lg" %}
             </div>
             <div class="flex gap-6 justify-center flex-wrap">
                 <a href="#pricing" class="btn btn--primary">View pricing</a>
@@ -123,7 +123,7 @@ description: "Get a professional business website with hosting, updates and supp
             <div class="w-16 h-px bg-brand-primary mx-auto mb-8"></div>
             <div class="space-y-6 text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed text-left">
                 <p>You don't need a huge, complex website to make an impact. You need something clean, credible and easy to keep up-to-date. The Essentials Website Subscription delivers that without the hassle of managing plugins or paying for maintenance separately.</p>
-                <p class="font-semibold text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] text-xl">Your website stays secure, optimised and online — and you never need to chase support.</p>
+                <p class="font-semibold text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] text-xl">Your website stays secure, optimised and online, and you never need to chase support.</p>
             </div>
         </div>
     </div>
@@ -322,12 +322,69 @@ description: "Get a professional business website with hosting, updates and supp
 
                 <div class="flex gap-4 justify-center flex-wrap">
                     <a href="#contact" class="btn btn--primary text-lg px-8">Start your website subscription</a>
-                    <a href="/" class="btn btn--secondary text-lg px-8">Compare plans</a>
+                    <a href="/services/" class="btn btn--secondary text-lg px-8">Compare all plans</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Breadcrumb Structured Data (Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codecraftnorth.co.uk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://codecraftnorth.co.uk/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Essentials Website Subscription",
+      "item": "https://codecraftnorth.co.uk/services/essentials-website-subscription/"
+    }
+  ]
+}
+</script>
 
+<!-- Service Structured Data (Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Website Subscription",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "CodeCraft North",
+    "url": "https://codecraftnorth.co.uk"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United Kingdom"
+  },
+  "description": "Essentials Website Subscription for UK small businesses. Professional website with hosting, updates, and unlimited small edits from £125/month. No setup fee.",
+  "offers": {
+    "@type": "Offer",
+    "price": "125",
+    "priceCurrency": "GBP",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "125",
+      "priceCurrency": "GBP",
+      "billingIncrement": "P1M"
+    },
+    "description": "Monthly website subscription with hosting, updates, and support"
+  }
+}
+</script>
 

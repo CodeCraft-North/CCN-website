@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: "Website Tips & Insights for UK Small Businesses"
-description: "Explore guides, insights, and practical tips from CodeCraft North to help your business grow online. Learn about websites, SEO, performance, and strategy — all written for small business owners in plain English."
+description: "Website tips and insights for UK small businesses. Practical guides on SEO, performance, and strategy written in plain English to help your business grow online."
 ---
 
 <!-- Hero Section -->
@@ -13,7 +13,7 @@ description: "Explore guides, insights, and practical tips from CodeCraft North 
                 At CodeCraft North, we believe your website should be more than a digital brochure, it should be a tool that drives growth. Our resources are written for small business owners who want clear, actionable advice without the jargon.
             </p>
             <div class="mb-8 flex justify-center">
-                {% image "./src/img/resources.svg", "Template image placeholder", [400, 600], "w-1/3 rounded-lg" %}
+                {% image "./src/img/resources.svg", "Website tips and insights for UK small businesses", [400, 600], "w-1/3 rounded-lg" %}
             </div>
         </div>
     </div>
@@ -71,7 +71,7 @@ description: "Explore guides, insights, and practical tips from CodeCraft North 
                 <a href="{{ post.url }}" class="block">
                     {% if post.data.image %}
                     <div class="aspect-video bg-[var(--color-bg-card)] dark:bg-[var(--color-bg-card-dark)] overflow-hidden">
-                        <img src="{{ post.data.image }}" alt="{{ post.data.title }}" class="w-full h-full object-cover">
+                        <img src="{{ post.data.image }}" alt="{{ post.data.title }} - CodeCraft North article" class="w-full h-full object-cover" loading="lazy" width="800" height="450">
                     </div>
                     {% else %}
                     <div class="aspect-video bg-gradient-to-br from-brand-primary to-brand-primary flex items-center justify-center">

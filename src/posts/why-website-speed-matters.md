@@ -132,4 +132,4 @@ By prioritising performance and addressing speed issues early, you create a stro
 
 If your website is slow and you're not sure where to start, we can help. Whether you need a complete rebuild or just some optimization work, we'll get your site running at peak performance.
 
-[Get in touch](/contact/) to discuss how we can speed up your website.
+[Get in touch](/contact/) to discuss how we can speed up your website, or explore our [website services](/services/) to see how we build fast, performance-focused sites.

@@ -95,7 +95,7 @@ However, it is important to factor in the long-term reality. Websites still requ
 
 Some businesses sit between these two models. They want the performance and reliability of a professionally built website but do not want a long-term subscription.
 
-At CodeCraft North, this is where static one-off builds with optional hosting and support come in. These sites are fast, secure, and low maintenance by design, while still allowing flexibility over who manages them long term.
+At CodeCraft North, this is where [static one-off builds with optional hosting and support](/services/one-off-website-build/) come in. These sites are fast, secure, and low maintenance by design, while still allowing flexibility over who manages them long term.
 
 This approach offers a middle ground. You get a high-quality build without ongoing commitment, with the option to add support later if your needs change.
 
@@ -118,7 +118,7 @@ Finally, consider how much value you place on having a long-term website partner
 
 ## The honest view
 
-For most small businesses, a website subscription is the more practical option. It offers predictable costs, ongoing support, and fewer technical risks, all of which free up time to focus on running the business.
+For most small businesses, a [website subscription](/services/) is the more practical option. It offers predictable costs, ongoing support, and fewer technical risks, all of which free up time to focus on running the business.
 
 That said, one-off builds still have their place. The right choice depends on your budget, resources, and preferences, not on a one-size-fits-all rule.
 
@@ -135,5 +135,5 @@ If you want an honest recommendation based on your situation, you can get in tou
 
 We're happy to discuss your specific situation and recommend the best approach for your business — even if that means pointing you in a different direction.
 
-[Get in touch](/contact/) and let's have an honest conversation about what makes sense for you.
+[Get in touch](/contact/) and let's have an honest conversation about what makes sense for you. You can also explore our [Essentials Subscription](/services/essentials-website-subscription/), [Growth Subscription](/services/growth-website-subscription/), or [One-Off Build](/services/one-off-website-build/) options.
 
