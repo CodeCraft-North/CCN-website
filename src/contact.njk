@@ -186,11 +186,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
 
                 if (response.ok) {
-                    // Success
-                    formMessage.className = 'p-4 rounded-lg text-center bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 border border-green-200 dark:border-green-800';
-                    formMessage.textContent = 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.';
-                    formMessage.classList.remove('hidden');
-                    form.reset();
+                    // Success - redirect to thank you page
+                    window.location.href = '/thank-you/';
                 } else {
                     throw new Error('Form submission failed');
                 }
