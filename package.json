@@ -4,7 +4,7 @@
   "description": "Code Craft North - Professional web design services",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
+    "build": "npm run css:prod && eleventy",
     "serve": "eleventy --serve",
     "dev": "eleventy --serve --watch",
     "css:build": "postcss ./src/css/input.css -o ./dist/css/styles.css --watch",
