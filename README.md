@@ -1,8 +1,8 @@
 # CodeCraft North Website
 
-Private repository for the CodeCraft North business website. Built with Eleventy (11ty) and Tailwind CSS.
+CodeCraft North business website. Built with Eleventy (11ty) and Tailwind CSS.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Eleventy (11ty)** - Static site generator
 - **Tailwind CSS v4** - Utility-first CSS framework (PostCSS-based)
@@ -11,7 +11,7 @@ Private repository for the CodeCraft North business website. Built with Eleventy
 - **Dark/Light Mode** - Manual toggle with semantic tokens
 - **Luxon** - Date formatting
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── .eleventy.js           # Eleventy configuration
@@ -53,13 +53,10 @@ Private repository for the CodeCraft North business website. Built with Eleventy
 │   └── terms-of-service.njk
 │
 ├── dist/                 # Build output (gitignored)
-└── docs/                 # Brand documentation
-    ├── Colours.md
-    ├── CodeCraft North Branding Guidelines.md
-    └── copy.txt
+└── docs/                 # Brand documentation (gitignored - internal notes)
 ```
 
-## 🔧 Setup on a New Machine
+## Setup on a New Machine
 
 ### Prerequisites
 - **Node.js** v16 or higher ([download](https://nodejs.org/))
@@ -70,7 +67,7 @@ Private repository for the CodeCraft North business website. Built with Eleventy
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/CCN_website.git
+   git clone https://github.com/[your-username]/CCN_website.git
    cd CCN_website
    ```
 
@@ -95,7 +92,7 @@ Private repository for the CodeCraft North business website. Built with Eleventy
 
 That's it! The site should be running locally.
 
-## 📝 Available NPM Scripts
+## Available NPM Scripts
 
 ```bash
 npm run dev          # Start dev server with hot reload (port 8080)
@@ -109,7 +106,7 @@ npm run css:prod     # Compile optimized Tailwind CSS for production
 1. Run `npm run css:build` in one terminal (watches for CSS changes)
 2. Run `npm run dev` in another terminal (watches for HTML changes)
 
-## 🎨 Brand Colors
+## Brand Colors
 
 Current color palette (defined in `src/css/input.css` using Tailwind v4 `@theme` directive):
 
@@ -119,7 +116,7 @@ Current color palette (defined in `src/css/input.css` using Tailwind v4 `@theme`
 --color-brand-accent: #f97316;      // Accent Orange
 ```
 
-See `docs/Colours.md` for full color specifications including light/dark mode variants.
+Color specifications are defined in `src/css/input.css` and `tokens.json`.
 
 **Custom Utilities:**
 - `.bg-bg-primary` - Page background (white/slate)
@@ -130,9 +127,9 @@ See `docs/Colours.md` for full color specifications including light/dark mode va
 - `.border-neutral-*` - Neutral border colors
 - `.bg-neutral-*` - Neutral background colors
 
-See `docs/TOKEN_SYSTEM.md` for the complete semantic token system.
+Semantic tokens are defined in `tokens.json` and used throughout `src/css/input.css`.
 
-## 🎯 Using Icons
+## Using Icons
 
 This site uses **Heroicons** (created by the Tailwind CSS team) for all icons. These are reliable, well-tested SVG icons that work perfectly with Tailwind.
 
@@ -167,7 +164,7 @@ Always use this format for consistency:
 </svg>
 ```
 
-## 🖼️ Using Images
+## Using Images
 
 This site uses the `@11ty/eleventy-img` plugin for automatic image optimization.
 
@@ -179,10 +176,10 @@ This site uses the `@11ty/eleventy-img` plugin for automatic image optimization.
 
 ### What It Does
 
-- ✅ Converts to WebP + JPEG automatically
-- ✅ Generates responsive srcsets for all screen sizes
-- ✅ Lazy loads images by default
-- ✅ Optimizes during build
+- Converts to WebP + JPEG automatically
+- Generates responsive srcsets for all screen sizes
+- Lazy loads images by default
+- Optimizes during build
 
 ### Folder Structure
 
@@ -190,9 +187,9 @@ This site uses the `@11ty/eleventy-img` plugin for automatic image optimization.
 - `src/img/logos/` - Brand logos
 - `src/img/hero/` - Hero section images
 
-See `docs/IMAGE_USAGE_EXAMPLES.md` for complete examples.
+Images are automatically optimized during build using the `{% image %}` shortcode.
 
-## ✍️ Adding New Blog Posts
+## Adding New Blog Posts
 
 1. Create a new markdown file in `src/posts/`:
    ```bash
@@ -217,7 +214,7 @@ See `docs/IMAGE_USAGE_EXAMPLES.md` for complete examples.
    - Get a URL like `/resources/your-post-title/`
    - Use the blog post template
 
-## 🔄 Making Updates
+## Making Updates
 
 ### Regular Workflow
 
@@ -247,7 +244,7 @@ See `docs/IMAGE_USAGE_EXAMPLES.md` for complete examples.
 - **Styles:** Modify `src/css/input.css` for custom components
 - **Images:** Add to `src/img/`
 
-## 🚀 Deployment
+## Deployment
 
 ### Build for Production
 
@@ -268,28 +265,17 @@ The `dist/` folder contains everything needed. Upload to:
 - **Cloudflare Pages**
 - Any static hosting provider
 
-## 📧 Contact Form Setup
+## Contact Form Setup
 
-The contact form (`src/contact.njk`) is ready but needs backend integration:
+The contact form (`src/contact.njk`) is configured for Netlify Forms:
 
-1. Set up Cloudflare Pages Functions (recommended)
-2. Create `/functions/api/contact.js` endpoint
-3. Form will automatically connect to `/api/contact`
+- Form submissions are automatically handled by Netlify
+- Submissions appear in the Netlify dashboard
+- Includes honeypot spam protection
+- Fallback email link for errors
 
-Currently shows a fallback message with email link.
 
-## 🔐 Environment Variables
-
-If you need environment variables (for APIs, etc.):
-
-1. Create `.env` file in root (gitignored)
-2. Add variables:
-   ```
-   API_KEY=your_key_here
-   ```
-3. Access in Eleventy config if needed
-
-## 📂 Key Files
+## Key Files
 
 - **`.eleventy.js`** - Eleventy configuration (collections, filters, directories)
 - **`postcss.config.cjs`** - PostCSS/Tailwind v4 configuration
@@ -298,7 +284,7 @@ If you need environment variables (for APIs, etc.):
 - **`src/_includes/header.njk`** - Navigation menu
 - **`src/css/input.css`** - Custom CSS components and Tailwind tokens
 
-## 🎯 Site Pages
+## Site Pages
 
 | Page | URL | File |
 |------|-----|------|
@@ -310,15 +296,15 @@ If you need environment variables (for APIs, etc.):
 | Individual Posts | `/resources/post-slug/` | `src/posts/*.md` |
 | Legal Pages | `/privacy-policy/` etc. | `src/*.njk` |
 
-## 📈 Performance
+## Performance
 
 Site is optimized for speed:
-- ✅ Static HTML generation (no server processing)
-- ✅ Tailwind CSS purging (only used classes)
-- ✅ Lightweight JavaScript (theme toggle, mobile menu)
-- ✅ Fast hosting-ready (CDN-friendly)
+- Static HTML generation (no server processing)
+- Tailwind CSS purging (only used classes)
+- Lightweight JavaScript (theme toggle, mobile menu)
+- Fast hosting-ready (CDN-friendly)
 
-## 🌙 Dark Mode
+## Dark Mode
 
 Manual dark mode toggle:
 - Toggle button in header
@@ -326,11 +312,11 @@ Manual dark mode toggle:
 - All pages support dark mode
 - Uses semantic token system (roles auto-adjust for light/dark)
 
-## 📞 Support & Contact
+## Support & Contact
 
 **Business Email:** hello@codecraftnorth.co.uk  
 **Location:** Wirral, UK
 
 ---
 
-**Last Updated:** October 2025
+**Last Updated:** December 2026
