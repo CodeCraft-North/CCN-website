@@ -421,4 +421,38 @@
   .prose > :last-child {
     margin-bottom: 0;
   }
+
+  /* Table styles - responsive wrapping */
+  table td {
+    white-space: nowrap;
+    min-width: 120px;
+  }
+  
+  /* Allow wrapping in feature name column (left column) */
+  table td:first-child {
+    white-space: normal;
+    min-width: auto;
+  }
+  
+  /* Cells that should never wrap (like "Pages included" values) */
+  table td.table-cell-nowrap {
+    white-space: nowrap !important;
+    min-width: 180px;
+  }
+  
+  /* On mobile, allow wrapping in value cells and increase minimum width */
+  @media (max-width: 768px) {
+    table td:not(:first-child) {
+      white-space: normal;
+      min-width: 150px;
+      word-break: break-word;
+      hyphens: auto;
+    }
+    
+    /* But keep nowrap for cells with the nowrap class */
+    table td.table-cell-nowrap {
+      white-space: nowrap !important;
+      min-width: 200px;
+    }
+  }
 }

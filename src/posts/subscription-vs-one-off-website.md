@@ -7,7 +7,7 @@ readTime: "6 min read"
 image: "/img/blog/template-image.webp"
 ---
 
-# Website Subscription vs One-Off Build: Which Is Right for Your Business?
+# Website Subscription vs One-off Build: Which Is Right for Your Business?
 
 When investing in a professional website, most small business owners face the same question. Should you choose a monthly website subscription or pay for a one-off website build?
 
@@ -135,5 +135,5 @@ If you want an honest recommendation based on your situation, you can get in tou
 
 We're happy to discuss your specific situation and recommend the best approach for your business — even if that means pointing you in a different direction.
 
-[Get in touch](/contact/) and let's have an honest conversation about what makes sense for you. You can also explore our [Essentials Subscription](/services/essentials-website-subscription/), [Growth Subscription](/services/growth-website-subscription/), or [One-Off Build](/services/one-off-website-build/) options.
+[Get in touch](/contact/) and let's have an honest conversation about what makes sense for you. You can also explore our [Essentials Subscription](/services/essentials-website-subscription/), [Growth Subscription](/services/growth-website-subscription/), or [One-off Build](/services/one-off-website-build/) options.
 
