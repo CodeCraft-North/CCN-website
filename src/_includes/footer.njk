@@ -36,11 +36,16 @@
         <div class="footer__bottom pt-8 border-t border-[var(--color-border-standard-dark)]">
             <div class="flex flex-col md:flex-row justify-between items-center gap-4">
                 <p class="footer__copyright text-[var(--color-text-light)]">&copy; <span id="current-year"></span> Code Craft North. All rights reserved.</p>
-                <nav class="footer__legal flex gap-6 text-sm">
-                    <a href="/privacy-policy/" class="text-[var(--color-text-light)] hover:text-[var(--color-interaction-hover-dark)] transition-colors">Privacy Policy</a>
-                    <a href="/cookie-policy/" class="text-[var(--color-text-light)] hover:text-[var(--color-interaction-hover-dark)] transition-colors">Cookie Policy</a>
-                    <a href="/terms-of-service/" class="text-[var(--color-text-light)] hover:text-[var(--color-interaction-hover-dark)] transition-colors">Terms of Service</a>
-                </nav>
+                <div class="flex flex-wrap gap-6 items-center">
+                    <nav class="footer__site-links flex gap-6 text-sm">
+                        <a href="/locations/" class="text-[var(--color-text-light)] hover:text-[var(--color-interaction-hover-dark)] transition-colors">Areas we serve</a>
+                    </nav>
+                    <nav class="footer__legal flex gap-6 text-sm">
+                        <a href="/privacy-policy/" class="text-[var(--color-text-light)] hover:text-[var(--color-interaction-hover-dark)] transition-colors">Privacy Policy</a>
+                        <a href="/cookie-policy/" class="text-[var(--color-text-light)] hover:text-[var(--color-interaction-hover-dark)] transition-colors">Cookie Policy</a>
+                        <a href="/terms-of-service/" class="text-[var(--color-text-light)] hover:text-[var(--color-interaction-hover-dark)] transition-colors">Terms of Service</a>
+                    </nav>
+                </div>
             </div>
         </div>
     </div>
