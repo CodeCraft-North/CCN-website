@@ -36,7 +36,7 @@ For most small businesses, a subscription typically includes the initial build, 
 The key difference is peace of mind. You are not expected to manage hosting, updates, or technical issues yourself. That responsibility sits with your website partner.
 
 
-## Image placeholder: Managed website subscription workflow
+
 
 
 ## Advantages of a website subscription
@@ -68,7 +68,7 @@ From that point onwards, you are responsible for hosting, maintenance, updates, 
 This model offers more autonomy, but also more responsibility.
 
 
-## Image placeholder: One-off website build lifecycle
+
 
 
 ## Advantages of a one-off build
@@ -100,7 +100,7 @@ At CodeCraft North, this is where [static one-off builds with optional hosting a
 This approach offers a middle ground. You get a high-quality build without ongoing commitment, with the option to add support later if your needs change.
 
 
-## Image placeholder: Static website hosting architecture
+
 
 
 ## How to choose the right option for your business

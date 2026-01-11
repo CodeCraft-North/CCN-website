@@ -37,7 +37,7 @@ Conversion rates are also affected. Studies have consistently shown that faster 
 Credibility is another factor. A slow or unresponsive website can subconsciously signal that a business is outdated, unreliable, or poorly managed. For service-based businesses especially, trust is critical.
 
 
-## Image placeholder: Website loading speed comparison graphic
+
 
 
 ## Common causes of slow websites
@@ -64,7 +64,7 @@ Core Web Vitals are a set of metrics Google uses to measure real-world user expe
 Improving website speed does not guarantee higher rankings on its own, but slow performance can hold an otherwise strong website back. For small businesses competing locally or within niche markets, speed can be a deciding factor.
 
 
-## Image placeholder: Core Web Vitals overview illustration
+
 
 
 ## Practical ways to improve website speed
@@ -91,7 +91,7 @@ In many cases, static sites load in under one second and remain fast even under 
 This is why many modern small business websites are now built using static site generators such as Eleventy, combined with high-performance hosting and global CDNs.
 
 
-## Image placeholder: Static site architecture diagram
+
 
 
 ## How to test your website speed
