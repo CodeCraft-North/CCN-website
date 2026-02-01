@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Preconnect to third-party origins (performance + SEO) -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDYV0G0D42"></script>
     <script>
@@ -15,8 +17,8 @@
     </script>
     
     <title>{% if title %}{{ title }} - {% endif %}Code Craft North</title>
-    <meta name="description" content="{{ description or 'Hand-built, lightning-fast websites, backed by ongoing support and honest expertise. Professional web design services for small businesses.' }}">
-    <meta name="keywords" content="web design, website development, small business websites, UK web design, fast websites, SEO">
+    <meta name="description" content="{{ (description or 'Hand-built, lightning-fast websites, backed by ongoing support and honest expertise. Professional web design services for small businesses.') | descriptionMeta }}">
+    {% if keywords %}<meta name="keywords" content="{{ keywords }}">{% else %}<meta name="keywords" content="web design, website development, small business websites, UK web design, fast websites, SEO">{% endif %}
     <meta name="author" content="Code Craft North">
     
     <!-- Canonical URL -->
@@ -24,9 +26,11 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="{% if layout == 'blog-post.njk' %}article{% else %}website{% endif %}">
+    <meta property="og:site_name" content="Code Craft North">
+    <meta property="og:locale" content="en_GB">
     <meta property="og:url" content="https://codecraftnorth.co.uk{{ page.url }}">
     <meta property="og:title" content="{% if title %}{{ title }}{% if layout != 'blog-post.njk' %} - {% endif %}{% endif %}{% if layout != 'blog-post.njk' %}Code Craft North{% endif %}">
-    <meta property="og:description" content="{{ description or excerpt or 'Hand-built, lightning-fast websites, backed by ongoing support and honest expertise.' }}">
+    <meta property="og:description" content="{{ (description or excerpt or 'Hand-built, lightning-fast websites, backed by ongoing support and honest expertise.') | descriptionMeta }}">
     <meta property="og:image" content="{% if image %}https://codecraftnorth.co.uk{{ image }}{% else %}https://codecraftnorth.co.uk/img/logos/CCN-logo-transparent-blue.webp{% endif %}">
     {% if layout == 'blog-post.njk' and date %}
     <meta property="article:published_time" content="{{ date | htmlDateString }}">
@@ -37,7 +41,7 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://codecraftnorth.co.uk{{ page.url }}">
     <meta property="twitter:title" content="{% if title %}{{ title }}{% if layout != 'blog-post.njk' %} - {% endif %}{% endif %}{% if layout != 'blog-post.njk' %}Code Craft North{% endif %}">
-    <meta property="twitter:description" content="{{ description or excerpt or 'Hand-built, lightning-fast websites, backed by ongoing support and honest expertise.' }}">
+    <meta property="twitter:description" content="{{ (description or excerpt or 'Hand-built, lightning-fast websites, backed by ongoing support and honest expertise.') | descriptionMeta }}">
     <meta property="twitter:image" content="{% if image %}https://codecraftnorth.co.uk{{ image }}{% else %}https://codecraftnorth.co.uk/img/logos/CCN-logo-transparent-blue.webp{% endif %}">
     {% if robots %}
     <meta name="robots" content="{{ robots }}">

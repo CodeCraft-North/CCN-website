@@ -2,6 +2,7 @@
 layout: base.njk
 title: "Areas We Serve"
 description: "Areas we serve across the UK, including Wirral and Liverpool. CodeCraft North builds fast, fully managed websites for small businesses."
+date: 2025-02-01
 ---
 
 <!-- Hero Section -->
@@ -149,3 +150,25 @@ description: "Areas we serve across the UK, including Wirral and Liverpool. Code
         </div>
     </div>
 </section>
+
+<!-- Breadcrumb Structured Data (Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codecraftnorth.co.uk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Areas we serve",
+      "item": "https://codecraftnorth.co.uk/locations/"
+    }
+  ]
+}
+</script>

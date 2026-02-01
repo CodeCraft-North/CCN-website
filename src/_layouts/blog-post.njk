@@ -46,7 +46,7 @@ description: "{{ excerpt or title }}"
     </div>
 </article>
 
-<!-- Article Structured Data (Schema.org) -->
+<!-- Article Structured Data (Schema.org). Set dateModified or updated in post front matter when you edit an article. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -55,7 +55,7 @@ description: "{{ excerpt or title }}"
   "description": "{{ excerpt or title }}",
   "image": "{% if image %}https://codecraftnorth.co.uk{{ image }}{% else %}https://codecraftnorth.co.uk/img/logos/CCN-logo-transparent-blue.webp{% endif %}",
   "datePublished": "{{ date | htmlDateString }}",
-  "dateModified": "{{ date | htmlDateString }}",
+  "dateModified": "{{ (dateModified or updated or date) | htmlDateString }}",
   "author": {
     "@type": "Person",
     "name": "Carl Ball",

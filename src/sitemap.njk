@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
     {%- for page in collections.sitemap -%}
     <url>
         <loc>https://codecraftnorth.co.uk{{ page.url }}</loc>
-        <lastmod>{{ page.date | htmlDateString }}</lastmod>
+        <lastmod>{{ page | sitemapLastmod }}</lastmod>
         <changefreq>{{ page.url | sitemapChangefreq }}</changefreq>
         <priority>{{ page.url | sitemapPriority }}</priority>
     </url>

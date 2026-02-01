@@ -2,6 +2,7 @@
 layout: base.njk
 title: "About CodeCraft North"
 description: "At CodeCraft North, you're not paying for a website. You're partnering with a developer who stays involved. Learn about our approach to web development."
+date: 2025-02-01
 ---
 
 <!-- Hero Section -->
@@ -165,5 +166,25 @@ description: "At CodeCraft North, you're not paying for a website. You're partne
     </div>
 </section>
 
-
+<!-- Breadcrumb Structured Data (Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://codecraftnorth.co.uk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About",
+      "item": "https://codecraftnorth.co.uk/about/"
+    }
+  ]
+}
+</script>
 

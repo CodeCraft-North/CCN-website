@@ -48,6 +48,25 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
   });
 
+  // Meta description: truncate to ~160 chars at word boundary for SERP display
+  eleventyConfig.addFilter("descriptionMeta", (str, maxLen = 160) => {
+    if (!str || typeof str !== "string") return str || "";
+    const s = str.trim();
+    if (s.length <= maxLen) return s;
+    const truncated = s.slice(0, maxLen - 3);
+    const lastSpace = truncated.lastIndexOf(" ");
+    const end = lastSpace > 0 ? lastSpace : truncated.length;
+    return truncated.slice(0, end).trim() + "...";
+  });
+
+  // Sitemap lastmod: use page.data.lastmod or page.data.date or page.date (supports Date or ISO string)
+  eleventyConfig.addFilter("sitemapLastmod", (page) => {
+    const lastmod = (page && page.data && (page.data.lastmod ?? page.data.date)) ?? (page && page.date);
+    if (!lastmod) return DateTime.now().toFormat("yyyy-LL-dd");
+    if (typeof lastmod === "string") return lastmod.slice(0, 10);
+    return DateTime.fromJSDate(lastmod, { zone: "utc" }).toFormat("yyyy-LL-dd");
+  });
+
   // Sitemap filters for automatic priority and change frequency
   // Priority: 0.0-1.0 indicating relative importance on your site
   // Note: Search engines largely ignore priority but it helps with clarity
