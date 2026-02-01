@@ -1,0 +1,14 @@
+# Netlify build and deploy
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Security headers (applied to all responses)
+# If you deploy elsewhere, copy these into your host's header config
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
