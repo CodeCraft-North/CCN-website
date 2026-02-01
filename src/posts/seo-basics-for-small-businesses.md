@@ -1,7 +1,7 @@
 ---
 title: "SEO basics every small business owner should know"
 date: 2026-01-01
-dateModified: 2025-02-01
+dateModified: 2026-01-01
 category: "SEO"
 excerpt: "Cut through the confusion and learn the fundamentals of SEO that actually matter for small businesses."
 readTime: "7 min read"

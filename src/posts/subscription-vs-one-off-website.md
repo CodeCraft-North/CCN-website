@@ -1,6 +1,7 @@
 ---
 title: "Website subscription vs one-off build: which is right for you?"
 date: 2026-01-01
+dateModified: 2026-01-01
 category: "Business"
 excerpt: "Understanding the pros and cons of each approach to help you make the right choice for your business."
 readTime: "6 min read"

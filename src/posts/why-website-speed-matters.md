@@ -1,6 +1,7 @@
 ---
 title: "Why website speed matters for small businesses"
 date: 2026-01-01
+dateModified: 2026-01-01
 category: "Performance"
 excerpt: "A slow website costs you customers. Learn why speed matters and what you can do about it."
 readTime: "5 min read"
