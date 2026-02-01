@@ -393,6 +393,32 @@ description: "Professional web design services UK for small businesses. Choose b
     </div>
 </section>
 
+<!-- FAQ Section -->
+<section class="section-padding bg-[var(--color-bg-section)] dark:bg-[var(--color-bg-section-dark)]" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+        <div class="max-w-3xl mx-auto">
+            <h2 id="faq-heading" class="text-4xl md:text-5xl font-black mb-12 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight text-center">Frequently asked questions</h2>
+
+            <div class="space-y-8">
+                <article class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg p-6 shadow border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)]">
+                    <h3 class="text-lg font-bold mb-3 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">Which option is right for my business?</h3>
+                    <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">If you want a website that is built, hosted, and managed for you, a subscription is usually the best fit. If you want full control and prefer to manage updates yourself, a one-off build may be a better option.</p>
+                </article>
+
+                <article class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg p-6 shadow border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)]">
+                    <h3 class="text-lg font-bold mb-3 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">What is the difference between a subscription and a one-off build?</h3>
+                    <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">Subscriptions spread the cost of building your website over time and include hosting, updates, and support. One-off builds are paid upfront and handed over once complete.</p>
+                </article>
+
+                <article class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg p-6 shadow border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)]">
+                    <h3 class="text-lg font-bold mb-3 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">Is there a minimum term?</h3>
+                    <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">Subscription websites have a 12-month minimum term. One-off builds do not.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Testimonials -->
 {# <section class="section-padding bg-[var(--color-bg-primary)] dark:bg-[var(--color-bg-primary-dark)] relative">
     <div class="container relative z-10">
@@ -448,4 +474,38 @@ description: "Professional web design services UK for small businesses. Choose b
         </div>
     </div>
 </section> #}
+
+<!-- FAQ Structured Data (Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which option is right for my business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you want a website that is built, hosted, and managed for you, a subscription is usually the best fit. If you want full control and prefer to manage updates yourself, a one-off build may be a better option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a subscription and a one-off build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Subscriptions spread the cost of building your website over time and include hosting, updates, and support. One-off builds are paid upfront and handed over once complete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a minimum term?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Subscription websites have a 12-month minimum term. One-off builds do not."
+      }
+    }
+  ]
+}
+</script>
 
