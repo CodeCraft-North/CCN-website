@@ -10,8 +10,10 @@ description: "Professional web design services UK for small businesses. Choose b
         <div class="max-w-4xl mx-auto">
             <h1 class="text-5xl md:text-6xl font-black mb-6 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight pt-6">Small business website services UK</h1>
             <p class="text-2xl font-semibold text-brand-primary mb-6 leading-snug">Professional websites for every need and budget. Choose between a fully managed subscription or a one-off custom build.</p>
-            <div class="mb-8 flex justify-center">
-                {% image "./src/img/services.svg", "Professional website services for UK small businesses", [400, 600], "w-full max-w-3xl rounded-lg" %}
+            <div class="mb-10 flex justify-center">
+                <div class="w-full max-w-md min-w-0">
+                    {% image "./src/img/services.svg", "Professional website services for UK small businesses", [400, 600], "w-full h-auto max-w-full rounded-lg" %}
+                </div>
             </div>
             <p class="text-lg mb-8 text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed max-w-3xl mx-auto text-left">
                 We handle everything, hosting, maintenance, updates and growth. You can focus on running your business. No inflated agency fees, no technical overwhelm, just clean, fast websites that work.
@@ -349,6 +351,9 @@ description: "Professional web design services UK for small businesses. Choose b
                 <p class="text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] mb-4">
                     <strong class="text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">Still not sure?</strong> We're happy to talk through your options.
                 </p>
+                <p class="text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] mb-4">
+                    Not sure yet? <a href="/website-review/" class="text-brand-primary hover:underline font-medium">Request a free website review</a>.
+                </p>
                 <a href="#contact" class="btn btn--primary">Get in touch</a>
             </div>
         </div>
@@ -407,26 +412,22 @@ description: "Professional web design services UK for small businesses. Choose b
 </section>
 
 <!-- FAQ Section -->
-<section class="section-padding bg-[var(--color-bg-primary)] dark:bg-[var(--color-bg-primary-dark)]" id="faq" aria-labelledby="faq-heading">
-    <div class="container">
-        <div class="max-w-3xl mx-auto">
-            <h2 id="faq-heading" class="text-4xl md:text-5xl font-black mb-12 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight text-center">Frequently asked questions</h2>
-
-            <div class="space-y-8">
-                <article class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg p-6 shadow border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)]">
-                    <h3 class="text-lg font-bold mb-3 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">Which option is right for my business?</h3>
-                    <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">If you want a website that is built, hosted, and managed for you, a subscription is usually the best fit. If you want full control and prefer to manage updates yourself, a one-off build may be a better option.</p>
-                </article>
-
-                <article class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg p-6 shadow border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)]">
-                    <h3 class="text-lg font-bold mb-3 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">What is the difference between a subscription and a one-off build?</h3>
-                    <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">Subscriptions spread the cost of building your website over time and include hosting, updates, and support. One-off builds are paid upfront and handed over once complete.</p>
-                </article>
-
-                <article class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg p-6 shadow border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)]">
-                    <h3 class="text-lg font-bold mb-3 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">Is there a minimum term?</h3>
-                    <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">Subscription websites have a 12-month minimum term. One-off builds do not.</p>
-                </article>
+<section class="faq section-padding bg-[var(--color-bg-section)] dark:bg-[var(--color-bg-section-dark)] relative" id="faq" aria-labelledby="faq-heading">
+    <div class="container relative z-10">
+        <h2 id="faq-heading" class="faq__title text-4xl md:text-5xl font-black text-center mb-4 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight">Frequently asked questions</h2>
+        <div class="w-16 h-px bg-brand-primary mx-auto mb-12"></div>
+        <div class="faq__list max-w-4xl mx-auto space-y-4">
+            <div class="faq__item bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-xl p-8 shadow-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <h3 class="faq__question text-xl font-bold mb-4 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">Which option is right for my business?</h3>
+                <p class="faq__answer text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">If you want a website that is built, hosted, and managed for you, a subscription is usually the best fit. If you want full control and prefer to manage updates yourself, a one-off build may be a better option.</p>
+            </div>
+            <div class="faq__item bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-xl p-8 shadow-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <h3 class="faq__question text-xl font-bold mb-4 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">What is the difference between a subscription and a one-off build?</h3>
+                <p class="faq__answer text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">Subscriptions spread the cost of building your website over time and include hosting, updates, and support. One-off builds are paid upfront and handed over once complete.</p>
+            </div>
+            <div class="faq__item bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-xl p-8 shadow-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <h3 class="faq__question text-xl font-bold mb-4 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">Is there a minimum term?</h3>
+                <p class="faq__answer text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">Subscription websites have a 12-month minimum term. One-off builds do not.</p>
             </div>
         </div>
     </div>

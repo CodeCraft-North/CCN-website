@@ -54,6 +54,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("sitemapPriority", (url) => {
     if (url === "/") return "1.0"; // Homepage - highest priority
     if (url.startsWith("/services/")) return "0.8"; // Key landing pages
+    if (url === "/website-review/") return "0.8"; // Primary CTA page
     if (url.match(/^\/(about|contact|locations)\//)) return "0.7"; // Important static pages
     if (url.startsWith("/resources/")) {
       return url === "/resources/" ? "0.7" : "0.6"; // Blog index: 0.7, posts: 0.6
@@ -83,7 +84,7 @@ module.exports = function(eleventyConfig) {
 
   // Sitemap collection - all pages except excluded ones
   eleventyConfig.addCollection("sitemap", function(collectionApi) {
-    const excludedUrls = ["/404.html", "/robots.txt", "/thank-you/", "/sitemap.xml"];
+    const excludedUrls = ["/404.html", "/robots.txt", "/thank-you/", "/website-review-thanks/", "/sitemap.xml"];
     return collectionApi.getAll()
       .filter(page => {
         // Exclude pages that opt out

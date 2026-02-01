@@ -39,6 +39,9 @@
     <meta property="twitter:title" content="{% if title %}{{ title }}{% if layout != 'blog-post.njk' %} - {% endif %}{% endif %}{% if layout != 'blog-post.njk' %}Code Craft North{% endif %}">
     <meta property="twitter:description" content="{{ description or excerpt or 'Hand-built, lightning-fast websites, backed by ongoing support and honest expertise.' }}">
     <meta property="twitter:image" content="{% if image %}https://codecraftnorth.co.uk{{ image }}{% else %}https://codecraftnorth.co.uk/img/logos/CCN-logo-transparent-blue.webp{% endif %}">
+    {% if robots %}
+    <meta name="robots" content="{{ robots }}">
+    {% endif %}
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/img/logos/favicon-transparent.png">

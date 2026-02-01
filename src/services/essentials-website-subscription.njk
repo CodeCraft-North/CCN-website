@@ -16,8 +16,10 @@ description: "Get a professional business website with hosting, updates and supp
             <p class="text-xl mb-8 text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed max-w-3xl mx-auto text-left">
                 For many small businesses, the hardest part of having a website is managing it after launch. The Essentials Website Subscription removes that problem. One predictable monthly fee covers everything: design, hosting, security, updates and support. You focus on running your business while we take care of your website.
             </p>
-            <div class="mb-8 flex justify-center">
-                {% image "./src/img/essentials-subscription.svg", "Essentials website subscription service for UK small businesses", [400, 600], "w-full max-w-3xl rounded-lg" %}
+            <div class="mb-10 flex justify-center">
+                <div class="w-full max-w-md min-w-0">
+                    {% image "./src/img/essentials-subscription.svg", "Essentials website subscription service for UK small businesses", [400, 600], "w-full h-auto max-w-full rounded-lg" %}
+                </div>
             </div>
             <div class="flex gap-6 justify-center flex-wrap">
                 <a href="#pricing" class="btn btn--primary">View pricing</a>
@@ -336,31 +338,26 @@ description: "Get a professional business website with hosting, updates and supp
 </section>
 
 <!-- FAQ Section -->
-<section class="section-padding bg-[var(--color-bg-section)] dark:bg-[var(--color-bg-section-dark)]" id="faq" aria-labelledby="faq-heading">
-    <div class="container">
-        <div class="max-w-3xl mx-auto">
-            <h2 id="faq-heading" class="text-4xl md:text-5xl font-black mb-12 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight text-center">Frequently asked questions</h2>
-
-            <div class="space-y-8">
-                <article class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg p-6 shadow border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)]">
-                    <h3 class="text-lg font-bold mb-3 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">Do I own my website?</h3>
-                    <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">Yes. We build your website upfront and spread the cost over a 12-month subscription. Once the minimum term is complete, the website itself is yours.</p>
-                </article>
-
-                <article class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg p-6 shadow border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)]">
-                    <h3 class="text-lg font-bold mb-3 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">What happens during the subscription?</h3>
-                    <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">While your subscription is active, we host and fully manage your website. This includes updates, performance, and support, so you do not need to deal with any technical setup.</p>
-                </article>
-
-                <article class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg p-6 shadow border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)]">
-                    <h3 class="text-lg font-bold mb-3 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">What happens if I cancel after 12 months?</h3>
-                    <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">If you cancel after the minimum term, we stop hosting and managing the site. You can request a static copy of your website and host it elsewhere if you wish.</p>
-                </article>
-
-                <article class="bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-lg p-6 shadow border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)]">
-                    <h3 class="text-lg font-bold mb-3 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">What if I cancel early?</h3>
-                    <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">The subscription has a 12-month minimum because the website is designed and built upfront. If the subscription is cancelled before the minimum term is complete, ownership does not transfer and no website files are provided.</p>
-                </article>
+<section class="faq section-padding bg-[var(--color-bg-section)] dark:bg-[var(--color-bg-section-dark)] relative" id="faq" aria-labelledby="faq-heading">
+    <div class="container relative z-10">
+        <h2 id="faq-heading" class="faq__title text-4xl md:text-5xl font-black text-center mb-4 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight">Frequently asked questions</h2>
+        <div class="w-16 h-px bg-brand-primary mx-auto mb-12"></div>
+        <div class="faq__list max-w-4xl mx-auto space-y-4">
+            <div class="faq__item bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-xl p-8 shadow-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <h3 class="faq__question text-xl font-bold mb-4 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">Do I own my website?</h3>
+                <p class="faq__answer text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">Yes. We build your website upfront and spread the cost over a 12-month subscription. Once the minimum term is complete, the website itself is yours.</p>
+            </div>
+            <div class="faq__item bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-xl p-8 shadow-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <h3 class="faq__question text-xl font-bold mb-4 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">What happens during the subscription?</h3>
+                <p class="faq__answer text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">While your subscription is active, we host and fully manage your website. This includes updates, performance, and support, so you do not need to deal with any technical setup.</p>
+            </div>
+            <div class="faq__item bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-xl p-8 shadow-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <h3 class="faq__question text-xl font-bold mb-4 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">What happens if I cancel after 12 months?</h3>
+                <p class="faq__answer text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">If you cancel after the minimum term, we stop hosting and managing the site. You can request a static copy of your website and host it elsewhere if you wish.</p>
+            </div>
+            <div class="faq__item bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] rounded-xl p-8 shadow-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <h3 class="faq__question text-xl font-bold mb-4 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">What if I cancel early?</h3>
+                <p class="faq__answer text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed">The subscription has a 12-month minimum because the website is designed and built upfront. If the subscription is cancelled before the minimum term is complete, ownership does not transfer and no website files are provided.</p>
             </div>
         </div>
     </div>
