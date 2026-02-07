@@ -8,10 +8,10 @@ description: "{{ excerpt or title }}"
         <!-- Header -->
         <header class="mb-12 text-center">
             {% if category %}
-            <span class="inline-block px-4 py-2 text-sm font-semibold text-brand-primary bg-brand-light rounded-full mb-4">{{ category }}</span>
+            <span class="inline-block px-4 py-2 text-sm font-semibold text-[var(--color-text-primary)] dark:text-[var(--color-brand-primary)] bg-brand-light rounded-full mb-4">{{ category }}</span>
             {% endif %}
             
-            <h1 class="text-4xl md:text-5xl font-black mb-6 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight">{{ title }}</h1>
+            <h1 class="text-4xl md:text-5xl font-black mb-6 text-[var(--color-text-primary)] dark:text-[var(--color-text-strong-dark)] leading-tight">{{ title }}</h1>
             
             <div class="flex items-center justify-center gap-4 text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)]">
                 <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
@@ -36,7 +36,7 @@ description: "{{ excerpt or title }}"
 
         <!-- Back Link -->
         <div class="mt-12 pt-8 border-t border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)]">
-            <a href="/resources/" class="inline-flex items-center gap-2 text-brand-primary hover:underline font-medium">
+            <a href="/resources/" class="inline-flex items-center gap-2 text-brand-primary dark:text-[var(--color-brand-primary-on-dark)] hover:underline font-medium">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
                 </svg>

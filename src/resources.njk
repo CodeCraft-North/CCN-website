@@ -9,7 +9,7 @@ date: 2026-02-01
 <section class="py-24 text-center relative overflow-hidden bg-[var(--color-bg-primary)] dark:bg-[var(--color-bg-primary-dark)]">
     <div class="max-w-6xl mx-auto px-6 relative z-10">
         <div class="max-w-4xl mx-auto">
-            <h1 class="text-5xl md:text-6xl font-black mb-6 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight pt-6">Practical insights for growing your business online</h1>
+            <h1 class="text-5xl md:text-6xl font-black mb-6 text-[var(--color-text-primary)] dark:text-[var(--color-text-strong-dark)] leading-tight pt-6">Practical insights for growing your business online</h1>
             <p class="text-lg mb-8 text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] leading-relaxed max-w-3xl mx-auto text-left">
                 At CodeCraft North, we believe your website should be more than a digital brochure, it should be a tool that drives growth. Our resources are written for small business owners who want clear, actionable advice without the jargon.
             </p>
@@ -30,25 +30,25 @@ date: 2026-02-01
         </p>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] mb-8">
             <li class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-brand-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <svg class="w-6 h-6 text-[var(--color-brand-primary)] dark:text-[var(--color-brand-primary-on-dark)] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span>Website performance and SEO fundamentals</span>
             </li>
             <li class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-brand-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <svg class="w-6 h-6 text-[var(--color-brand-primary)] dark:text-[var(--color-brand-primary-on-dark)] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span>Choosing between subscription and one-off builds</span>
             </li>
             <li class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-brand-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <svg class="w-6 h-6 text-[var(--color-brand-primary)] dark:text-[var(--color-brand-primary-on-dark)] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span>Best practices for content, hosting, and maintenance</span>
             </li>
             <li class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-brand-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <svg class="w-6 h-6 text-[var(--color-brand-primary)] dark:text-[var(--color-brand-primary-on-dark)] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span>Tools and strategies to help your business grow</span>
@@ -64,7 +64,7 @@ date: 2026-02-01
 <section class="py-16 bg-[var(--color-bg-primary)] dark:bg-[var(--color-bg-primary-dark)]">
     <div class="max-w-6xl mx-auto px-6">
         <div class="text-center mb-12">
-            <h2 class="text-4xl md:text-5xl font-black mb-4 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight">Latest Articles</h2>
+            <h2 class="text-4xl md:text-5xl font-black mb-4 text-[var(--color-text-primary)] dark:text-[var(--color-text-strong-dark)] leading-tight">Latest Articles</h2>
             <p class="text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)]">Explore our most recent insights and how-tos.</p>
         </div>
 
@@ -86,10 +86,10 @@ date: 2026-02-01
                     
                     <div class="p-6">
                         {% if post.data.category %}
-                        <span class="inline-block px-3 py-1 text-xs font-semibold text-brand-primary bg-brand-light rounded-full mb-3">{{ post.data.category }}</span>
+                        <span class="inline-block px-3 py-1 text-xs font-semibold text-[var(--color-text-primary)] dark:text-[var(--color-brand-primary)] bg-brand-light rounded-full mb-3">{{ post.data.category }}</span>
                         {% endif %}
                         
-                        <h3 class="text-xl font-bold mb-3 text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)] leading-tight hover:text-brand-primary transition-colors">{{ post.data.title }}</h3>
+                        <h3 class="text-xl font-bold mb-3 text-[var(--color-text-primary)] dark:text-[var(--color-text-strong-dark)] leading-tight hover:text-brand-primary dark:hover:text-[var(--color-brand-primary-on-dark)] transition-colors">{{ post.data.title }}</h3>
                         
                         {% if post.data.excerpt %}
                         <p class="text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] mb-4 leading-relaxed">{{ post.data.excerpt }}</p>
@@ -97,7 +97,7 @@ date: 2026-02-01
                         
                         <div class="flex items-center justify-between text-sm text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)]">
                             <time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate }}</time>
-                            <span class="text-brand-primary font-medium">Read more</span>
+                            <span class="text-brand-primary dark:text-[var(--color-brand-primary-on-dark)] font-medium">Read more</span>
                         </div>
                     </div>
                 </a>
