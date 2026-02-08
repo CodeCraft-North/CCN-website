@@ -111,16 +111,19 @@ date: 2026-02-01
 
                     <div>
                         <label for="review-website" class="block text-sm font-semibold text-[var(--color-text-primary)] dark:text-[var(--color-text-strong-dark)] mb-2">Website URL <span class="text-red-600 dark:text-red-400">*</span></label>
+                        <p class="text-sm text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] mb-2">You can enter your domain with or without <code class="text-xs bg-[var(--color-bg-section)] dark:bg-[var(--color-bg-section-dark)] px-1.5 py-0.5 rounded">https://</code>.</p>
                         <input
-                            type="url"
+                            type="text"
                             id="review-website"
                             name="website_url"
                             required
                             maxlength="500"
                             autocomplete="url"
+                            inputmode="url"
                             class="w-full px-4 py-3 rounded-lg border border-[var(--color-border-standard)] dark:border-[var(--color-border-standard-dark)] bg-[var(--color-bg-surface)] dark:bg-[var(--color-bg-surface-dark)] text-[var(--color-text-primary)] dark:text-[var(--color-text-strong-dark)] focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition-all"
-                            placeholder="https://yourwebsite.com"
+                            placeholder="e.g. yourwebsite.com or https://yourwebsite.com"
                         >
+                        <p id="review-website-error" class="mt-1.5 text-sm text-red-600 dark:text-red-400 hidden" role="alert">Please enter a valid domain (e.g. yourwebsite.com or https://yourwebsite.com).</p>
                     </div>
 
                     <div>
@@ -221,8 +224,45 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if (form) {
+        const websiteInput = document.getElementById('review-website');
+        const websiteError = document.getElementById('review-website-error');
+
+        function normaliseWebsiteUrl(value) {
+            const trimmed = (value || '').trim();
+            if (!trimmed) return '';
+            if (/^https?:\/\//i.test(trimmed)) return trimmed;
+            return 'https://' + trimmed;
+        }
+
+        function isValidWebsiteUrl(value) {
+            try {
+                const url = new URL(value);
+                if (url.protocol !== 'http:' && url.protocol !== 'https:') return false;
+                const host = url.hostname.toLowerCase();
+                if (host === 'localhost') return true;
+                return host.includes('.');
+            } catch {
+                return false;
+            }
+        }
+
         form.addEventListener('submit', async function(e) {
             e.preventDefault();
+
+            if (websiteInput && websiteError) {
+                const raw = websiteInput.value.trim();
+                const normalised = normaliseWebsiteUrl(raw);
+                websiteError.classList.add('hidden');
+                websiteInput.setAttribute('aria-invalid', 'false');
+
+                if (!normalised || !isValidWebsiteUrl(normalised)) {
+                    websiteError.classList.remove('hidden');
+                    websiteInput.setAttribute('aria-invalid', 'true');
+                    websiteInput.focus();
+                    return;
+                }
+                websiteInput.value = normalised;
+            }
 
             const submitButton = form.querySelector('button[type="submit"]');
             const originalText = submitButton.textContent;
