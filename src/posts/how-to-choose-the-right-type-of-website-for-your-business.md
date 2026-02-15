@@ -64,7 +64,7 @@ Typical UK pricing for a straightforward brochure build:
 
 If you are paying significantly more than that for a basic five page site with no strategy behind it, ask what value is actually being added.
 
-Our [Static Essentials Site](https://codecraftnorth.co.uk/static-essentials-site) follows this model. It focuses on speed, clarity, and long term reliability, not unnecessary complexity.
+Our [Static Essentials Site](/services/essentials-website-subscription/) follows this model. It focuses on speed, clarity, and long term reliability, not unnecessary complexity.
 
 {% image "./src/img/blog/lead-gen.webp", "Lead-gen website", [600, 900], "w-full rounded-lg shadow-lg my-8" %}
 
@@ -97,7 +97,7 @@ In the UK, expect:
 If someone promises “page one in 30 days” without discussing competition or demand, be cautious. For balanced guidance, the UK Government’s advice on improving your online presence is a sensible starting point:
 https://www.gov.uk/guidance/build-your-online-presence
 
-If you prefer steady improvement rather than a one off build, our [Growth Website Subscription](https://codecraftnorth.co.uk/growth-website-subscription) is built around ongoing optimisation rather than launch and disappear.
+If you prefer steady improvement rather than a one off build, our [Growth Website Subscription](/services/growth-website-subscription/) is built around ongoing optimisation rather than launch and disappear.
 
 
 {% image "./src/img/blog/ecommerce-website.webp", "Ecommerce website", [600, 900], "w-full rounded-lg shadow-lg my-8" %}
