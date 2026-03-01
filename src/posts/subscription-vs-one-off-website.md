@@ -1,5 +1,6 @@
 ---
 title: "Website subscription vs one-off build: which is right for you?"
+permalink: "/resources/website-subscription-vs-one-off-build-which-is-right-for-you/"
 date: 2026-01-01
 dateModified: 2026-01-01
 category: "Website Strategy"

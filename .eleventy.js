@@ -37,6 +37,16 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
 
   // Add filters
+  // Slug that strips colons (reserved in URLs) so permalinks stay valid
+  eleventyConfig.addFilter("slug", (str) => {
+    const slug = (str || "").toString().toLowerCase()
+      .trim()
+      .replace(/\s+/g, "-")
+      .replace(/:/g, "-")
+      .replace(/[^\p{L}\p{N}-]/gu, "");
+    return slug.replace(/-+/g, "-").replace(/^-|-$/g, "");
+  });
+
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
