@@ -6,16 +6,28 @@
     
     <!-- Preconnect to third-party origins (performance + SEO) -->
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDYV0G0D42"></script>
+    <!-- Google Analytics loads only after consent (see cookie-consent and script.js) -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-MDYV0G0D42');
+      (function() {
+        try {
+          const stored = localStorage.getItem('ccn_consent');
+          if (stored) {
+            const prefs = JSON.parse(stored);
+            if (prefs.analytics === true) {
+              var s = document.createElement('script');
+              s.async = true;
+              s.src = 'https://www.googletagmanager.com/gtag/js?id=G-MDYV0G0D42';
+              document.head.appendChild(s);
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-MDYV0G0D42');
+            }
+          }
+        } catch (e) {}
+      })();
     </script>
-    
+
     <title>{% if title %}{{ title }} - {% endif %}Code Craft North</title>
     <meta name="description" content="{{ (description or 'Hand-built, lightning-fast websites, backed by ongoing support and honest expertise. Professional web design services for small businesses.') | descriptionMeta }}">
     {% if keywords %}<meta name="keywords" content="{{ keywords }}">{% else %}<meta name="keywords" content="web design, website development, small business websites, UK web design, fast websites, SEO">{% endif %}
@@ -72,7 +84,7 @@
         })();
     </script>
 </head>
-    <body class="font-sans bg-[var(--color-bg-primary)] dark:bg-[var(--color-bg-primary-dark)] text-[var(--color-text-primary)] dark:text-[var(--color-text-strong-dark)]">
+    <body class="font-sans bg-bg-primary dark:bg-bg-primary-dark text-text-primary dark:text-text-strong-dark">
     {% include "header.njk" %}
     
     <main>
@@ -80,6 +92,7 @@
     </main>
     
     {% include "footer.njk" %}
+    {% include "cookie-consent.njk" %}
 
     <!-- Structured Data (Schema.org) -->
     <script type="application/ld+json">

@@ -62,26 +62,51 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
-    
+    const mobileServicesToggle = document.getElementById('mobile-services-toggle');
+    const mobileServicesMenu = document.getElementById('mobile-services-menu');
+    const mobileServicesArrow = document.getElementById('mobile-services-arrow');
+
+    function closeMobileMenu() {
+        if (mobileMenu) mobileMenu.classList.add('hidden');
+        if (mobileMenuToggle) {
+            const icon = mobileMenuToggle.querySelector('svg path');
+            if (icon) icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        }
+        if (mobileServicesMenu) mobileServicesMenu.classList.add('hidden');
+        if (mobileServicesArrow) mobileServicesArrow.classList.remove('rotate-180');
+        if (mobileServicesToggle) mobileServicesToggle.setAttribute('aria-expanded', 'false');
+    }
+
     if (mobileMenuToggle && mobileMenu) {
         mobileMenuToggle.addEventListener('click', function() {
+            const isHidden = mobileMenu.classList.contains('hidden');
             mobileMenu.classList.toggle('hidden');
-            
-            // Toggle hamburger icon
+
             const icon = mobileMenuToggle.querySelector('svg path');
             if (mobileMenu.classList.contains('hidden')) {
-                icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16'); // Hamburger
+                if (icon) icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                mobileMenuToggle.setAttribute('aria-expanded', 'false');
             } else {
-                icon.setAttribute('d', 'M6 18L18 6M6 6l12 12'); // Close X
+                if (icon) icon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                mobileMenuToggle.setAttribute('aria-expanded', 'true');
             }
         });
-        
-        // Close mobile menu when clicking outside
+
         document.addEventListener('click', function(e) {
             if (!mobileMenuToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
-                mobileMenu.classList.add('hidden');
-                const icon = mobileMenuToggle.querySelector('svg path');
-                icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16'); // Reset to hamburger
+                closeMobileMenu();
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key !== 'Escape') return;
+            if (mobileServicesMenu && !mobileServicesMenu.classList.contains('hidden')) {
+                mobileServicesMenu.classList.add('hidden');
+                if (mobileServicesArrow) mobileServicesArrow.classList.remove('rotate-180');
+                if (mobileServicesToggle) mobileServicesToggle.setAttribute('aria-expanded', 'false');
+            } else if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                closeMobileMenu();
             }
         });
     }
@@ -124,16 +149,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Mobile services submenu toggle
-    const mobileServicesToggle = document.getElementById('mobile-services-toggle');
-    const mobileServicesMenu = document.getElementById('mobile-services-menu');
-    const mobileServicesArrow = document.getElementById('mobile-services-arrow');
-    
     if (mobileServicesToggle && mobileServicesMenu && mobileServicesArrow) {
         mobileServicesToggle.addEventListener('click', function(e) {
             e.preventDefault();
+            const isHidden = mobileServicesMenu.classList.contains('hidden');
             mobileServicesMenu.classList.toggle('hidden');
             mobileServicesArrow.classList.toggle('rotate-180');
+            mobileServicesToggle.setAttribute('aria-expanded', String(!isHidden));
         });
     }
 
@@ -153,11 +175,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     block: 'start'
                 });
                 
-                // Close mobile menu if open
                 if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-                    mobileMenu.classList.add('hidden');
-                    const icon = mobileMenuToggle.querySelector('svg path');
-                    icon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16'); // Reset to hamburger
+                    closeMobileMenu();
                 }
             }
         });
@@ -167,5 +186,79 @@ document.addEventListener('DOMContentLoaded', function() {
     const yearElement = document.getElementById('current-year');
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
+    }
+
+    // Cookie consent banner and GA gating
+    const CONSENT_KEY = 'ccn_consent';
+    const GA_ID = 'G-MDYV0G0D42';
+    const consentBanner = document.getElementById('cookie-consent-banner');
+    const consentAccept = document.getElementById('cookie-consent-accept');
+    const consentDecline = document.getElementById('cookie-consent-decline');
+    const manageCookies = document.getElementById('manage-cookies');
+
+    function loadGoogleAnalytics() {
+        if (document.querySelector('script[src*="googletagmanager.com/gtag"]')) return;
+        const s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', GA_ID);
+    }
+
+    function showConsentBanner() {
+        if (consentBanner) consentBanner.classList.remove('hidden');
+    }
+
+    function hideConsentBanner() {
+        if (consentBanner) consentBanner.classList.add('hidden');
+    }
+
+    function setConsent(analytics) {
+        try {
+            localStorage.setItem(CONSENT_KEY, JSON.stringify({
+                analytics: analytics,
+                timestamp: Date.now()
+            }));
+        } catch (e) {}
+    }
+
+    function shouldShowBanner() {
+        try {
+            const stored = localStorage.getItem(CONSENT_KEY);
+            if (!stored) return true;
+            const prefs = JSON.parse(stored);
+            return typeof prefs.analytics !== 'boolean';
+        } catch (e) {
+            return true;
+        }
+    }
+
+    if (consentBanner && shouldShowBanner()) {
+        showConsentBanner();
+    }
+
+    if (consentAccept) {
+        consentAccept.addEventListener('click', function() {
+            setConsent(true);
+            loadGoogleAnalytics();
+            hideConsentBanner();
+        });
+    }
+
+    if (consentDecline) {
+        consentDecline.addEventListener('click', function() {
+            setConsent(false);
+            hideConsentBanner();
+        });
+    }
+
+    if (manageCookies) {
+        manageCookies.addEventListener('click', function() {
+            showConsentBanner();
+        });
     }
 });

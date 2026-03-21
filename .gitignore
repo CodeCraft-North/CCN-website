@@ -47,6 +47,7 @@ lerna-debug.log*
 
 # Documentation (internal notes, not for public repo)
 docs/
+.cursor/
 
 # Package manager lock files (optional - uncomment if you want to ignore)
 # package-lock.json
