@@ -2,62 +2,76 @@
 document.addEventListener('DOMContentLoaded', function() {
     const themeToggle = document.getElementById('theme-toggle');
     const html = document.documentElement;
-    
+
+    // Storage can throw in hardened or private modes; never abort the rest of this handler (cookie banner, etc.)
+    function safeGetLocalStorage(key) {
+        try {
+            return localStorage.getItem(key);
+        } catch (e) {
+            return null;
+        }
+    }
+
+    function safeSetLocalStorage(key, value) {
+        try {
+            localStorage.setItem(key, value);
+        } catch (e) {}
+    }
+
     // Function to get initial theme preference
     function getInitialTheme() {
-        // Check for saved manual preference first
-        const savedTheme = localStorage.getItem('theme');
+        const savedTheme = safeGetLocalStorage('theme');
         if (savedTheme) {
             return savedTheme;
         }
-        
-        // If no saved preference, check device setting
+
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             return 'dark';
         }
-        
-        // Default to light
+
         return 'light';
     }
-    
+
     // Function to apply theme
     function applyTheme(theme) {
         if (theme === 'dark') {
             html.classList.add('dark');
-            themeToggle.innerHTML = '<span class="text-lg">☀️</span>';
+            if (themeToggle) {
+                themeToggle.innerHTML = '<span class="text-lg">☀️</span>';
+            }
         } else {
             html.classList.remove('dark');
-            themeToggle.innerHTML = '<span class="text-lg">🌙</span>';
+            if (themeToggle) {
+                themeToggle.innerHTML = '<span class="text-lg">🌙</span>';
+            }
         }
     }
-    
-    // Apply initial theme
+
     const initialTheme = getInitialTheme();
     applyTheme(initialTheme);
-    
-    // Listen for device preference changes (if no manual override)
+
     if (window.matchMedia) {
         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
         mediaQuery.addEventListener('change', function(e) {
-            // Only auto-switch if user hasn't manually set a preference
-            if (!localStorage.getItem('theme')) {
+            if (!safeGetLocalStorage('theme')) {
                 applyTheme(e.matches ? 'dark' : 'light');
             }
         });
     }
-    
-    // Toggle theme on click
-    themeToggle.addEventListener('click', function() {
-        if (html.classList.contains('dark')) {
-            html.classList.remove('dark');
-            themeToggle.innerHTML = '<span class="text-lg">🌙</span>';
-            localStorage.setItem('theme', 'light');
-        } else {
-            html.classList.add('dark');
-            themeToggle.innerHTML = '<span class="text-lg">☀️</span>';
-            localStorage.setItem('theme', 'dark');
-        }
-    });
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                themeToggle.innerHTML = '<span class="text-lg">🌙</span>';
+                safeSetLocalStorage('theme', 'light');
+            } else {
+                html.classList.add('dark');
+                themeToggle.innerHTML = '<span class="text-lg">☀️</span>';
+                safeSetLocalStorage('theme', 'dark');
+            }
+        });
+    }
 
     // Mobile menu toggle
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
