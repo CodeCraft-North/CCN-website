@@ -3,7 +3,7 @@ title: "How to Choose the Right Type of Website for Small Business"
 date: 2026-02-15
 dateModified: 2026-02-15
 category: "Website Strategy"
-excerpt: "Not all websites do the same job. Learn the differences between brochure, lead generation, and ecommerce sites, and how to pick the right one."
+excerpt: "Not all websites do the same job. Learn the differences between brochure, lead generation and ecommerce sites, and how to pick the right one."
 readTime: "4 min read"
 image: "/img/blog/How to Choose the Right Type of Website for Small Business.webp"
 ---
@@ -38,7 +38,7 @@ Before you think about design, branding, or tech, you need clarity on the job yo
 
 ## Brochure Website vs Lead Generation Website
 
-This is where most confusion sits. A **brochure website vs lead generation website** can look similar on the surface. Both may have five or six pages, some service descriptions, and a contact form.
+This is where most confusion sits. A **brochure website vs lead generation website** can look similar on the surface. Both may have five or six pages, some service descriptions and a contact form.
 
 The difference is not visual. It is strategic.
 
@@ -53,9 +53,9 @@ It works particularly well if:
 - Most customers already know roughly what you do
 - Your sales happen through conversation
 
-A brochure site’s job is simple. It proves you are legitimate, professional, and easy to contact.
+A brochure site’s job is simple. It proves you are legitimate, professional and easy to contact.
 
-For many UK trades, consultants, and local service businesses, this is exactly the right type of website for small business growth.
+For many UK trades, consultants and local service businesses, this is exactly the right type of website for small business growth.
 
 Typical UK pricing for a straightforward brochure build:
 
@@ -64,7 +64,7 @@ Typical UK pricing for a straightforward brochure build:
 
 If you are paying significantly more than that for a basic five page site with no strategy behind it, ask what value is actually being added.
 
-Our [Essentials Website](/services/essentials-website-subscription/) follows this model. It focuses on speed, clarity, and long term reliability, not unnecessary complexity.
+Our [Essentials Website](/services/essentials-website-subscription/) follows this model. It focuses on speed, clarity and long term reliability, not unnecessary complexity.
 
 {% image "./src/img/blog/lead-gen.webp", "Lead-gen website", [600, 900], "w-full rounded-lg shadow-lg my-8" %}
 
@@ -87,7 +87,7 @@ Do you want your website to support your business, or actively grow it?
 
 There is no shame in either answer. But you need to be honest about which one you want.
 
-Lead generation sites typically cost more because they require more thinking, research, and content planning.
+Lead generation sites typically cost more because they require more thinking, research and content planning.
 
 In the UK, expect:
 
@@ -113,16 +113,16 @@ An ecommerce website makes sense when:
 - You want automated checkout and payment
 - You ship beyond your immediate local area
 
-It does not make sense if your service is bespoke, high value, and requires discussion before sale.
+It does not make sense if your service is bespoke, high value and requires discussion before sale.
 
-Ecommerce sites are more complex by nature. They need secure payment gateways, product management systems, stock handling, and ongoing maintenance.
+Ecommerce sites are more complex by nature. They need secure payment gateways, product management systems, stock handling and ongoing maintenance.
 
 Typical UK pricing:
 
 - £2,500 to £8,000 depending on scale
-- £30 to £100 per month for hosting, security, and support
+- £30 to £100 per month for hosting, security and support
 
-If you are quoted £999 for unlimited products, lifetime support, and advanced features, it is worth asking how that is sustainable.
+If you are quoted £999 for unlimited products, lifetime support and advanced features, it is worth asking how that is sustainable.
 
 
 ## How to Decide the Right Type of Website for Small Business Growth

@@ -12,7 +12,7 @@ image: "/img/blog/SEO-basics-for-small-business.webp"
 
 Search engine optimisation is one of the most valuable digital marketing tools available to small businesses. Yet for many business owners, SEO feels technical, confusing, or overly complex. The reality is that you do not need to understand every algorithm update to benefit from SEO.
 
-By focusing on the fundamentals, small businesses can improve their visibility in search results, attract the right customers, and build long-term growth without relying entirely on paid advertising.
+By focusing on the fundamentals, small businesses can improve their visibility in search results, attract the right customers and build long-term growth without relying entirely on paid advertising.
 
 This guide covers the essential SEO basics for small businesses and explains how to apply them in a practical, sustainable way.
 
@@ -28,7 +28,7 @@ Unlike paid adverts, SEO builds visibility over time. A well-optimised website c
 
 ## How search engines decide which sites to rank
 
-Search engines aim to show the most useful and trustworthy results for each search. To do this, they evaluate websites based on three broad areas: technical quality, content relevance, and authority.
+Search engines aim to show the most useful and trustworthy results for each search. To do this, they evaluate websites based on three broad areas: technical quality, content relevance and authority.
 
 Technical quality ensures your site works properly. Content relevance ensures your pages answer the searcher’s question. Authority signals help search engines decide whether your business is credible.
 
@@ -58,9 +58,9 @@ Many of these issues are easiest to solve when a website is built properly from 
 
 ## On-page SEO and content fundamentals
 
-On-page SEO refers to the content on your website and how it is structured. This includes your written text, headings, images, and page metadata.
+On-page SEO refers to the content on your website and how it is structured. This includes your written text, headings, images and page metadata.
 
-Every important page on your website should have a clear purpose. Service pages should explain what you offer, who it is for, and how a customer can take the next step.
+Every important page on your website should have a clear purpose. Service pages should explain what you offer, who it is for and how a customer can take the next step.
 
 Page titles and meta descriptions are especially important. The title appears as the clickable headline in search results, while the meta description provides context and encourages clicks. Well-written titles and descriptions can significantly improve click-through rates even if rankings stay the same.
 
@@ -79,7 +79,7 @@ Single-word keywords such as “builder” or “marketing” are highly competi
 
 Longer, more detailed search phrases are known as long-tail keywords. These often have lower competition and higher conversion rates because the searcher knows exactly what they are looking for.
 
-Understanding search intent is just as important as the keyword itself. Some searches are informational, some are comparative, and others are transactional. Your content should match the intent behind the search.
+Understanding search intent is just as important as the keyword itself. Some searches are informational, some are comparative and others are transactional. Your content should match the intent behind the search.
 
 
 {% image "./src/img/blog/Local SEO for UK small businesses.webp", "Local SEO for UK small businesses", [600, 900], "w-full rounded-lg shadow-lg my-8" %}
@@ -89,9 +89,9 @@ Understanding search intent is just as important as the keyword itself. Some sea
 
 For businesses that serve a specific area, local SEO is essential. Local SEO helps your business appear in location-based searches and map results.
 
-Your Google Business Profile plays a major role in local visibility. A fully completed profile with accurate details, photos, and regular reviews can significantly improve local rankings.
+Your Google Business Profile plays a major role in local visibility. A fully completed profile with accurate details, photos and regular reviews can significantly improve local rankings.
 
-Consistency is critical. Your business name, address, and phone number should be identical across your website, directories, and listings. Inconsistent details weaken local trust signals.
+Consistency is critical. Your business name, address and phone number should be identical across your website, directories and listings. Inconsistent details weaken local trust signals.
 
 Local content also helps. Mentioning your service areas naturally within your website and creating dedicated location pages where appropriate can improve relevance for local searches.
 
@@ -104,7 +104,7 @@ Off-page SEO refers to signals outside your website that indicate trust and cred
 
 Backlinks act as recommendations. A link from a reputable and relevant website tells search engines that your site is trustworthy. Quality matters far more than quantity.
 
-For small businesses, natural backlink opportunities include local directories, professional associations, suppliers, partners, and genuine mentions in relevant publications.
+For small businesses, natural backlink opportunities include local directories, professional associations, suppliers, partners and genuine mentions in relevant publications.
 
 Social media activity does not directly affect rankings, but it helps increase visibility and can lead to more people discovering and linking to your website.
 
@@ -132,16 +132,16 @@ SEO is most effective when it is integrated into your website from the ground up
 
 ## Final thoughts on SEO basics for small business
 
-SEO does not need to be complicated or intimidating. By focusing on solid foundations, clear content, relevant keywords, and genuine trust signals, small businesses can build long-term visibility and attract the right customers.
+SEO does not need to be complicated or intimidating. By focusing on solid foundations, clear content, relevant keywords and genuine trust signals, small businesses can build long-term visibility and attract the right customers.
 
-Good SEO is not about tricks or shortcuts. It is about clarity, usefulness, and consistency.
+Good SEO is not about tricks or shortcuts. It is about clarity, usefulness and consistency.
 
 For further guidance straight from Google, you can read their official SEO Starter Guide here:  
 https://developers.google.com/search/docs/fundamentals/seo-starter-guide
 
 ---
 
-Focus on the basics, be patient, and you'll see results.
+Focus on the basics, be patient and you'll see results.
 
 Need help with your website's SEO? [Get in touch](/contact/) for an honest assessment, or explore our [website services](/services/) to see how we can help improve your online presence.
 
