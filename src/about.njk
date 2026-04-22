@@ -6,20 +6,53 @@ date: 2026-02-01
 ---
 
 <!-- Hero Section -->
-<section class="py-24 text-center bg-bg-primary dark:bg-bg-primary-dark">
-    <div class="container">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-5xl md:text-6xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight pt-6">About CodeCraft North</h1>
-            
+<section class="py-24 text-center relative overflow-hidden bg-bg-primary dark:bg-bg-primary-dark">
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0">
+        <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-brand-light dark:bg-brand-dark/40 blur-3xl opacity-70" style="animation: var(--animate-drift);"></div>
+        <div class="absolute -bottom-40 -right-20 w-md h-112 rounded-full bg-brand-primary/10 dark:bg-brand-primary-on-dark/10 blur-3xl" style="animation: var(--animate-drift-slow); animation-delay: -8s;"></div>
+    </div>
+    <div class="container relative z-10">
+        <div class="max-w-4xl mx-auto hero-entry">
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-light dark:bg-brand-dark/50 text-brand-primary dark:text-brand-primary-on-dark text-sm font-semibold tracking-wide mb-6 mt-6">
+                <span class="w-2 h-2 rounded-full bg-brand-primary animate-pulse"></span>
+                About CodeCraft North
+            </span>
+            <h1 class="text-5xl md:text-6xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight">A developer who <span class="text-brand-primary dark:text-brand-primary-on-dark">stays involved</span></h1>
             <p class="text-2xl font-semibold text-text-primary dark:text-text-strong-dark mb-6 leading-snug">You're not paying for a website, you're partnering with a developer who stays involved.</p>
             <div class="mb-10 flex justify-center">
                 <div class="w-full max-w-md min-w-0">
                     {% image "./src/img/websites-built-with-care.svg", "CodeCraft North - websites built with purpose and care", [400, 800, 1200], "w-full h-auto max-w-full rounded-lg" %}
                 </div>
             </div>
-            <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed max-w-3xl mx-auto text-left">
+            <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed max-w-3xl mx-auto text-left mb-10">
                 I build fast, secure websites that grow with your business. Backed by ongoing support, honest advice and measurable results.
             </p>
+            <ul class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+                <li class="flex items-center gap-3 justify-center text-left">
+                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </span>
+                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">15+ years' experience</span>
+                </li>
+                <li class="flex items-center gap-3 justify-center text-left">
+                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+                    </span>
+                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">Enterprise-grade standards</span>
+                </li>
+                <li class="flex items-center gap-3 justify-center text-left">
+                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </span>
+                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">One developer, one contact</span>
+                </li>
+                <li class="flex items-center gap-3 justify-center text-left">
+                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+                    </span>
+                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">UK-based, no jargon</span>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
@@ -28,7 +61,7 @@ date: 2026-02-01
 <section class="section-padding bg-bg-section dark:bg-bg-section-dark">
     <div class="container">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight text-center">Websites built with purpose and care</h2>
+            <h2 class="reveal text-4xl md:text-5xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight text-center">Websites built with purpose and care</h2>
             
             <div class="mb-12 max-w-2xl mx-auto min-w-0">
                 {% image "./src/img/Carl_Ball.webp", "Carl Ball, founder of CodeCraft North", [400, 800, 1200], "w-full h-auto max-w-full rounded-lg" %}
@@ -59,7 +92,7 @@ date: 2026-02-01
 <section class="section-padding bg-bg-primary dark:bg-bg-primary-dark">
     <div class="container">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-black mb-4 text-text-primary dark:text-text-strong-dark leading-tight text-center">Why not hire an in-house developer?</h2> 
+            <h2 class="reveal text-4xl md:text-5xl font-black mb-4 text-text-primary dark:text-text-strong-dark leading-tight text-center">Why not hire an in-house developer?</h2> 
             <div class="space-y-6 text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">
                 <p>Many business owners consider hiring a full time web developer, but it's rarely the most efficient option. A skilled developer can cost £35,000–£50,000 per year once salary, pension, equipment and management time are factored in, and that's before training, software and hosting costs.</p>
                 
@@ -75,7 +108,7 @@ date: 2026-02-01
 <section class="section-padding bg-bg-section dark:bg-bg-section-dark">
     <div class="container">
         <div class="max-w-5xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-black mb-4 text-text-primary dark:text-text-strong-dark leading-tight text-center">What I believe in</h2>
+            <h2 class="reveal text-4xl md:text-5xl font-black mb-4 text-text-primary dark:text-text-strong-dark leading-tight text-center">What I believe in</h2>
             <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-12 text-left max-w-3xl mx-auto">Over the years I've seen too many businesses held back by poor advice, overcomplicated builds and unnecessary technical jargon. CodeCraft North is built around a few simple principles:</p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
@@ -130,36 +163,47 @@ date: 2026-02-01
 <!-- How I Work Section -->
 <section class="section-padding bg-bg-primary dark:bg-bg-primary-dark">
     <div class="container">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-black mb-4 text-text-primary dark:text-text-strong-dark leading-tight text-center">How I work</h2>
-            <div class="space-y-6 text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-12 max-w-3xl mx-auto text-left">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="reveal text-4xl md:text-5xl font-black mb-4 text-text-primary dark:text-text-strong-dark leading-tight text-center">How I work</h2>
+            <div class="space-y-6 text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-16 max-w-3xl mx-auto text-left">
                 <p>Every project starts with a simple conversation, no jargon, no technical overwhelm. We take time to understand your business, your audience and what success looks like to you. From there, we design and build a fast, reliable website that forms the foundation for your growth.</p>
-                
                 <p>Once live, we'll handle everything technical. Hosting, maintenance, updates and performance monitoring. You get one point of contact and the peace of mind that everything just works.</p>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="w-16 h-16 flex items-center justify-center bg-brand-primary rounded-full text-white text-2xl font-black shadow-lg mb-6">1</div>
-                    <h3 class="text-2xl font-bold mb-4 text-text-primary dark:text-text-strong-dark text-left">Discovery call</h3>
-                    <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed text-left">We discuss your goals, audience and what makes your business unique.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 pt-6">
+                <div class="reveal reveal--delay-1 group relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 pt-12 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="absolute -top-7 left-8 w-16 h-16 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-primary dark:ring-bg-primary-dark transition-transform duration-300 group-hover:scale-110">01</div>
+                    <h3 class="text-2xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">Discovery call</h3>
+                    <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">We discuss your goals, audience and what makes your business unique.</p>
                 </div>
-                
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="w-16 h-16 flex items-center justify-center bg-brand-primary rounded-full text-white text-2xl font-black shadow-lg mb-6">2</div>
-                    <h3 class="text-2xl font-bold mb-4 text-text-primary dark:text-text-strong-dark text-left">Design & build</h3>
-                    <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed text-left">We create a fast, accessible website that reflects your brand and drives action.</p>
+                <div class="reveal reveal--delay-2 group relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 pt-12 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="absolute -top-7 left-8 w-16 h-16 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-primary dark:ring-bg-primary-dark transition-transform duration-300 group-hover:scale-110">02</div>
+                    <h3 class="text-2xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">Design &amp; build</h3>
+                    <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">We create a fast, accessible website that reflects your brand and drives action.</p>
                 </div>
-                
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="w-16 h-16 flex items-center justify-center bg-brand-primary rounded-full text-white text-2xl font-black shadow-lg mb-6">3</div>
-                    <h3 class="text-2xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">Launch & support</h3>
-                    <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed ">Your site goes live and we stay with you to handle updates and improvements.</p>
+                <div class="reveal reveal--delay-3 group relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 pt-12 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                    <div class="absolute -top-7 left-8 w-16 h-16 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-primary dark:ring-bg-primary-dark transition-transform duration-300 group-hover:scale-110">03</div>
+                    <h3 class="text-2xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">Launch &amp; support</h3>
+                    <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">Your site goes live and we stay with you to handle updates and improvements.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Final CTA Showcase -->
+{% set ctaEyebrow = "Let's build it together" %}
+{% set ctaTitle = "A developer who treats your site like their own" %}
+{% set ctaDescription = "Start with a free, no-pressure conversation. We'll listen, ask sensible questions and recommend a plan that genuinely helps your business — not one that maximises our invoice." %}
+{% set ctaPrimary = { href: "/contact/", label: "Start a conversation" } %}
+{% set ctaSecondary = { href: "/services/", label: "See our services" } %}
+{% set ctaBullets = [
+    "One developer, one point of contact — no account managers",
+    "Enterprise-grade performance, security and accessibility",
+    "Plain-English advice, no jargon and no upsells",
+    "Built to perform, not to win design awards"
+] %}
+{% set ctaTrustBadges = ["UK-based", "15+ years", "No long contracts", "Honest pricing"] %}
+{% include "cta-showcase.njk" %}
 
 <!-- Breadcrumb Structured Data (Schema.org) -->
 <script type="application/ld+json">

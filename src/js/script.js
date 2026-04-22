@@ -173,6 +173,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Scroll reveal: fade/slide-in elements with the .reveal class as they enter the viewport.
+    // Respects prefers-reduced-motion by revealing everything immediately, and degrades gracefully
+    // when IntersectionObserver is unavailable.
+    const revealables = document.querySelectorAll('.reveal');
+    if (revealables.length) {
+        const prefersReducedMotion = window.matchMedia
+            && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (prefersReducedMotion || typeof IntersectionObserver === 'undefined') {
+            revealables.forEach((el) => el.classList.add('is-visible'));
+        } else {
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.15,
+                rootMargin: '0px 0px -40px 0px'
+            });
+
+            revealables.forEach((el) => revealObserver.observe(el));
+        }
+    }
+
     // Smooth scrolling for anchor links
     const links = document.querySelectorAll('a[href^="#"]');
     

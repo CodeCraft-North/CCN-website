@@ -7,24 +7,56 @@ date: 2026-02-01
 
 <!-- Hero Section -->
 <section class="py-24 text-center relative overflow-hidden bg-bg-primary dark:bg-bg-primary-dark">
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0">
+        <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-brand-light dark:bg-brand-dark/40 blur-3xl opacity-70" style="animation: var(--animate-drift);"></div>
+        <div class="absolute -bottom-40 -right-20 w-md h-112 rounded-full bg-brand-primary/10 dark:bg-brand-primary-on-dark/10 blur-3xl" style="animation: var(--animate-drift-slow); animation-delay: -4s;"></div>
+    </div>
     <div class="max-w-6xl mx-auto px-6 relative z-10">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-5xl md:text-6xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight pt-6">Websites that grow with your business</h1>
+        <div class="max-w-4xl mx-auto hero-entry">
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-light dark:bg-brand-dark/50 text-brand-primary dark:text-brand-primary-on-dark text-sm font-semibold tracking-wide mb-6 mt-6">
+                <span class="w-2 h-2 rounded-full bg-brand-primary animate-pulse"></span>
+                Hand-built websites for UK businesses
+            </span>
+            <h1 class="text-5xl md:text-6xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight">Websites that <span class="text-brand-primary dark:text-brand-primary-on-dark">grow</span> with your business</h1>
             <p class="text-2xl font-semibold text-text-primary dark:text-text-strong-dark mb-6 leading-snug">Clear, reliable websites for organisations where trust, accessibility and long-term support matter.</p>
-        </div>
-        <div class="mb-10 flex justify-center">
-            <div class="w-full max-w-md min-w-0">
-                {% image "./src/img/web-design.svg", "Web design illustration", [400, 800, 1200], "w-full h-auto max-w-full rounded-lg" %}
+            <div class="mb-10 flex justify-center">
+                <div class="w-full max-w-md min-w-0">
+                    {% image "./src/img/web-design.svg", "Web design illustration", [400, 800, 1200], "w-full h-auto max-w-full rounded-lg" %}
+                </div>
             </div>
-        </div>
-        <div class="max-w-4xl mx-auto">
             <p class="text-lg mb-8 text-text-secondary dark:text-text-secondary-dark leading-relaxed max-w-2xl mx-auto text-left">
                 At CodeCraft North, we build more than websites. We create fast, dependable foundations for organisations that need credibility and clarity from day one. Every site is carefully crafted for performance, accessibility and SEO, without bloated page builders. We host it, secure it, update it and support it over the long term, so you can focus on running your organisation with confidence.
             </p>
             <div class="flex gap-6 justify-center flex-wrap">
-                <a href="/website-review/" class="btn btn--primary">Request a free website review</a>
+                <a href="/website-review/" class="btn btn--primary btn-shine">Request a free website review</a>
                 <a href="/services/" class="btn btn--secondary">View services</a>
             </div>
+            <ul class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+                <li class="flex items-center gap-3 justify-center text-left">
+                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </span>
+                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">Fifteen years experience</span>
+                </li>
+                <li class="flex items-center gap-3 justify-center text-left">
+                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                    </span>
+                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">UK based</span>
+                </li>
+                <li class="flex items-center gap-3 justify-center text-left">
+                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
+                    </span>
+                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">Hand-built, no page builders</span>
+                </li>
+                <li class="flex items-center gap-3 justify-center text-left">
+                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                    </span>
+                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">Long-term support</span>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
@@ -33,23 +65,23 @@ date: 2026-02-01
 <section class="py-16 bg-bg-section dark:bg-bg-section-dark text-left relative">
     <div class="max-w-6xl mx-auto px-6 relative z-10">
         <div>
-            <h2 class="text-4xl md:text-5xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight text-center">Simple, flexible website plans built around your business</h2>
+            <h2 class="reveal text-4xl md:text-5xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight text-center">Simple, flexible website plans built around your business</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 max-w-5xl mx-auto">
-                <a href="/services/essentials-website-subscription/" class="block bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-6 shadow-lg border-2 border-transparent transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-brand-primary">
+                <a href="/services/essentials-website-subscription/" class="reveal reveal--delay-1 block bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-6 shadow-lg border-2 border-transparent transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-brand-primary">
                     <div class="mb-4">
                         <h3 class="text-xl font-bold text-text-primary dark:text-text-strong-dark mb-4">Essentials subscription</h3>
                         <div class="text-3xl font-bold text-brand-primary dark:text-text-strong-dark mb-4">from £125<span class="text-lg font-medium text-text-secondary dark:text-text-secondary-dark">/month</span></div>
                     </div>
                     <p class="text-text-secondary dark:text-text-secondary-dark text-lg leading-relaxed text-left">5 pages plus legal pages, hosting, updates and unlimited small content changes</p>
                 </a>
-                <a href="/services/growth-website-subscription/" class="block bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-6 shadow-lg border-2 border-transparent transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-brand-primary">
+                <a href="/services/growth-website-subscription/" class="reveal reveal--delay-2 block bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-6 shadow-lg border-2 border-transparent transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-brand-primary">
                     <div class="mb-4">
                         <h3 class="text-xl font-bold text-text-primary dark:text-text-strong-dark mb-4">Growth subscription</h3>
                         <div class="text-3xl font-bold text-brand-primary dark:text-text-strong-dark mb-4">from £199<span class="text-lg font-medium text-text-secondary dark:text-text-secondary-dark">/month</span></div>
                     </div>
                     <p class="text-text-secondary dark:text-text-secondary-dark text-lg leading-relaxed">7 pages plus articles section, fully managed blog and monthly strategy advice</p>
                 </a>
-                <a href="/services/one-off-website-build/" class="block bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-6 shadow-lg border-2 border-transparent transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-brand-primary">
+                <a href="/services/one-off-website-build/" class="reveal reveal--delay-3 block bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-6 shadow-lg border-2 border-transparent transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-brand-primary">
                     <div class="mb-4">
                         <h3 class="text-xl font-bold text-text-primary dark:text-text-strong-dark mb-4">One-off build</h3>
                         <div class="text-3xl font-bold text-brand-primary dark:text-text-strong-dark mb-4">from £1,250</div>
@@ -64,7 +96,7 @@ date: 2026-02-01
 <!-- Features Section -->
 <section class="features section-padding-lg bg-bg-primary dark:bg-bg-primary-dark relative" id="services">
     <div class="container relative z-10">
-        <h2 class="features__title text-4xl md:text-5xl font-black text-center mb-6 text-text-primary dark:text-text-strong-dark leading-tight">Everything you need.<br>Nothing you don't.</h2>
+        <h2 class="reveal features__title text-4xl md:text-5xl font-black text-center mb-6 text-text-primary dark:text-text-strong-dark leading-tight">Everything you need.<br>Nothing you don't.</h2>
         <p class="features__subtitle text-lg font-medium text-text-secondary dark:text-text-secondary-dark mb-12 max-w-3xl mx-auto leading-relaxed text-left">
             Your website should work hard for your business, without the unnecessary complexity. Every CodeCraft North build includes the essentials that matter most for performance, reliability and long-term growth.
         </p>
@@ -143,7 +175,7 @@ date: 2026-02-01
 <section class="portfolio section-padding-lg bg-bg-section dark:bg-bg-section-dark relative">
     <div class="container relative z-10">
         <div class="mb-12">
-            <h2 class="text-4xl md:text-5xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight text-center max-w-4xl mx-auto">
+            <h2 class="reveal text-4xl md:text-5xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight text-center max-w-4xl mx-auto">
                 Selected client work and recent projects
             </h2>
             <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed max-w-3xl mx-auto  text-left">
@@ -220,14 +252,31 @@ date: 2026-02-01
 <!-- How We Work Section -->
 <section class="process section-padding bg-bg-section dark:bg-bg-section-dark relative">
     <div class="container relative z-10">
-        <h2 class="process__title text-4xl md:text-5xl font-black text-center mb-6 text-text-primary dark:text-text-strong-dark leading-tight">How we work</h2>
-        <p class="process__description text-lg font-medium max-w-4xl mx-auto mb-8 text-text-secondary dark:text-text-secondary-dark leading-relaxed text-left">
-            We start with a short call to understand your goals, audience and offer. Then we design a clear site structure, 
-            build the core pages and launch on fast UK hosting. After launch we handle updates, improvements and ongoing support. 
-            You get a responsive partner, not a ticket queue.
+        <h2 class="reveal process__title text-4xl md:text-5xl font-black text-center mb-6 text-text-primary dark:text-text-strong-dark leading-tight">How we work</h2>
+        <p class="reveal process__description text-lg font-medium max-w-4xl mx-auto mb-12 text-text-secondary dark:text-text-secondary-dark leading-relaxed text-left">
+            A simple, transparent process from first conversation to long-term partnership. No jargon, no ticket queues, just a clear path to a website that pulls its weight for your business.
         </p>
-        <div class="process__cta text-center">
-            <a href="#contact" class="btn btn--primary">Get in touch</a>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto pt-6">
+            <div class="reveal reveal--delay-1 group relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 pt-10 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <div class="absolute -top-6 left-6 w-14 h-14 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-section dark:ring-bg-section-dark transition-transform duration-300 group-hover:scale-110">01</div>
+                <h3 class="text-xl font-bold mb-2 text-text-primary dark:text-text-strong-dark">Discovery call</h3>
+                <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">A short conversation about your goals, audience and offer, so we build the right thing from the start.</p>
+            </div>
+            <div class="reveal reveal--delay-2 group relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 pt-10 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <div class="absolute -top-6 left-6 w-14 h-14 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-section dark:ring-bg-section-dark transition-transform duration-300 group-hover:scale-110">02</div>
+                <h3 class="text-xl font-bold mb-2 text-text-primary dark:text-text-strong-dark">Design and structure</h3>
+                <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">We design a clear site structure and hand-build every page for speed, accessibility and strong on-page SEO.</p>
+            </div>
+            <div class="reveal reveal--delay-3 group relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 pt-10 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <div class="absolute -top-6 left-6 w-14 h-14 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-section dark:ring-bg-section-dark transition-transform duration-300 group-hover:scale-110">03</div>
+                <h3 class="text-xl font-bold mb-2 text-text-primary dark:text-text-strong-dark">Launch on fast UK hosting</h3>
+                <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">Your site goes live on high-performance UK hosting with SSL, daily backups and uptime monitoring included.</p>
+            </div>
+            <div class="reveal reveal--delay-4 group relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 pt-10 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <div class="absolute -top-6 left-6 w-14 h-14 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-section dark:ring-bg-section-dark transition-transform duration-300 group-hover:scale-110">04</div>
+                <h3 class="text-xl font-bold mb-2 text-text-primary dark:text-text-strong-dark">Ongoing support</h3>
+                <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">After launch we handle updates, improvements and plain-English advice so your site keeps working for you.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -235,7 +284,7 @@ date: 2026-02-01
 <!-- About Section -->
 <section class="about section-padding bg-bg-primary dark:bg-bg-primary-dark">
     <div class="container">
-        <h2 class="about__title text-4xl md:text-5xl font-black text-center mb-8 text-text-primary dark:text-text-strong-dark leading-tight">Built for performance.<br>Backed by partnership.</h2>
+        <h2 class="reveal about__title text-4xl md:text-5xl font-black text-center mb-8 text-text-primary dark:text-text-strong-dark leading-tight">Built for performance.<br>Backed by partnership.</h2>
         <div class="about__content max-w-4xl mx-auto text-center">
             <div class="mb-10 max-w-2xl mx-auto flex justify-center">
                 <div class="w-full max-w-md min-w-0">
@@ -260,7 +309,7 @@ date: 2026-02-01
 <!-- FAQ Section -->
 <section class="faq section-padding bg-bg-section dark:bg-bg-section-dark relative">
     <div class="container relative z-10">
-        <h2 class="faq__title text-4xl md:text-5xl font-black text-center mb-6 text-text-primary dark:text-text-strong-dark leading-tight">Questions we often get</h2>
+        <h2 class="reveal faq__title text-4xl md:text-5xl font-black text-center mb-6 text-text-primary dark:text-text-strong-dark leading-tight">Questions we often get</h2>
         
         <div class="faq__list max-w-4xl mx-auto space-y-4">
             <div class="faq__item bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
@@ -278,3 +327,18 @@ date: 2026-02-01
         </div>
     </div>
 </section>
+
+<!-- Final CTA Showcase -->
+{% set ctaEyebrow = "Ready when you are" %}
+{% set ctaTitle = "Let's build a website that grows your business" %}
+{% set ctaDescription = "Tell us about your business and what you want your website to do. You will get a short, practical response with a clear view of the next steps, no pressure and no jargon." %}
+{% set ctaPrimary = { href: "/contact/", label: "Get in touch" } %}
+{% set ctaSecondary = { href: "/website-review/", label: "Free website review" } %}
+{% set ctaBullets = [
+    "A fast, modern website built for real business outcomes",
+    "UK hosting, SSL and daily backups included on subscription plans",
+    "Ongoing support from the developer who built your site",
+    "A straightforward process with no long delays or surprises"
+] %}
+{% set ctaTrustBadges = ["Fifteen years experience", "UK based", "Hand-built", "Long-term support"] %}
+{% include "cta-showcase.njk" %}

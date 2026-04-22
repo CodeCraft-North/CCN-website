@@ -1,0 +1,91 @@
+{#
+  Reusable gradient CTA showcase.
+  Usage (set variables before include, all optional except title):
+    {% set ctaEyebrow = "Ready when you are" %}
+    {% set ctaTitle = "Let's build something that works for your business" %}
+    {% set ctaDescription = "Tell us about your project..." %}
+    {% set ctaPrimary = { href: "/contact/", label: "Get in touch" } %}
+    {% set ctaSecondary = { href: "/website-review/", label: "Free website review" } %}
+    {% set ctaBullets = ["Point one", "Point two", "Point three", "Point four"] %}
+    {% set ctaTrustBadges = ["UK based", "Hand-built", "Long-term support", "No long-term contracts"] %}
+    {% include "cta-showcase.njk" %}
+#}
+{% set _eyebrow = ctaEyebrow or "Ready when you are" %}
+{% set _title = ctaTitle or "Let's build something that works for your business" %}
+{% set _description = ctaDescription or "Tell us about your project. We will reply with a short, practical response and a clear view of what comes next." %}
+{% set _primary = ctaPrimary or { href: "/contact/", label: "Get in touch" } %}
+{% set _secondary = ctaSecondary or { href: "/website-review/", label: "Free website review" } %}
+{% set _bullets = ctaBullets or [
+    "A fast, modern website that works hard for your business",
+    "Clear structure and messaging that turns visits into enquiries",
+    "UK hosting, SSL, and ongoing support on subscription plans",
+    "A straightforward process with no long delays"
+] %}
+{% set _badges = ctaTrustBadges or ["UK based", "Hand-built, no page builders", "Long-term support", "No long-term contracts"] %}
+
+<section class="section-padding bg-bg-primary dark:bg-bg-primary-dark">
+    <div class="container">
+        <div class="reveal relative overflow-hidden rounded-3xl shadow-2xl" style="background: linear-gradient(135deg, var(--color-brand-dark) 0%, var(--color-brand-primary) 100%);">
+            <div aria-hidden="true" class="pointer-events-none absolute inset-0">
+                <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-white/10 blur-3xl" style="animation: var(--animate-drift);"></div>
+                <div class="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-white/5 blur-3xl" style="animation: var(--animate-drift-slow); animation-delay: -6s;"></div>
+                <svg class="absolute top-8 right-8 w-40 h-40 text-white/10" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+            </div>
+            <div class="relative z-10 px-6 py-16 md:px-14 md:py-20 grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
+                <div class="lg:col-span-3 text-white">
+                    <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 backdrop-blur text-white text-sm font-semibold tracking-wide mb-6 border border-white/20">
+                        <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                        {{ _eyebrow }}
+                    </span>
+                    <h2 class="text-4xl md:text-5xl font-black leading-tight mb-6">{{ _title }}</h2>
+                    <p class="text-lg md:text-xl text-white/90 leading-relaxed mb-8 max-w-2xl">{{ _description }}</p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <a href="{{ _primary.href }}" class="btn-shine inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-white font-bold text-lg shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300" style="color: var(--color-brand-primary);">
+                            {{ _primary.label }}
+                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/></svg>
+                        </a>
+                        {% if _secondary %}
+                        <a href="{{ _secondary.href }}" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-white/10 backdrop-blur text-white font-bold text-lg border border-white/30 hover:bg-white/20 transition-all duration-300">
+                            {{ _secondary.label }}
+                        </a>
+                        {% endif %}
+                    </div>
+                    {% if _badges and _badges|length %}
+                    <ul class="flex flex-wrap gap-2">
+                        {% for badge in _badges %}
+                        <li class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur text-white/90 text-xs font-semibold tracking-wide border border-white/20">
+                            <svg class="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            {{ badge }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </div>
+                {% if _bullets and _bullets|length %}
+                <div class="lg:col-span-2">
+                    <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/20">
+                        <p class="text-white font-bold text-lg mb-5">What you get</p>
+                        <ul class="space-y-4 text-white">
+                            {% for bullet in _bullets %}
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 shrink-0 mt-0.5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                                <span>{{ bullet }}</span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{# Reset locals so consecutive includes on the same page don't inherit previous values. #}
+{% set ctaEyebrow = null %}
+{% set ctaTitle = null %}
+{% set ctaDescription = null %}
+{% set ctaPrimary = null %}
+{% set ctaSecondary = null %}
+{% set ctaBullets = null %}
+{% set ctaTrustBadges = null %}
