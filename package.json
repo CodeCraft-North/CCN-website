@@ -1,10 +1,11 @@
 {
   "name": "codecraft-north",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Code Craft North - Professional web design services",
   "main": "index.js",
   "scripts": {
-    "build": "npm run css:prod && eleventy",
+    "clean": "node -e \"require('fs').rmSync('dist', { recursive: true, force: true })\"",
+    "build": "npm run clean && npm run css:prod && eleventy",
     "serve": "eleventy --serve",
     "dev": "eleventy --serve --watch",
     "css:build": "postcss ./src/css/input.css -o ./dist/css/styles.css --watch",

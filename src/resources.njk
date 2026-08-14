@@ -1,145 +1,80 @@
 ---
 layout: base.njk
-title: "Website Tips & Insights for UK Small Businesses"
-description: "Website tips and insights for UK small businesses. Practical guides on SEO, performance and strategy written in plain English to help your business grow online."
+title: "Website Guides for Small Businesses"
+description: "Practical website guides for UK small businesses, covering SEO, performance, website planning and choosing the right service model."
 date: 2026-02-01
 ---
 
-<!-- Hero Section -->
-<section class="py-24 text-center relative overflow-hidden bg-bg-primary dark:bg-bg-primary-dark">
-    <div aria-hidden="true" class="pointer-events-none absolute inset-0">
-        <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-brand-light dark:bg-brand-dark/40 blur-3xl opacity-70" style="animation: var(--animate-drift);"></div>
-        <div class="absolute -bottom-40 -right-20 w-md h-112 rounded-full bg-brand-primary/10 dark:bg-brand-primary-on-dark/10 blur-3xl" style="animation: var(--animate-drift-slow); animation-delay: -4s;"></div>
-    </div>
-    <div class="max-w-6xl mx-auto px-6 relative z-10">
-        <div class="max-w-4xl mx-auto hero-entry">
-            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-light dark:bg-brand-dark/50 text-brand-primary dark:text-brand-primary-on-dark text-sm font-semibold tracking-wide mb-6 mt-6">
-                <span class="w-2 h-2 rounded-full bg-brand-primary animate-pulse"></span>
-                Resources & insights
-            </span>
-            <h1 class="text-5xl md:text-6xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight">Practical insights for <span class="text-brand-primary dark:text-brand-primary-on-dark">growing your business</span> online</h1>
-            <p class="text-lg mb-8 text-text-secondary dark:text-text-secondary-dark leading-relaxed max-w-3xl mx-auto text-left">
-                At CodeCraft North, we believe your website should be more than a digital brochure, it should be a tool that drives growth. Our resources are written for small business owners who want clear, actionable advice without the jargon.
-            </p>
-            <div class="mb-10 flex justify-center">
+<section class="plan-hero bg-bg-primary dark:bg-bg-primary-dark">
+    <div class="container">
+        <div class="plan-hero__grid">
+            <div class="hero-entry">
+                <p class="eyebrow">Website advice, without the jargon</p>
+                <h1>Make better decisions about your website</h1>
+                <p class="plan-hero__lead">Straightforward guides for small-business owners who want to understand what makes a website useful, visible and worth investing in.</p>
+                <div class="flex flex-col sm:flex-row gap-4 mt-8">
+                    <a href="#latest-guides" class="btn btn--primary btn-shine justify-center">Read the latest guides</a>
+                    <a href="/website-review/" class="btn btn--secondary justify-center">Get a free website review</a>
+                </div>
+            </div>
+            <div class="hero-entry hero-entry--delay flex items-center justify-center" aria-hidden="true">
                 <div class="w-full max-w-md min-w-0">
-                    {% image "./src/img/resources.svg", "Website tips and insights for UK small businesses", [400, 800, 1200], "w-full h-auto max-w-full rounded-lg" %}
+                    {% image "./src/img/resources.svg", "", [400, 800], "w-full h-auto max-w-full" %}
                 </div>
             </div>
-            <ul class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
-                <li class="flex items-center gap-3 justify-center text-left">
-                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
-                    </span>
-                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">Plain-English guides</span>
-                </li>
-                <li class="flex items-center gap-3 justify-center text-left">
-                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
-                    </span>
-                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">Performance &amp; SEO</span>
-                </li>
-                <li class="flex items-center gap-3 justify-center text-left">
-                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 015.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/></svg>
-                    </span>
-                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">Practical strategy</span>
-                </li>
-                <li class="flex items-center gap-3 justify-center text-left">
-                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
-                    </span>
-                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">No jargon, ever</span>
-                </li>
-            </ul>
         </div>
     </div>
 </section>
 
-<!-- Topics Section - Icon Tiles -->
 <section class="section-padding bg-bg-section dark:bg-bg-section-dark">
-    <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center max-w-3xl mx-auto mb-12">
-            <h2 class="reveal text-4xl md:text-5xl font-black mb-4 text-text-primary dark:text-text-strong-dark leading-tight">What we write about</h2>
-            <p class="reveal reveal--delay-1 text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">
-                Browse our latest articles, guides and case studies covering the things that actually move the needle for small businesses online.
-            </p>
+    <div class="container">
+        <div class="section-intro">
+            <p class="eyebrow">What you will find here</p>
+            <h2>Useful context before you spend money</h2>
+            <p>I write about the decisions that most often affect website results: what to build, how to improve it and where common advice needs a little more nuance.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="reveal reveal--delay-1 group bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <div class="w-12 h-12 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark mb-4 transition-transform duration-300 group-hover:scale-110">
-                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
-                </div>
-                <h3 class="text-lg font-bold mb-2 text-text-primary dark:text-text-strong-dark">Performance &amp; SEO</h3>
-                <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">Website performance and SEO fundamentals that actually move rankings.</p>
-            </div>
-            <div class="reveal reveal--delay-2 group bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <div class="w-12 h-12 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark mb-4 transition-transform duration-300 group-hover:scale-110">
-                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5"/></svg>
-                </div>
-                <h3 class="text-lg font-bold mb-2 text-text-primary dark:text-text-strong-dark">Subscription vs one-off</h3>
-                <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">Choosing between subscription and one-off builds — what's right for your business?</p>
-            </div>
-            <div class="reveal reveal--delay-3 group bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <div class="w-12 h-12 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark mb-4 transition-transform duration-300 group-hover:scale-110">
-                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
-                </div>
-                <h3 class="text-lg font-bold mb-2 text-text-primary dark:text-text-strong-dark">Hosting &amp; maintenance</h3>
-                <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">Best practices for content, hosting and maintenance — keep your site secure and fast.</p>
-            </div>
-            <div class="reveal reveal--delay-4 group bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <div class="w-12 h-12 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark mb-4 transition-transform duration-300 group-hover:scale-110">
-                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 015.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/></svg>
-                </div>
-                <h3 class="text-lg font-bold mb-2 text-text-primary dark:text-text-strong-dark">Growth strategies</h3>
-                <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">Tools and strategies to help your business grow — practical, not theoretical.</p>
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <article class="plan-scope-card">
+                <h3>Planning and investment</h3>
+                <p>Understand different website models, realistic costs and how to choose the right scope for your business.</p>
+            </article>
+            <article class="plan-scope-card">
+                <h3>Search and content</h3>
+                <p>Learn the SEO foundations that help the right people find your website and understand what you offer.</p>
+            </article>
+            <article class="plan-scope-card">
+                <h3>Speed and reliability</h3>
+                <p>See why performance matters, what commonly slows websites down and which improvements are worth prioritising.</p>
+            </article>
         </div>
-        <p class="reveal text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed text-center mt-12 max-w-3xl mx-auto">
-            Whether you're just starting out or looking to improve an existing site, you'll find something useful here.
-        </p>
     </div>
 </section>
 
-<!-- Blog Posts Section -->
-<section class="py-16 bg-bg-primary dark:bg-bg-primary-dark">
-    <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center mb-12">
-            <h2 class="reveal text-4xl md:text-5xl font-black mb-4 text-text-primary dark:text-text-strong-dark leading-tight">Latest articles</h2>
-            <p class="reveal reveal--delay-1 text-lg text-text-secondary dark:text-text-secondary-dark">Explore our most recent insights and how-tos.</p>
+<section id="latest-guides" class="section-padding-lg bg-bg-primary dark:bg-bg-primary-dark scroll-mt-24">
+    <div class="container">
+        <div class="section-intro">
+            <p class="eyebrow">Latest resources</p>
+            <h2>Practical website guides</h2>
+            <p>Each article is written to help you make a clearer decision or take a useful next step.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {% for post in collections.posts %}
-            <article class="reveal bg-bg-surface dark:bg-bg-surface-dark rounded-xl shadow-lg border border-border-standard dark:border-border-standard-dark overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <a href="{{ post.url }}" class="block">
+            <article class="reveal bg-bg-surface dark:bg-bg-surface-dark rounded-2xl shadow-lg border border-border-standard dark:border-border-standard-dark overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <a href="{{ post.url }}" class="block h-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-primary">
                     {% if post.data.image %}
                     <div class="aspect-video bg-bg-card dark:bg-bg-card-dark overflow-hidden">
-                        <img src="{{ post.data.image }}" alt="{{ post.data.title }} - CodeCraft North article" class="w-full h-full object-cover" loading="lazy" width="800" height="450">
-                    </div>
-                    {% else %}
-                    <div class="aspect-video bg-linear-to-br from-brand-primary to-brand-primary flex items-center justify-center">
-                        <svg class="w-16 h-16 text-white opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                        </svg>
+                        <img src="{{ post.data.image }}" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" width="800" height="450">
                     </div>
                     {% endif %}
-                    
-                    <div class="p-6">
-                        {% if post.data.category %}
-                        <span class="inline-block px-3 py-1 text-xs font-semibold text-text-primary dark:text-brand-primary bg-brand-light rounded-full mb-3">{{ post.data.category }}</span>
-                        {% endif %}
-                        
-                        <h3 class="text-xl font-bold mb-3 text-text-primary dark:text-text-strong-dark leading-tight hover:text-brand-primary dark:hover:text-brand-primary-on-dark transition-colors">{{ post.data.title }}</h3>
-                        
-                        {% if post.data.excerpt %}
-                        <p class="text-text-secondary dark:text-text-secondary-dark mb-4 leading-relaxed">{{ post.data.excerpt }}</p>
-                        {% endif %}
-                        
-                        <div class="flex items-center justify-between text-sm text-text-secondary dark:text-text-secondary-dark">
-                            <time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate }}</time>
-                            <span class="text-brand-primary dark:text-brand-primary-on-dark font-medium">Read more</span>
+                    <div class="p-6 md:p-7">
+                        <div class="flex flex-wrap items-center gap-3 mb-4 text-sm">
+                            {% if post.data.category %}<span class="inline-block px-3 py-1 font-semibold text-text-primary dark:text-brand-primary bg-brand-light rounded-full">{{ post.data.category }}</span>{% endif %}
+                            <time datetime="{{ post.data.date | htmlDateString }}" class="text-text-secondary dark:text-text-secondary-dark">{{ post.data.date | readableDate }}</time>
                         </div>
+                        <h3 class="text-2xl font-black mb-3 text-text-primary dark:text-text-strong-dark leading-tight">{{ post.data.title }}</h3>
+                        {% if post.data.excerpt %}<p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-5">{{ post.data.excerpt }}</p>{% endif %}
+                        <span class="text-link">Read guide <span aria-hidden="true">→</span></span>
                     </div>
                 </a>
             </article>
@@ -148,40 +83,33 @@ date: 2026-02-01
     </div>
 </section>
 
-<!-- Final CTA Showcase -->
-{% set ctaEyebrow = "Ready for advice tailored to you?" %}
-{% set ctaTitle = "Articles are great. A real conversation is better." %}
-{% set ctaDescription = "Our resources cover the basics, but every business is different. Get in touch for honest, plain-English advice on what your website actually needs to grow." %}
-{% set ctaPrimary = { href: "/contact/", label: "Start a conversation" } %}
-{% set ctaSecondary = { href: "/website-review/", label: "Get a free review" } %}
-{% set ctaBullets = [
-    "No-pressure conversation about your goals",
-    "Honest advice, even if we're not the right fit",
-    "Clear next steps with no jargon",
-    "We reply within 1 business day"
-] %}
-{% set ctaTrustBadges = ["UK-based", "Plain English", "No upsells", "Honest advice"] %}
-{% include "cta-showcase.njk" %}
+<section class="section-padding bg-bg-section dark:bg-bg-section-dark">
+    <div class="container">
+        <div class="ownership-panel reveal">
+            <div>
+                <p class="eyebrow">Need advice about your own site?</p>
+                <h2>Get a useful starting point</h2>
+                <p>Articles can explain the principles, but your website has its own audience, constraints and priorities. I can review it and point out the clearest opportunities.</p>
+            </div>
+            <div class="ownership-panel__aside">
+                <h3>Free website review</h3>
+                <ul class="check-list">
+                    <li>Personal feedback within 48 hours</li>
+                    <li>Clear, prioritised observations</li>
+                    <li>No obligation to buy anything</li>
+                </ul>
+                <a href="/website-review/" class="btn btn--primary btn-shine justify-center w-full">Request your review</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!-- Breadcrumb Structured Data (Schema.org) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://codecraftnorth.co.uk/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Resources",
-      "item": "https://codecraftnorth.co.uk/resources/"
-    }
-  ]
+  "@type": "CollectionPage",
+  "name": "Website Guides for Small Businesses",
+  "description": "Practical website guides for UK small businesses covering SEO, performance and website planning.",
+  "url": "https://codecraftnorth.co.uk/resources/"
 }
 </script>
-

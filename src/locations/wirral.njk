@@ -1,372 +1,135 @@
 ---
 layout: base.njk
-title: "Website Designer in Wirral"
-description: "Website design and fully managed website subscriptions for Wirral businesses. Fast, SEO friendly websites built for small UK businesses."
-date: 2026-02-01
+title: "Web Design Wirral | Website Designer"
+description: "Wirral web design, development and UK hosting from a local developer. Managed website packages from £125/month and one-off builds from £1,250."
+date: 2026-08-14
 ---
 
-<!-- Hero Section -->
-<section class="relative overflow-hidden py-24 text-center bg-bg-primary dark:bg-bg-primary-dark">
-    <div aria-hidden="true" class="pointer-events-none absolute inset-0">
-        <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-brand-light dark:bg-brand-dark/40 blur-3xl opacity-70"></div>
-        <div class="absolute -bottom-40 -right-20 w-md h-112 rounded-full bg-brand-primary/10 dark:bg-brand-primary-on-dark/10 blur-3xl"></div>
+<section class="plan-hero bg-bg-primary dark:bg-bg-primary-dark">
+    <div class="container"><div class="plan-hero__grid">
+        <div class="hero-entry">
+            <p class="eyebrow">Website designer in Wirral</p>
+            <h1>Web design in Wirral that turns interest into enquiries</h1>
+            <p class="plan-hero__lead">I’m Carl, a web developer based on the Wirral. I design fast, clear websites for local service businesses that need to explain their value, earn trust and make the next step obvious.</p>
+            <div class="flex flex-col sm:flex-row gap-4 mt-8">
+                <a href="/contact/" class="btn btn--primary btn-shine justify-center">Discuss your website</a>
+                <a href="/website-review/" class="btn btn--secondary justify-center">Get a free website review</a>
+            </div>
+        </div>
+        <figure class="location-hero__image shadow-lg">
+            {% image "./src/img/wirral-web-design.webp", "Website design services for businesses across the Wirral", [500, 800], "w-full h-full object-cover" %}
+        </figure>
+    </div></div>
+</section>
+
+<section class="py-8 bg-bg-section dark:bg-bg-section-dark border-y border-border-standard dark:border-border-standard-dark" aria-label="Wirral website service summary">
+    <div class="container grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="proof-item"><strong>Wirral based</strong><span>Direct contact with Carl</span></div>
+        <div class="proof-item"><strong>From £125/month</strong><span>Website packages with hosting</span></div>
+        <div class="proof-item"><strong>From £1,250</strong><span>One-off website builds</span></div>
+        <div class="proof-item"><strong>4–6 weeks</strong><span>Typical one-off delivery</span></div>
     </div>
-    <div class="container relative z-10">
-        <div class="max-w-5xl mx-auto">
-            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-light dark:bg-brand-dark/50 text-brand-primary dark:text-brand-primary-on-dark text-sm font-semibold tracking-wide mb-6 mt-6">
-                <span class="w-2 h-2 rounded-full bg-brand-primary animate-pulse"></span>
-                Web design Wirral
-            </span>
-            <h1 class="text-5xl md:text-6xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight">
-                Website Design <span class="text-brand-primary dark:text-brand-primary-on-dark">Wirral</span> for Small Businesses
-            </h1>
-            <p class="text-xl md:text-2xl font-semibold text-text-primary dark:text-text-strong-dark max-w-3xl mx-auto mb-10 leading-snug">
-                Fast, modern websites built to generate enquiries, not just sit there looking pretty.
-            </p>
-            <div class="mb-10 flex justify-center">
-                <div class="w-full max-w-3xl min-w-0 overflow-hidden rounded-2xl border border-border-standard dark:border-border-standard-dark shadow-2xl">
-                    {% image "./src/img/wirral-web-design.webp", "Website design services for Wirral businesses", [400, 800, 1200], "w-full h-auto max-w-full" %}
-                </div>
-            </div>
-            <div class="space-y-6 text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed text-left max-w-3xl mx-auto mb-10">
-                <p>If you run a small business in the Wirral, your website should be doing more than just sitting there. It should be bringing in enquiries, explaining what you do clearly, and making it easy for people to get in touch.</p>
-                <p>We build fast, modern websites for Wirral businesses that want something simple, reliable, and built to generate work. No overcomplicated systems, no bloated builds, just a site that does its job properly.</p>
-            </div>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center flex-wrap mb-12">
-                <a href="/contact/" class="btn btn--primary">Start your project</a>
-                <a href="/website-review/" class="btn btn--secondary">Free website review</a>
-            </div>
-            <ul class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto text-left">
-                <li class="flex items-start gap-3">
-                    <svg class="w-6 h-6 text-brand-primary dark:text-brand-primary-on-dark shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                    <div>
-                        <p class="font-bold text-text-primary dark:text-text-strong-dark">Fast to launch</p>
-                        <p class="text-sm text-text-secondary dark:text-text-secondary-dark">Weeks, not months</p>
-                    </div>
-                </li>
-                <li class="flex items-start gap-3">
-                    <svg class="w-6 h-6 text-brand-primary dark:text-brand-primary-on-dark shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    <div>
-                        <p class="font-bold text-text-primary dark:text-text-strong-dark">Built to convert</p>
-                        <p class="text-sm text-text-secondary dark:text-text-secondary-dark">Enquiries focused</p>
-                    </div>
-                </li>
-                <li class="flex items-start gap-3">
-                    <svg class="w-6 h-6 text-brand-primary dark:text-brand-primary-on-dark shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    <div>
-                        <p class="font-bold text-text-primary dark:text-text-strong-dark">UK hosted</p>
-                        <p class="text-sm text-text-secondary dark:text-text-secondary-dark">SSL and backups</p>
-                    </div>
-                </li>
-                <li class="flex items-start gap-3">
-                    <svg class="w-6 h-6 text-brand-primary dark:text-brand-primary-on-dark shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"/></svg>
-                    <div>
-                        <p class="font-bold text-text-primary dark:text-text-strong-dark">Long-term support</p>
-                        <p class="text-sm text-text-secondary dark:text-text-secondary-dark">Subscription or one-off</p>
-                    </div>
-                </li>
+</section>
+
+<section class="section-padding-lg bg-bg-primary dark:bg-bg-primary-dark">
+    <div class="container">
+        <div class="section-intro"><p class="eyebrow">Web design and development</p><h2>Web development for Wirral businesses has to support the buying decision</h2><p>People comparing nearby businesses still need clear reasons to choose one. Your website should answer the practical questions that turn a local search into a confident enquiry.</p></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <article class="plan-scope-card"><h3>What do you actually do?</h3><p>Clear service pages help visitors recognise that they are in the right place without decoding vague marketing language.</p></article>
+            <article class="plan-scope-card"><h3>Why should they trust you?</h3><p>Experience, process, proof and straightforward expectations reduce the uncertainty that stops people getting in touch.</p></article>
+            <article class="plan-scope-card"><h3>Do you cover their area?</h3><p>Useful service-area information gives customers confidence without creating thin pages for every nearby town.</p></article>
+            <article class="plan-scope-card"><h3>What should they do next?</h3><p>Strong calls to action make it easy to enquire, request a review or understand the next step on mobile.</p></article>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding-lg bg-bg-section dark:bg-bg-section-dark">
+    <div class="container"><div class="ownership-panel reveal">
+        <div>
+            <p class="eyebrow">Genuinely local, without pretending</p>
+            <h2>Based on the Wirral and working across the peninsula</h2>
+            <p>I support organisations in and around Birkenhead, Heswall, West Kirby, Hoylake, Wallasey and the wider Wirral. Most projects can be handled efficiently through short calls, email and clear review stages, with local meetings discussed when useful.</p>
+            <p>My focus is not filling a page with place names. It is understanding how a local service business wins work and building a site that supports that process.</p>
+        </div>
+        <div class="ownership-panel__aside">
+            <h3>Particularly well suited to</h3>
+            <ul class="check-list">
+                <li>Trades and home-service businesses</li>
+                <li>Professional and specialist services</li>
+                <li>Small teams serving local and national clients</li>
+                <li>Charities and trust-led organisations</li>
             </ul>
         </div>
+    </div></div>
+</section>
+
+<section class="section-padding-lg bg-bg-primary dark:bg-bg-primary-dark">
+    <div class="container">
+        <div class="section-intro"><p class="eyebrow">Common problems</p><h2>Why an existing Wirral business website may not generate enquiries</h2><p>Traffic alone is not enough. These are the issues I most often look for when reviewing an established site.</p></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <article class="decision-card"><h3>The offer is hard to understand</h3><p>Visitors cannot quickly tell which service fits, who it is for or what makes the business different.</p></article>
+            <article class="decision-card"><h3>Local relevance feels forced</h3><p>Repeated location keywords do not replace useful information about coverage, availability and the customer’s problem.</p></article>
+            <article class="decision-card"><h3>The mobile journey is awkward</h3><p>Slow pages, oversized sections or buried contact details lose people searching while they are ready to act.</p></article>
+            <article class="decision-card"><h3>Trust arrives too late</h3><p>Proof, process and reassurance sit below generic sales copy instead of helping with the decision early.</p></article>
+        </div>
     </div>
 </section>
 
-<!-- Need More Enquiries Section -->
+<section class="section-padding-lg bg-bg-section dark:bg-bg-section-dark">
+    <div class="container">
+        <div class="section-intro"><p class="eyebrow">Clear prices, no hidden setup fee</p><h2>Website design packages and hosting for Wirral businesses</h2><p>Choose a managed website package with UK hosting from £125 per month or a one-off build from £1,250. The same published pricing applies whether your organisation is nearby or elsewhere in the UK.</p></div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <article class="offer-card"><p class="eyebrow">Managed starter</p><h3>Essentials</h3><p class="offer-card__price">From £125 <span>/month</span></p><p>Five core pages with hosting, maintenance, support and reasonable updates to existing pages.</p><ul class="check-list"><li>No setup fee</li><li>12-month minimum</li><li>Portable website after the minimum term</li></ul><a href="/services/essentials-website-subscription/" class="btn btn--secondary justify-center mt-auto">Explore Essentials</a></article>
+            <article class="offer-card offer-card--featured"><p class="eyebrow">Managed growth</p><h3>Growth</h3><p class="offer-card__price">From £199 <span>/month</span></p><p>Seven core pages plus help structuring and publishing articles supplied by your business.</p><ul class="check-list"><li>Monthly reporting and strategy</li><li>12-month minimum</li><li>Portable website after the minimum term</li></ul><a href="/services/growth-website-subscription/" class="btn btn--primary btn-shine justify-center mt-auto">Explore Growth</a></article>
+            <article class="offer-card"><p class="eyebrow">Own it outright</p><h3>One-off build</h3><p class="offer-card__price">From £1,250</p><p>Five core pages, typically delivered in 4–6 weeks, with project-specific source code at handover.</p><ul class="check-list"><li>No minimum term</li><li>Hosting and support optional</li><li>Extra pages quoted clearly</li></ul><a href="/services/one-off-website-build/" class="btn btn--secondary justify-center mt-auto">Explore one-off builds</a></article>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding-lg bg-bg-primary dark:bg-bg-primary-dark">
+    <div class="container">
+        <div class="section-intro"><p class="eyebrow">A straightforward process</p><h2>From local business context to a working website</h2></div>
+        <ol class="grid grid-cols-1 md:grid-cols-3 gap-6 process-list">
+            <li><span>01</span><h3>Clarify the opportunity</h3><p>We discuss your services, customers, coverage and what currently stops the website generating better enquiries.</p></li>
+            <li><span>02</span><h3>Build the right journey</h3><p>I structure and hand-build the pages around real customer questions, with clear review points.</p></li>
+            <li><span>03</span><h3>Launch with a plan</h3><p>You know who owns what, what happens after launch and how future updates will be handled.</p></li>
+        </ol>
+    </div>
+</section>
+
 <section class="section-padding bg-bg-section dark:bg-bg-section-dark">
     <div class="container">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-black mb-4 text-text-primary dark:text-text-strong-dark leading-tight text-center">Website design for Wirral businesses that need more enquiries</h2>
-            <div class="w-16 h-px bg-brand-primary mx-auto mb-8"></div>
-            <div class="space-y-6 text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed text-left">
-                <p>Most small businesses we speak to are in a similar position. The website exists, but it is not really helping the business grow.</p>
-                <p>It might look dated, load slowly, or just not explain things clearly. In a lot of cases, it was built years ago and never touched again. Others rely heavily on Facebook or word of mouth and never quite turn that into consistent leads.</p>
-                <p>That is where a properly built website makes a difference. Clear structure, fast performance, and simple calls to action can turn casual visitors into actual enquiries.</p>
-            </div>
+        <div class="section-intro"><p class="eyebrow">Wirral web design questions</p><h2>Useful details before getting in touch</h2></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <article class="faq-card"><h3>Are you actually based on the Wirral?</h3><p>Yes. Code Craft North is based on the Wirral and works with businesses locally and across the UK.</p></article>
+            <article class="faq-card"><h3>Do we need to meet in person?</h3><p>No. Most work is handled through short calls, email and clear feedback stages. A local meeting can be discussed if it would genuinely help.</p></article>
+            <article class="faq-card"><h3>Can you improve an existing website?</h3><p>Yes. Start with the free review if you are unsure whether the best route is a focused improvement, a rebuild or leaving the site alone.</p></article>
+            <article class="faq-card"><h3>Will the website rank first in Wirral?</h3><p>No responsible developer can guarantee a ranking. I build strong technical and on-page foundations, then help you make useful decisions about content and local relevance.</p></article>
         </div>
     </div>
 </section>
 
-<!-- Wirral Areas Section -->
-<section class="section-padding bg-bg-primary dark:bg-bg-primary-dark">
-    <div class="container">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-black mb-4 text-text-primary dark:text-text-strong-dark leading-tight text-center">Supporting businesses across the Wirral</h2>
-            <div class="w-16 h-px bg-brand-primary mx-auto mb-10"></div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div class="space-y-6 text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">
-                    <p>We work with businesses across the Wirral, including Heswall, West Kirby, Birkenhead, Wallasey, and Hoylake.</p>
-                    <p>Most of the work we do is with local service businesses, small teams, and professional services. The common theme is always the same. They need a website that looks credible, explains what they do properly, and helps bring in new enquiries.</p>
-                    <p>Whether you are targeting local customers or working across the UK, the goal is the same. Make it easy for people to understand your business and take the next step.</p>
-                </div>
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 border border-border-standard dark:border-border-standard-dark shadow-lg">
-                    <h3 class="text-2xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">Areas we regularly support</h3>
-                    <ul class="space-y-3 text-text-secondary dark:text-text-secondary-dark text-lg">
-                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-primary"></span>Heswall</li>
-                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-primary"></span>West Kirby</li>
-                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-primary"></span>Birkenhead</li>
-                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-primary"></span>Wallasey</li>
-                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-primary"></span>Hoylake</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{% set ctaEyebrow = "Wirral-based, ready to listen" %}
+{% set ctaTitle = "Tell me what your website needs to do better" %}
+{% set ctaDescription = "Share your current site or the idea you are starting with. I will recommend the simplest useful next step, without a sales-script handoff." %}
+{% set ctaPrimary = { href: "/contact/", label: "Talk to Carl" } %}
+{% set ctaSecondary = { href: "/website-review/", label: "Get a free website review" } %}
+{% set ctaBullets = ["Direct contact with a Wirral-based developer", "Clear published starting prices", "Fast, accessible and search-ready foundations", "Managed or fully owned options"] %}
+{% set ctaTrustBadges = ["Wirral based", "Founder-led", "No jargon", "Clear ownership"] %}
+{% include "cta-showcase.njk" %}
 
-<!-- Common Issues Section -->
-<section class="section-padding bg-bg-section dark:bg-bg-section-dark">
-    <div class="container">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-black mb-4 text-text-primary dark:text-text-strong-dark leading-tight text-center">Common issues we fix with Wirral business websites</h2>
-            <div class="w-16 h-px bg-brand-primary mx-auto mb-12"></div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-                <div class="group bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="flex items-start gap-4">
-                        <div class="shrink-0 w-12 h-12 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold mb-2 text-text-primary dark:text-text-strong-dark">No enquiries from existing traffic</h3>
-                            <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">The site gets visitors, but there is no clear path that turns interest into contact.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="group bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="flex items-start gap-4">
-                        <div class="shrink-0 w-12 h-12 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold mb-2 text-text-primary dark:text-text-strong-dark">Outdated presentation</h3>
-                            <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">The website no longer reflects the quality of the business behind it.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="group bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="flex items-start gap-4">
-                        <div class="shrink-0 w-12 h-12 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/></svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold mb-2 text-text-primary dark:text-text-strong-dark">Slow mobile performance</h3>
-                            <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">Mobile users drop off quickly when pages are heavy and slow to load.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="group bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="flex items-start gap-4">
-                        <div class="shrink-0 w-12 h-12 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/></svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold mb-2 text-text-primary dark:text-text-strong-dark">Hard to update and maintain</h3>
-                            <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">Even basic edits feel awkward, so the site gets left behind over time.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed text-center max-w-4xl mx-auto">Fixing these does not require anything complicated. It just needs the right structure, the right content, and a clean, fast build.</p>
-        </div>
-    </div>
-</section>
+<nav class="py-8 bg-bg-primary dark:bg-bg-primary-dark border-t border-border-standard dark:border-border-standard-dark" aria-label="Related location pages"><div class="container flex flex-wrap gap-6 justify-center"><a href="/locations/" class="text-link">All areas served</a><a href="/locations/liverpool/" class="text-link">Website designer in Liverpool</a></div></nav>
 
-<!-- Performance Section -->
-<section class="section-padding bg-bg-primary dark:bg-bg-primary-dark">
-    <div class="container">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-black mb-4 text-text-primary dark:text-text-strong-dark leading-tight text-center">Websites built for performance, not just appearance</h2>
-            <div class="w-16 h-px bg-brand-primary mx-auto mb-10"></div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-                <div class="space-y-6 text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">
-                    <p>A good looking website is important, but it is not enough on its own.</p>
-                    <p>The end result is a website that supports your business day to day, not something you have to think about constantly.</p>
-                </div>
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 border border-border-standard dark:border-border-standard-dark shadow-lg">
-                    <h3 class="text-2xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">What we prioritise</h3>
-                    <ul class="space-y-3 text-text-secondary dark:text-text-secondary-dark text-lg">
-                        <li>Clear messaging so people understand what you do quickly</li>
-                        <li>Fast load times so visitors do not drop off</li>
-                        <li>Simple navigation so users can find what they need</li>
-                        <li>Strong calls to action that encourage enquiries</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Services Available Section -->
-<section class="section-padding bg-bg-section dark:bg-bg-section-dark">
-    <div class="container">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-black mb-4 text-text-primary dark:text-text-strong-dark leading-tight text-center">Services available in the Wirral</h2>
-            <div class="w-16 h-px bg-brand-primary mx-auto mb-12"></div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="flex flex-col bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-6 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                    <h3 class="text-xl font-bold mb-3 text-text-primary dark:text-text-strong-dark">Essentials Website Subscription</h3>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-4 flex-1">A monthly website for small businesses that want a professional online presence without a large upfront cost. Everything is managed for you.</p>
-                    <a href="/services/essentials-website-subscription/" class="text-brand-primary dark:text-brand-primary-on-dark hover:underline font-semibold mt-auto">Learn more →</a>
-                </div>
-
-                <div class="flex flex-col bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-6 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                    <h3 class="text-xl font-bold mb-3 text-text-primary dark:text-text-strong-dark">Growth Website Subscription</h3>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-4 flex-1">A fully managed website with ongoing improvements, blog support, and monthly check-ins. Designed for businesses that want to actively grow online.</p>
-                    <a href="/services/growth-website-subscription/" class="text-brand-primary dark:text-brand-primary-on-dark hover:underline font-semibold mt-auto">Learn more →</a>
-                </div>
-
-                <div class="flex flex-col bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-6 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                    <h3 class="text-xl font-bold mb-3 text-text-primary dark:text-text-strong-dark">One-off Website Build</h3>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-4 flex-1">A one-time build with full ownership. Ideal if you prefer to manage your own hosting and updates.</p>
-                    <a href="/services/one-off-website-build/" class="text-brand-primary dark:text-brand-primary-on-dark hover:underline font-semibold mt-auto">Learn more →</a>
-                </div>
-            </div>
-            <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed text-center mt-8">You can explore each option in more detail on our services pages.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Process Section -->
-<section class="section-padding bg-bg-primary dark:bg-bg-primary-dark">
-    <div class="container">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-black mb-4 text-text-primary dark:text-text-strong-dark leading-tight text-center">What happens next</h2>
-            <div class="w-16 h-px bg-brand-primary mx-auto mb-12"></div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 pt-10 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="absolute -top-6 left-6 w-14 h-14 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-primary dark:ring-bg-primary-dark">01</div>
-                    <h3 class="text-xl font-bold mb-2 text-text-primary dark:text-text-strong-dark">Tell us about your business</h3>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">You get in touch and tell us about your business, goals, and what your current website is not doing well.</p>
-                </div>
-                <div class="relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 pt-10 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="absolute -top-6 left-6 w-14 h-14 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-primary dark:ring-bg-primary-dark">02</div>
-                    <h3 class="text-xl font-bold mb-2 text-text-primary dark:text-text-strong-dark">Plan structure and content</h3>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">We map out the page structure and key messaging around what your business needs to generate enquiries.</p>
-                </div>
-                <div class="relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 pt-10 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="absolute -top-6 left-6 w-14 h-14 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-primary dark:ring-bg-primary-dark">03</div>
-                    <h3 class="text-xl font-bold mb-2 text-text-primary dark:text-text-strong-dark">Build, test, and launch</h3>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">The site is built, tested, and launched with speed, clarity, and conversion in mind from day one.</p>
-                </div>
-                <div class="relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 pt-10 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="absolute -top-6 left-6 w-14 h-14 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-primary dark:ring-bg-primary-dark">04</div>
-                    <h3 class="text-xl font-bold mb-2 text-text-primary dark:text-text-strong-dark">Ongoing support</h3>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">If you choose a subscription, ongoing updates and support are handled for you without long delays or complex handovers.</p>
-                </div>
-            </div>
-            <p class="text-center text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed mt-10 max-w-3xl mx-auto">No complicated setup, no long delays, just a clear process from start to finish.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Local Designer Trust Section -->
-<section class="section-padding bg-bg-section dark:bg-bg-section-dark">
-    <div class="container">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl md:text-5xl font-black mb-4 text-text-primary dark:text-text-strong-dark leading-tight">Do you need a local website designer in the Wirral?</h2>
-            <div class="w-16 h-px bg-brand-primary mx-auto mb-8"></div>
-            <div class="space-y-6 text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed text-left">
-                <p>You do not need someone physically based in the Wirral to get a good result, but you do need someone who understands how small UK businesses operate.</p>
-                <p>Everything we do is built around that. Clear communication, practical decisions, and websites that are designed to support real businesses, not just look good in a portfolio.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Final CTA Showcase -->
-<section class="section-padding bg-bg-primary dark:bg-bg-primary-dark">
-    <div class="container">
-        <div class="relative overflow-hidden rounded-3xl shadow-2xl" style="background: linear-gradient(135deg, var(--color-brand-dark) 0%, var(--color-brand-primary) 100%);">
-            <div aria-hidden="true" class="pointer-events-none absolute inset-0">
-                <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-white/10 blur-3xl"></div>
-                <div class="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-white/5 blur-3xl"></div>
-                <svg class="absolute top-8 right-8 w-40 h-40 text-white/10" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
-            </div>
-            <div class="relative z-10 px-6 py-16 md:px-14 md:py-20 grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
-                <div class="lg:col-span-3 text-white">
-                    <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 backdrop-blur text-white text-sm font-semibold tracking-wide mb-6 border border-white/20">
-                        <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
-                        Ready when you are
-                    </span>
-                    <h2 class="text-4xl md:text-5xl font-black leading-tight mb-6">Ready to improve your Wirral website?</h2>
-                    <p class="text-lg md:text-xl text-white/90 leading-relaxed mb-8 max-w-2xl">If your current site is not bringing in enquiries, or you are starting from scratch, we can help you get something in place that actually supports your business.</p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="/contact/" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-white font-bold text-lg shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300" style="color: var(--color-brand-primary);">
-                            Get in touch
-                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/></svg>
-                        </a>
-                        <a href="/website-review/" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-white/10 backdrop-blur text-white font-bold text-lg border border-white/30 hover:bg-white/20 transition-all duration-300">
-                            Free website review
-                        </a>
-                    </div>
-                </div>
-                <div class="lg:col-span-2">
-                    <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/20">
-                        <p class="text-white font-bold text-lg mb-5">What you get</p>
-                        <ul class="space-y-4 text-white">
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 shrink-0 mt-0.5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                                <span>A fast, modern website that works hard for your business</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 shrink-0 mt-0.5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                                <span>Clear structure and messaging that turns visits into enquiries</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 shrink-0 mt-0.5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                                <span>UK hosting, SSL, and ongoing support on subscription plans</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 shrink-0 mt-0.5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                                <span>A straightforward process with no long delays</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="faq section-padding bg-bg-section dark:bg-bg-section-dark relative">
-    <div class="container relative z-10">
-        <h2 class="faq__title text-4xl md:text-5xl font-black text-center mb-4 text-text-primary dark:text-text-strong-dark leading-tight">Frequently asked questions</h2>
-        <div class="w-16 h-px bg-brand-primary mx-auto mb-12"></div>
-        <div class="faq__list max-w-4xl mx-auto space-y-4">
-            <div class="faq__item bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <h3 class="faq__question text-xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">Do you only work with Wirral businesses?</h3>
-                <p class="faq__answer text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">No. We work with clients across the UK. Wirral and Liverpool are areas we actively support and optimise for.</p>
-            </div>
-            <div class="faq__item bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <h3 class="faq__question text-xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">Do we need to meet in person?</h3>
-                <p class="faq__answer text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">No. Everything can be handled remotely with clear communication, short calls, and straightforward feedback.</p>
-            </div>
-            <div class="faq__item bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <h3 class="faq__question text-xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">What types of Wirral businesses do you work with?</h3>
-                <p class="faq__answer text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">Typically local service businesses, professional services and small teams that need a credible website that generates enquiries.</p>
-            </div>
-            <div class="faq__item bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <h3 class="faq__question text-xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">Can you help if I already have a website?</h3>
-                <p class="faq__answer text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">Yes. We can rebuild, improve performance and restructure content so the site is clearer and easier to maintain.</p>
-            </div>
-            <div class="faq__item bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <h3 class="faq__question text-xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">Which option is right, subscription or one off?</h3>
-                <p class="faq__answer text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">If you want ongoing support and updates, choose a subscription. If you prefer work on your website and want independence, a one-off build is a better fit.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Related Links Section -->
-<section class="section-padding bg-bg-section dark:bg-bg-section-dark">
-    <div class="container">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-black mb-4 text-text-primary dark:text-text-strong-dark leading-tight text-center">Related links</h2>
-            <div class="w-16 h-px bg-brand-primary mx-auto mb-8"></div>
-            <div class="flex flex-wrap gap-6 justify-center">
-                <a href="/locations/" class="text-brand-primary dark:text-text-strong-dark hover:underline font-semibold text-lg">Areas we serve →</a>
-                <a href="/locations/liverpool/" class="text-brand-primary dark:text-text-strong-dark hover:underline font-semibold text-lg">Website Designer in Liverpool →</a>
-            </div>
-        </div>
-    </div>
-</section>
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Service", "name": "Website Design in Wirral", "description": "Website design and managed website services for businesses across the Wirral.", "provider": { "@type": "LocalBusiness", "name": "Code Craft North" }, "areaServed": { "@type": "AdministrativeArea", "name": "Wirral" } },
+    { "@type": "FAQPage", "mainEntity": [
+      { "@type": "Question", "name": "Are you based on the Wirral?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Code Craft North is based on the Wirral and works with businesses locally and across the UK." } },
+      { "@type": "Question", "name": "Do we need to meet in person?", "acceptedAnswer": { "@type": "Answer", "text": "No. Most work is handled through short calls, email and clear feedback stages. A local meeting can be discussed when useful." } },
+      { "@type": "Question", "name": "Can you improve an existing website?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The free website review can help identify whether a focused improvement or rebuild is the most suitable route." } }
+    ] }
+  ]
+}
+</script>

@@ -3,16 +3,16 @@
   Usage (set variables before include, all optional except title):
     {% set ctaEyebrow = "Ready when you are" %}
     {% set ctaTitle = "Let's build something that works for your business" %}
-    {% set ctaDescription = "Tell us about your project..." %}
+    {% set ctaDescription = "Tell me about your project..." %}
     {% set ctaPrimary = { href: "/contact/", label: "Get in touch" } %}
     {% set ctaSecondary = { href: "/website-review/", label: "Free website review" } %}
     {% set ctaBullets = ["Point one", "Point two", "Point three", "Point four"] %}
-    {% set ctaTrustBadges = ["UK based", "Hand-built", "Long-term support", "No long-term contracts"] %}
+    {% set ctaTrustBadges = ["UK based", "Hand-built", "Clear ownership", "Direct support"] %}
     {% include "cta-showcase.njk" %}
 #}
 {% set _eyebrow = ctaEyebrow or "Ready when you are" %}
 {% set _title = ctaTitle or "Let's build something that works for your business" %}
-{% set _description = ctaDescription or "Tell us about your project. We will reply with a short, practical response and a clear view of what comes next." %}
+{% set _description = ctaDescription or "Tell me about your project. I will reply with a short, practical response and a clear view of what comes next." %}
 {% set _primary = ctaPrimary or { href: "/contact/", label: "Get in touch" } %}
 {% set _secondary = ctaSecondary or { href: "/website-review/", label: "Free website review" } %}
 {% set _bullets = ctaBullets or [
@@ -21,7 +21,7 @@
     "UK hosting, SSL, and ongoing support on subscription plans",
     "A straightforward process with no long delays"
 ] %}
-{% set _badges = ctaTrustBadges or ["UK based", "Hand-built, no page builders", "Long-term support", "No long-term contracts"] %}
+{% set _badges = ctaTrustBadges or ["UK based", "Hand-built, no page builders", "Clear ownership", "Direct support"] %}
 
 <section class="section-padding bg-bg-primary dark:bg-bg-primary-dark">
     <div class="container">

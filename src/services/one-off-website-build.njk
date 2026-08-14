@@ -1,534 +1,115 @@
 ---
 layout: base.njk
 title: "One Off Website Build for UK Businesses"
-description: "Professional one off website build for UK businesses from £1,250. Fast, secure and SEO friendly websites with full ownership and no ongoing fees."
-date: 2026-02-01
+description: "A professional five-page website from £1,250, delivered in 4–6 weeks with project-specific source code and full ownership after payment."
+date: 2026-08-14
 ---
 
-
-<!-- Hero Section -->
-<section class="py-24 text-center relative overflow-hidden bg-bg-primary dark:bg-bg-primary-dark">
-    <div aria-hidden="true" class="pointer-events-none absolute inset-0">
-        <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-brand-light dark:bg-brand-dark/40 blur-3xl opacity-70" style="animation: var(--animate-drift);"></div>
-        <div class="absolute -bottom-40 -right-20 w-md h-112 rounded-full bg-brand-primary/10 dark:bg-brand-primary-on-dark/10 blur-3xl" style="animation: var(--animate-drift-slow); animation-delay: -7s;"></div>
-    </div>
-    <div class="container relative z-10">
-        <div class="max-w-4xl mx-auto hero-entry">
-            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-light dark:bg-brand-dark/50 text-brand-primary dark:text-brand-primary-on-dark text-sm font-semibold tracking-wide mb-6 mt-6">
-                <span class="w-2 h-2 rounded-full bg-brand-primary animate-pulse"></span>
-                One-off website build
-            </span>
-            <h1 class="text-5xl md:text-6xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight">One-off website build, <span class="text-brand-primary dark:text-brand-primary-on-dark">owned outright</span> by you</h1>
-            <p class="text-xl mb-8 text-text-secondary dark:text-text-secondary-dark leading-relaxed max-w-3xl mx-auto text-left">
-                Own your website outright with a professional one-off website build. Ideal for businesses that want full control, have in-house technical capability, or prefer to manage their own hosting, updates and content without ongoing commitments.
-            </p>
-            <div class="mb-10 flex justify-center">
-                <div class="w-full max-w-md min-w-0">
-                    {% image "./src/img/one-off-build.svg", "Professional one-off website build for UK businesses", [400, 800, 1200], "w-full h-auto max-w-full rounded-lg" %}
-                </div>
+<section class="plan-hero bg-bg-primary dark:bg-bg-primary-dark">
+    <div class="container"><div class="plan-hero__grid">
+        <div class="hero-entry">
+            <p class="eyebrow">One-off website build</p>
+            <h1>A professional website you own outright</h1>
+            <p class="plan-hero__lead">For businesses that prefer one project fee and want control after launch. I design and hand-build the website, then provide the project-specific source code, content and relevant assets so you can arrange hosting and future support your way.</p>
+            <div class="flex flex-col sm:flex-row gap-4 mt-8">
+                <a href="/contact/" class="btn btn--primary btn-shine justify-center">Discuss your project</a>
+                <a href="#included" class="btn btn--secondary justify-center">See what is included</a>
             </div>
-            <div class="flex gap-6 justify-center flex-wrap">
-                <a href="#pricing" class="btn btn--primary btn-shine">View pricing</a>
-                <a href="/contact/" class="btn btn--secondary">Start your project</a>
-            </div>
-            <ul class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
-                <li class="flex items-center gap-3 justify-center text-left">
-                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
-                    </span>
-                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">You own it outright</span>
-                </li>
-                <li class="flex items-center gap-3 justify-center text-left">
-                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
-                    </span>
-                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">Ultra-fast static build</span>
-                </li>
-                <li class="flex items-center gap-3 justify-center text-left">
-                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.745 3.745 0 013.296-1.043A3.745 3.745 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
-                    </span>
-                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">No minimum term</span>
-                </li>
-                <li class="flex items-center gap-3 justify-center text-left">
-                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    </span>
-                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">Delivered in 3–6 weeks</span>
-                </li>
+        </div>
+        <aside class="plan-summary" aria-label="One-off website build summary">
+            <p class="eyebrow">One project fee</p>
+            <p class="plan-summary__price">£1,250</p>
+            <p class="plan-summary__term">Starting price for five core pages plus legal pages. Typically delivered in 4–6 weeks, subject to timely content and approvals.</p>
+            <ul class="check-list">
+                <li>Custom design and lightweight build</li>
+                <li>On-page SEO and article functionality</li>
+                <li>Project-specific source code at handover</li>
+                <li>Optional hosting and ongoing support</li>
             </ul>
-        </div>
-    </div>
+            <a href="/contact/" class="btn btn--primary btn-shine justify-center w-full">Start a conversation</a>
+        </aside>
+    </div></div>
 </section>
 
-<!-- Main Features Section -->
-<section class="section-padding bg-bg-section dark:bg-bg-section-dark">
+<section id="included" class="section-padding-lg bg-bg-section dark:bg-bg-section-dark scroll-mt-24">
     <div class="container">
-        <div class="max-w-4xl mx-auto mb-16">
-            <h2 class="reveal text-4xl md:text-5xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight text-center">What's included</h2>
-
-            <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-4 text-center">
-                This is a traditional one off website build, delivered complete and ready for you to own and manage.
-            </p>
-            <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-8 text-center">
-                A professional website built to your specifications and delivered ready for you to host, manage and maintain yourself.
-            </p>
+        <div class="section-intro">
+            <p class="eyebrow">What you get</p>
+            <h2>A complete website and a clear handover</h2>
+            <p>The project covers the work needed to plan, build and launch a focused business website. Ongoing management is optional, not bundled in.</p>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-6 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                <div class="w-12 h-12 flex items-center justify-center bg-brand-primary rounded-lg text-white mb-4">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                        <path d="M2 17l10 5 10-5"></path>
-                        <path d="M2 12l10 5 10-5"></path>
-                    </svg>
-                </div>
-                <h3 class="text-lg font-bold mb-3 text-text-primary dark:text-text-strong-dark">5 pages plus legal pages</h3>
-                <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">Custom-designed pages built with clean, lightweight code</p>
-            </div>
-
-            <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-6 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                <div class="w-12 h-12 flex items-center justify-center bg-brand-primary rounded-lg text-white mb-4">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                </div>
-                <h3 class="text-lg font-bold mb-3 text-text-primary dark:text-text-strong-dark">Full on-page SEO optimisation</h3>
-                <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">Structure, speed, and visibility built into every page</p>
-            </div>
-
-            <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-6 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                <div class="w-12 h-12 flex items-center justify-center bg-brand-primary rounded-lg text-white mb-4">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                        <polyline points="14 2 14 8 20 8"></polyline>
-                        <line x1="16" y1="13" x2="8" y2="13"></line>
-                        <line x1="16" y1="17" x2="8" y2="17"></line>
-                        <polyline points="10 9 9 9 8 9"></polyline>
-                    </svg>
-                </div>
-                <h3 class="text-lg font-bold mb-3 text-text-primary dark:text-text-strong-dark">Articles/blog included</h3>
-                <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">Articles or blog included, you publish and manage content yourself</p>
-            </div>
-
-            <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-6 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                <div class="w-12 h-12 flex items-center justify-center bg-brand-primary rounded-lg text-white mb-4">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                    </svg>
-                </div>
-                <h3 class="text-lg font-bold mb-3 text-text-primary dark:text-text-strong-dark">Secure by design</h3>
-                <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">Ultra fast, secure static site with minimal ongoing maintenance requirements</p>
-            </div>
-
-            <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-6 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                <div class="w-12 h-12 flex items-center justify-center bg-brand-primary rounded-lg text-white mb-4">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="12" y1="1" x2="12" y2="23"></line>
-                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                    </svg>
-                </div>
-                <h3 class="text-lg font-bold mb-3 text-text-primary dark:text-text-strong-dark">Extra pages available</h3>
-                <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">£150 each for additional pages as needed</p>
-            </div>
-
-            <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-6 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                <div class="w-12 h-12 flex items-center justify-center bg-brand-primary rounded-lg text-white mb-4">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
-                    </svg>
-                </div>
-                <h3 class="text-lg font-bold mb-3 text-text-primary dark:text-text-strong-dark">Fast delivery</h3>
-                <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">Delivered in 3–4 weeks, ready to host</p>
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <article class="plan-scope-card"><h3>Five core pages</h3><p>Five pages designed around your business, plus the necessary legal pages. Additional pages are £150 each.</p></article>
+            <article class="plan-scope-card"><h3>Custom design and build</h3><p>A responsive, hand-built website shaped around your brand and customers rather than an off-the-shelf page template.</p></article>
+            <article class="plan-scope-card"><h3>Search-ready foundations</h3><p>Clear page structure, metadata, speed optimisation and technical foundations for search visibility are included.</p></article>
+            <article class="plan-scope-card"><h3>Article functionality</h3><p>The website can include an articles section ready for content you publish and manage after handover.</p></article>
+            <article class="plan-scope-card"><h3>Testing and launch</h3><p>I test the responsive layout, links, forms and essential technical setup before the website goes live.</p></article>
+            <article class="plan-scope-card"><h3>Ownership and handover</h3><p>Once the agreed project is complete and paid for, you receive the project-specific source code, content and relevant assets.</p></article>
         </div>
-
-        <div class="max-w-4xl mx-auto mt-12">
-            <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed text-center">
-                <strong class="text-text-primary dark:text-text-strong-dark">You own your website outright.</strong> It is fast, future proof and easy to host with any provider.
-            </p>
-        </div>
+        <p class="plan-notice max-w-4xl mx-auto mt-8"><strong>Scope made clear:</strong> the starting price covers five core pages plus legal pages. Extra pages are £150 each. Complex functionality, integrations, paid third-party services and work outside the agreed scope are quoted separately.</p>
     </div>
 </section>
 
-<!-- Optional Add-ons -->
+<section class="section-padding-lg bg-bg-primary dark:bg-bg-primary-dark">
+    <div class="container"><div class="ownership-panel reveal">
+        <div>
+            <p class="eyebrow">Ownership without ambiguity</p>
+            <h2>Built to be portable</h2>
+            <p>After final payment, I provide the project-specific source code, website content and relevant assets. You can host the site with me, take it to another suitable provider or ask another developer to work on it.</p>
+            <p>The handover does not include my reusable internal tools, deployment systems or licences belonging to third parties—but it does include what you need to run your finished website.</p>
+        </div>
+        <div class="ownership-panel__aside">
+            <h3>After launch, choose to…</h3>
+            <ul class="check-list">
+                <li>Arrange and manage hosting yourself</li>
+                <li>Use my optional managed hosting</li>
+                <li>Request future updates as separately scoped work</li>
+            </ul>
+            <a href="/terms-of-service/" class="text-link">Read the full terms</a>
+        </div>
+    </div></div>
+</section>
+
+<section class="section-padding-lg bg-bg-section dark:bg-bg-section-dark">
+    <div class="container">
+        <div class="section-intro"><p class="eyebrow">A typical 4–6 week project</p><h2>A simple path from brief to handover</h2><p>The timeline depends on receiving your content, feedback and approvals when agreed.</p></div>
+        <ol class="grid grid-cols-1 md:grid-cols-4 gap-6 process-list">
+            <li><span>01</span><h3>Scope</h3><p>We agree the pages, goals, content responsibilities and any extras before work begins.</p></li>
+            <li><span>02</span><h3>Design</h3><p>I establish the visual direction and page structure, then gather your feedback.</p></li>
+            <li><span>03</span><h3>Build and test</h3><p>I develop the full responsive website and check the important details.</p></li>
+            <li><span>04</span><h3>Launch and handover</h3><p>After approval and final payment, the site goes live and the project files are handed over.</p></li>
+        </ol>
+    </div>
+</section>
+
 <section class="section-padding bg-bg-primary dark:bg-bg-primary-dark">
     <div class="container">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="reveal text-4xl md:text-5xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight text-center">Optional add-ons</h2>
-            
-            <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-4 text-center">
-                Optional add-ons are available if you want support after launch, but they are not required.
-            </p>
-            <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-12 text-center">
-                Need hosting, security, or ongoing support? We offer optional add-ons to keep your site running smoothly.
-            </p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-8 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                    <h3 class="text-xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">Hosting & security</h3>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-4">Optional UK hosting with SSL, daily backups and uptime monitoring, if you prefer us to handle it.</p>
-                    <p class="text-text-secondary dark:text-text-secondary-dark text-sm italic">Available as monthly add-on</p>
-                </div>
-
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-8 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                    <h3 class="text-xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">Updates & fixes</h3>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-4">Optional ongoing maintenance, security updates and technical support when needed.</p>
-                    <p class="text-text-secondary dark:text-text-secondary-dark text-sm italic">Available as monthly add-on</p>
-                </div>
-            </div>
+        <div class="section-intro"><p class="eyebrow">Common questions</p><h2>Before you choose a one-off build</h2></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <article class="faq-card"><h3>Are hosting and maintenance included?</h3><p>Not in the project fee. You can arrange them independently or ask me to quote for managed hosting and ongoing support after launch.</p></article>
+            <article class="faq-card"><h3>Can I edit the website myself?</h3><p>The standard build is lightweight and developer-managed rather than based on a visual page builder. We can discuss how you want to handle future content before choosing the right setup.</p></article>
+            <article class="faq-card"><h3>Is 4–6 weeks guaranteed?</h3><p>It is the normal delivery range, not an unconditional guarantee. Delayed content, feedback, approvals or added scope can move the launch date.</p></article>
+            <article class="faq-card"><h3>Would a subscription be easier?</h3><p>Choose a <a class="text-link" href="/services/">managed plan</a> if you want hosting, maintenance, support and reasonable existing-page updates included rather than arranging them separately.</p></article>
         </div>
     </div>
 </section>
 
-<!-- Why Choose One-off -->
-<section class="section-padding bg-bg-section dark:bg-bg-section-dark">
-    <div class="container">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="reveal text-4xl md:text-5xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight text-center">Why choose a one-off build</h2>
-          
-            <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-4 text-center">
-                A one off website build is best suited to businesses that value ownership and independence over ongoing management.
-            </p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-8 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                    <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 flex items-center justify-center bg-brand-primary/10 dark:bg-text-strong-dark/10 rounded-lg text-brand-primary dark:text-brand-primary-on-dark flex-shrink-0">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"></polygon>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold mb-2 text-text-primary dark:text-text-strong-dark">Full ownership</h3>
-                            <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">You own the website completely and can host it anywhere or modify it as needed</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-8 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                    <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 flex items-center justify-center bg-brand-primary/10 dark:bg-text-strong-dark/10 rounded-lg text-brand-primary dark:text-brand-primary-on-dark flex-shrink-0">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="12" y1="1" x2="12" y2="23"></line>
-                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold mb-2 text-text-primary dark:text-text-strong-dark">No ongoing fees</h3>
-                            <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">After the initial build, your only costs are hosting (if you choose our hosting)</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-8 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                    <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 flex items-center justify-center bg-brand-primary/10 dark:bg-text-strong-dark/10 rounded-lg text-brand-primary dark:text-brand-primary-on-dark flex-shrink-0">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold mb-2 text-text-primary dark:text-text-strong-dark">Maximum performance</h3>
-                            <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">Static sites load almost instantly, perfect for SEO and user experience</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-lg p-8 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                    <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 flex items-center justify-center bg-brand-primary/10 dark:bg-text-strong-dark/10 rounded-lg text-brand-primary dark:text-brand-primary-on-dark flex-shrink-0">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold mb-2 text-text-primary dark:text-text-strong-dark">Complete control</h3>
-                            <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">You manage your own updates and content, no dependencies on us</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Process Section -->
-<section class="section-padding bg-bg-primary dark:bg-bg-primary-dark">
-    <div class="container">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="reveal text-4xl md:text-5xl font-black mb-16 text-text-primary dark:text-text-strong-dark leading-tight text-center">Our process</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 pt-6">
-                <div class="reveal reveal--delay-1 group relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 pt-10 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="absolute -top-6 left-6 w-14 h-14 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-primary dark:ring-bg-primary-dark transition-transform duration-300 group-hover:scale-110">01</div>
-                    <h3 class="text-lg font-bold mb-2 text-text-primary dark:text-text-strong-dark">Discovery</h3>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">We define your goals, structure and content.</p>
-                </div>
-                <div class="reveal reveal--delay-2 group relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 pt-10 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="absolute -top-6 left-6 w-14 h-14 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-primary dark:ring-bg-primary-dark transition-transform duration-300 group-hover:scale-110">02</div>
-                    <h3 class="text-lg font-bold mb-2 text-text-primary dark:text-text-strong-dark">Design</h3>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">You approve your layout and style.</p>
-                </div>
-                <div class="reveal reveal--delay-3 group relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 pt-10 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="absolute -top-6 left-6 w-14 h-14 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-primary dark:ring-bg-primary-dark transition-transform duration-300 group-hover:scale-110">03</div>
-                    <h3 class="text-lg font-bold mb-2 text-text-primary dark:text-text-strong-dark">Build</h3>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">We hand-code your website for maximum speed, performance and SEO.</p>
-                </div>
-                <div class="reveal reveal--delay-4 group relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 pt-10 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="absolute -top-6 left-6 w-14 h-14 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-primary dark:ring-bg-primary-dark transition-transform duration-300 group-hover:scale-110">04</div>
-                    <h3 class="text-lg font-bold mb-2 text-text-primary dark:text-text-strong-dark">Launch</h3>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">We provide everything you need to host.</p>
-                </div>
-                <div class="reveal reveal--delay-5 group relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 pt-10 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="absolute -top-6 left-6 w-14 h-14 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-primary dark:ring-bg-primary-dark transition-transform duration-300 group-hover:scale-110">05</div>
-                    <h3 class="text-lg font-bold mb-2 text-text-primary dark:text-text-strong-dark">Handover</h3>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">You own it outright. Optional add-ons are available if needed.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Pricing Section -->
-<section class="section-padding bg-bg-section dark:bg-bg-section-dark" id="pricing">
-    <div class="container">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="reveal text-4xl md:text-5xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight text-center">Pricing</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- One-off Build -->
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-2xl border-2 border-brand-primary">
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-bold text-text-primary dark:text-text-strong-dark mb-4">One-off build</h3>
-                        <div class="text-5xl font-black text-brand-primary dark:text-text-strong-dark mb-2">£1,250</div>
-                        <p class="text-text-secondary dark:text-text-secondary-dark">5 pages plus legal pages</p>
-                        <p class="text-base text-text-secondary dark:text-text-secondary-dark mt-2">Best for businesses that want a professional website without a long term subscription.</p>
-                    </div>
-                    
-                    <div class="space-y-3 mb-8">
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark flex-shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">5 pages plus legal pages</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark flex-shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Full on-page SEO optimisation</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark flex-shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Articles/blog included (you publish)</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark flex-shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Ultra-fast, secure by design</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark flex-shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">You own it outright</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark flex-shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">4-6 week delivery</p>
-                        </div>
-                    </div>
-
-                    <div class="border-t border-border-standard dark:border-border-standard-dark pt-6 mb-6">
-                        <p class="text-sm text-text-secondary dark:text-text-secondary-dark mb-2">Add-ons:</p>
-                        <p class="text-text-secondary dark:text-text-secondary-dark">• Extra pages: <strong class="text-text-primary dark:text-text-strong-dark">£150 each</strong></p>
-                        <p class="text-text-secondary dark:text-text-secondary-dark">• Hosting & security: <strong class="text-text-primary dark:text-text-strong-dark">Optional add-on</strong></p>
-                        <p class="text-text-secondary dark:text-text-secondary-dark">• Updates & fixes: <strong class="text-text-primary dark:text-text-strong-dark">Optional add-on</strong></p>
-                    </div>
-
-                    <p class="text-base text-text-secondary dark:text-text-secondary-dark mb-4 text-left">
-                        Not sure which option is right for you? We can talk it through and recommend the best approach.
-                    </p>
-
-                    <a href="/contact/" class="btn btn--primary btn-shine w-full text-center">Start your project</a>
-                </div>
-
-                <!-- Optional Add-ons -->
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-2xl border-2 border-border-standard dark:border-border-standard-dark">
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-bold text-text-primary dark:text-text-strong-dark mb-4">Optional add-ons</h3>
-                        <p class="text-text-secondary dark:text-text-secondary-dark">Available after build completion</p>
-                    </div>
-                    
-                    <div class="space-y-6 mb-8">
-                        <div>
-                            <h4 class="font-bold mb-2 text-text-primary dark:text-text-strong-dark">Hosting & security</h4>
-                            <p class="text-text-secondary dark:text-text-secondary-dark text-sm leading-relaxed mb-2">Fast UK hosting, SSL certificate, daily backups, and uptime monitoring.</p>
-                            <p class="text-text-secondary dark:text-text-secondary-dark text-sm italic">Available as monthly add-on</p>
-                        </div>
-
-                        <div>
-                            <h4 class="font-bold mb-2 text-text-primary dark:text-text-strong-dark">Updates & fixes</h4>
-                            <p class="text-text-secondary dark:text-text-secondary-dark text-sm leading-relaxed mb-2">Ongoing maintenance, security updates, and technical support.</p>
-                            <p class="text-text-secondary dark:text-text-secondary-dark text-sm italic">Available as monthly add-on</p>
-                        </div>
-                    </div>
-
-                    <div class="border-t border-border-standard dark:border-border-standard-dark pt-6 mb-6">
-                        <p class="text-sm text-text-secondary dark:text-text-secondary-dark italic">Optional — you can also self-host and manage everything yourself</p>
-                    </div>
-
-                    <a href="/contact/" class="btn btn--secondary w-full text-center">Enquire about add-ons</a>
-                </div>
-            </div>
-
-            <div class="mt-12 text-center">
-                <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-4">
-                    If you prefer ongoing support, updates and content management, a subscription may be a better fit.
-                </p>
-                <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-6">
-                    Want ongoing support and unlimited updates? <strong class="text-text-primary dark:text-text-strong-dark">Explore our <a href="/services/" class="text-brand-primary dark:text-text-strong-dark hover:underline">subscription plans</a>.</strong>
-                </p>
-                <div class="flex gap-4 justify-center flex-wrap">
-                    <a href="/services/essentials-website-subscription/" class="text-brand-primary dark:text-text-strong-dark hover:underline font-semibold">Essentials Subscription →</a>
-                    <a href="/services/growth-website-subscription/" class="text-brand-primary dark:text-text-strong-dark hover:underline font-semibold">Growth Subscription →</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="faq section-padding bg-bg-section dark:bg-bg-section-dark relative" id="faq" aria-labelledby="faq-heading">
-    <div class="container relative z-10">
-        <h2 id="faq-heading" class="reveal faq__title text-4xl md:text-5xl font-black text-center mb-4 text-text-primary dark:text-text-strong-dark leading-tight">Frequently asked questions</h2>
-        <div class="w-16 h-px bg-brand-primary dark:bg-text-strong-dark mx-auto mb-12"></div>
-        <div class="faq__list max-w-4xl mx-auto space-y-4">
-            <div class="faq__item bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <h3 class="faq__question text-xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">Do I own my website?</h3>
-                <p class="faq__answer text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">Yes. Once the project is complete and paid for, the website is yours.</p>
-            </div>
-            <div class="faq__item bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <h3 class="faq__question text-xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">Will I be able to update the site myself?</h3>
-                <p class="faq__answer text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">Yes. One-off builds are designed to be managed by you or your team. We provide guidance on how to update content once the site is handed over.</p>
-            </div>
-            <div class="faq__item bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <h3 class="faq__question text-xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">What happens after the site goes live?</h3>
-                <p class="faq__answer text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">After launch, ongoing support and hosting are optional and can be added as a separate service.</p>
-            </div>
-            <div class="faq__item bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <h3 class="faq__question text-xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">Is there a minimum term?</h3>
-                <p class="faq__answer text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">No. One-off builds are a single project with no minimum commitment.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Final CTA Showcase -->
-{% set ctaEyebrow = "Ready to start?" %}
-{% set ctaTitle = "A professional website you own outright, from £1,250" %}
-{% set ctaDescription = "Tell us about your project and we'll send back a clear plan for pages, timeline and anything that needs considering. No pressure, no jargon, just a straightforward conversation." %}
-{% set ctaPrimary = { href: "/contact/", label: "Start your project" } %}
-{% set ctaSecondary = { href: "/services/", label: "Compare with subscriptions" } %}
-{% set ctaBullets = [
-    "5 pages plus legal pages, designed around your business",
-    "Full on-page SEO and an articles/blog section included",
-    "Ultra-fast, secure static build you can host anywhere",
-    "Delivered in 3–6 weeks with a clear handover"
-] %}
-{% set ctaTrustBadges = ["You own it", "No minimum term", "Hand-built", "Fast delivery"] %}
+{% set ctaEyebrow = "One clear project" %}
+{% set ctaTitle = "Own a professional website from £1,250" %}
+{% set ctaDescription = "Tell me what the website needs to do and I will outline the pages, likely timeline and anything outside the starting scope before you commit." %}
+{% set ctaPrimary = { href: "/contact/", label: "Discuss your project" } %}
+{% set ctaSecondary = { href: "/services/", label: "Compare all options" } %}
+{% set ctaBullets = ["Five core pages plus legal pages", "Typically delivered in 4–6 weeks", "Project-specific source code included", "Hosting and support remain optional"] %}
+{% set ctaTrustBadges = ["From £1,250", "Full handover", "No minimum term", "Founder-led"] %}
 {% include "cta-showcase.njk" %}
 
-<!-- Breadcrumb Structured Data (Schema.org) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://codecraftnorth.co.uk/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://codecraftnorth.co.uk/services/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "One-off Website Build",
-      "item": "https://codecraftnorth.co.uk/services/one-off-website-build/"
-    }
-  ]
-}
-</script>
-
-<!-- Service Structured Data (Schema.org) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "serviceType": "Website Development",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "CodeCraft North",
-    "url": "https://codecraftnorth.co.uk"
-  },
-  "areaServed": {
-    "@type": "Country",
-    "name": "United Kingdom"
-  },
-  "description": "Professional one-off website build for UK businesses. Own your website outright with a custom build from £1,250. Includes 5 pages plus legal pages, full SEO optimisation, and blog functionality.",
-  "offers": {
-    "@type": "Offer",
-    "price": "1250",
-    "priceCurrency": "GBP",
-    "description": "One-off website build with 5 pages plus legal pages"
-  }
+  "name": "One-off Website Build",
+  "description": "A custom five-page business website, typically delivered in four to six weeks with project-specific source code and full ownership after payment.",
+  "provider": { "@type": "LocalBusiness", "name": "Code Craft North" },
+  "offers": { "@type": "Offer", "price": "1250", "priceCurrency": "GBP", "description": "Starting price for five core pages plus legal pages." }
 }
 </script>
-
-<!-- FAQ Structured Data (Schema.org) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Do I own my website?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Once the project is complete and paid for, the website is yours."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Will I be able to update the site myself?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. One-off builds are designed to be managed by you or your team. We provide guidance on how to update content once the site is handed over."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What happens after the site goes live?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "After launch, ongoing support and hosting are optional and can be added as a separate service."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is there a minimum term?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. One-off builds are a single project with no minimum commitment."
-      }
-    }
-  ]
-}
-</script>
-

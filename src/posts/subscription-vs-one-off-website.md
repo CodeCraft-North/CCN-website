@@ -1,141 +1,205 @@
 ---
-title: "Website subscription vs one-off build: which is right for you?"
+title: "Website Subscription vs One-off Build"
 permalink: "/resources/website-subscription-vs-one-off-build-which-is-right-for-you/"
 date: 2026-01-01
-dateModified: 2026-01-01
+dateModified: 2026-08-14
 category: "Website Strategy"
-excerpt: "Understanding the pros and cons of each approach to help you make the right choice for your business."
-readTime: "6 min read"
+excerpt: "Compare website subscriptions and one-off builds, including cost, ownership, support and flexibility, to choose the right model for your business."
+readTime: "7 min read"
 image: "/img/blog/template-image.webp"
 ---
 
-# Website Subscription vs One-off Build: Which Is Right for Your Business?
+The difference between a website subscription and a one-off build is not simply monthly versus upfront payment.
 
-When investing in a professional website, most small business owners face the same question. Should you choose a monthly website subscription or pay for a one-off website build?
-
-Both approaches can work well, but they suit very different types of businesses, budgets and expectations. Understanding the difference is essential before committing to either option.
-
-This guide explains the pros and cons of website subscriptions and one-off builds, hopefully it will help you decide which model makes the most sense for your business.
+It affects who looks after the website, what changes are included, when ownership transfers and what happens if the working relationship ends. Two providers can use the word “subscription” for very different agreements, so the detail matters more than the label.
 
 
-## Understanding the two website models
+## The short answer
 
-At a high level, the difference comes down to how the website is paid for and how it is supported over time.
+Choose a **website subscription** when you want to spread the initial cost and have one person responsible for hosting, maintenance and agreed ongoing changes.
 
-A website subscription spreads the cost across monthly payments and includes ongoing management. A one-off build involves paying upfront for the website and taking responsibility for everything that follows.
+Choose a **one-off build** when you can fund the project upfront, want ownership at handover and are comfortable arranging hosting and future support separately.
 
-Neither option is inherently better. The right choice depends on how you run your business and what you expect from your website.
-
-
-## What a website subscription includes
-
-A website subscription is a fully managed service. Instead of paying a large upfront fee, you pay a predictable monthly amount that covers both the website and the ongoing work required to keep it running properly.
-
-With a subscription, the website is not treated as a finished project. It is treated as a living business asset that evolves as your business grows.
-
-For most small businesses, a subscription typically includes the initial build, hosting, security, backups, maintenance and ongoing support. Content updates and small changes are usually included, which removes the friction of paying for every edit.
-
-The key difference is peace of mind. You are not expected to manage hosting, updates, or technical issues yourself. That responsibility sits with your website partner.
+Neither is automatically better or cheaper. The right model depends on the responsibility you want to keep after launch.
 
 
+## What a website subscription should make clear
 
+A well-defined website subscription combines an initial build with an ongoing managed service. The monthly fee may cover:
+
+- Design and development
+- Hosting and SSL
+- Backups and monitoring
+- Technical maintenance
+- Support
+- An agreed level of content or layout updates
+- Reporting or continued improvement
+
+Do not assume all subscriptions include those things. Ask what happens when you request a new page, new functionality or a substantial redesign.
+
+At Code Craft North, reasonable changes to existing pages are included in the managed plans. New pages, major redesigns, new functionality, integrations and third-party costs are quoted separately. That boundary keeps the monthly price predictable without pretending every possible piece of work can be unlimited.
 
 
 ## Advantages of a website subscription
 
-The most obvious advantage is the lower upfront cost. Instead of finding several thousand pounds in one go, the cost is spread into manageable monthly payments, which is often easier for small businesses to budget.
+### Lower upfront cost
 
-Ongoing support is another major benefit. Most businesses change over time. Services evolve, pricing changes, new pages are needed and content needs refreshing. A subscription allows these changes to happen without friction or additional quotes.
+The build cost is spread across the agreement rather than paid in one lump sum. This can preserve cash for a business that still wants a professionally planned and built website.
 
-Subscriptions also remove technical responsibility. Hosting, backups, security updates and performance monitoring are handled for you. This reduces risk and avoids situations where websites fall out of date or become vulnerable.
+### One point of responsibility
 
-There is also a partnership element. With a subscription, you are not handed a website and left to manage it alone. You have a developer who knows your site and is invested in keeping it working properly.
+Hosting, backups, maintenance and routine website changes stay with the person who built the site. You do not need to work out whether a problem belongs to the host, a plugin or a separate developer.
+
+### Easier ongoing changes
+
+Businesses change. Team details, services, images and calls to action need updating. An agreed allowance for existing-page changes removes the friction of requesting a quote for every sensible edit.
+
+### Continuity
+
+The developer already understands the site's structure and business goals. That context can make future advice and changes more useful.
 
 
-## When a website subscription makes sense
+## Trade-offs of a website subscription
 
-A website subscription is usually the best fit for small businesses that want to focus on running their business rather than managing technology.
+A subscription is a continuing commitment, not a cheap one-off build divided into optional instalments.
 
-It suits businesses that prefer predictable monthly costs, need occasional updates, or want reassurance that their website is being looked after properly. It is also ideal for growing businesses that expect their website to change as their services expand.
+Check:
 
-For many small business owners, the subscription model aligns better with how modern services are consumed. The website becomes part of normal operating costs rather than a large capital expense.
+- The minimum term
+- The notice period
+- What “updates” includes
+- Whether unused support carries over
+- When ownership transfers
+- What files and assets are provided when you leave
+- Whether the website can run on another suitable host
+
+Code Craft North's [Essentials](/services/essentials-website-subscription/) and [Growth](/services/growth-website-subscription/) plans have a 12-month minimum. They then continue monthly with 30 days' written notice. After the minimum term, a departing client receives a portable copy of the project-specific source code, content and relevant assets, ready for suitable hosting elsewhere.
+
+That exit position is important enough to understand before starting, not when you decide to leave.
 
 
 ## What a one-off website build involves
 
-A one-off website build means paying a single fee upfront for the design and development of the website. Once the project is complete, ownership is handed over to you.
+With a one-off build, the project has an agreed scope, price and handover point. You pay for the work as a project and receive the agreed website files and assets after completion and final payment.
 
-From that point onwards, you are responsible for hosting, maintenance, updates, backups and any future changes. You may handle these yourself, assign them to staff, or pay a developer on an ad-hoc basis when needed.
+You then decide how to handle:
 
-This model offers more autonomy, but also more responsibility.
+- Hosting
+- Domain renewals
+- Monitoring and backups
+- Future content changes
+- Technical support
+- Larger improvements or new features
 
-
-
+A one-off build does not mean the website has no future costs. It means those costs are separated from the initial project rather than bundled into a continuing service.
 
 
 ## Advantages of a one-off build
 
-The biggest advantage is ownership. You fully own the website and can host it wherever you like, change providers, or manage it internally.
+### Ownership at handover
 
-There are no mandatory monthly fees beyond hosting and domain costs, which typically range from around £50 to £150 per year, depending on setup.
+You receive the project-specific website and can arrange suitable hosting or future development elsewhere.
 
-One-off builds can work well for businesses with in-house technical skills or for those who want full control over their infrastructure and development decisions.
+### No service commitment
 
-They are also suitable for businesses with very stable offerings that rarely change and do not require frequent updates.
+Once the project is complete and paid for, there is no minimum support term. Hosting and ongoing help can remain optional.
 
+### Clear project boundary
 
-## When a one-off build makes sense
+A defined scope can suit businesses with stable services and content that rarely changes.
 
-A one-off build is usually better suited to businesses that have a larger upfront budget available and are comfortable managing technical aspects themselves.
+### Internal control
 
-It can also suit organisations with internal IT or development teams, or those who already have established systems and workflows for website maintenance.
-
-However, it is important to factor in the long-term reality. Websites still require updates, security patches and occasional fixes. These costs do not disappear just because the build was paid for upfront.
-
-
-## The hybrid option for flexibility
-
-Some businesses sit between these two models. They want the performance and reliability of a professionally built website but do not want a long-term subscription.
-
-At CodeCraft North, this is where [static one-off builds with optional hosting and support](/services/one-off-website-build/) come in. These sites are fast, secure and low maintenance by design, while still allowing flexibility over who manages them long term.
-
-This approach offers a middle ground. You get a high-quality build without ongoing commitment, with the option to add support later if your needs change.
+Organisations with their own technical or marketing resource may prefer to manage the website within existing systems and processes.
 
 
+## Trade-offs of a one-off build
+
+The upfront payment is higher, and responsibility changes hands after launch.
+
+Before choosing this route, be honest about who will:
+
+- Notice when something stops working
+- Keep content and legal information current
+- Manage DNS and hosting access
+- Make future changes safely
+- Arrange help when a request sits outside the original scope
+
+“We own it” is valuable, but ownership without a maintenance plan can become neglect.
 
 
+## Compare the total responsibility, not just the price
 
-## How to choose the right option for your business
+A useful comparison covers at least the first two or three years.
 
-The decision usually comes down to a few practical considerations.
+For each option, list:
 
-Budget is often the first factor. Monthly subscriptions reduce upfront cost, while one-off builds require a larger initial investment.
+- Initial payment
+- Monthly or annual fees
+- Hosting and third-party costs
+- Included support
+- Expected content changes
+- Likely additional pages or features
+- Internal staff time
+- Exit or handover costs
 
-Time and technical confidence also matter. If you do not want to think about hosting, updates, or troubleshooting, a subscription removes that burden.
+The lowest headline price is not always the lowest total cost. Equally, a managed subscription is not automatically good value if the business does not need the included service.
 
-Growth plans are important too. Businesses that expect regular changes benefit from ongoing support, while very stable businesses may not need it.
 
-Finally, consider how much value you place on having a long-term website partner rather than a one-time supplier.
+## Questions to ask any website provider
+
+These questions reveal more than the sales label:
+
+1. What exactly is included in the quoted scope?
+2. Who supplies and writes the content?
+3. What counts as an included edit?
+4. How are new pages or features priced?
+5. Who owns the domain?
+6. When does ownership of the website transfer?
+7. What will I receive if I leave?
+8. Can another competent developer host and maintain it?
+9. Which third-party services have separate fees?
+10. Who is responsible for the site after launch?
+
+If the answers are vague, the risk does not disappear; it simply moves to later.
+
+
+## Which model fits which business?
+
+A subscription is often a good fit if:
+
+- You prefer predictable operating costs
+- You do not want to manage technical suppliers
+- The site will need routine changes
+- Ongoing advice and continuity are valuable
+- The minimum term is commercially comfortable
+
+A one-off build may fit better if:
+
+- You have the upfront budget
+- The scope and content are stable
+- You want ownership immediately after final payment
+- You already have hosting or technical support
+- You are comfortable commissioning future work separately
+
+
+## How Code Craft North prices the two routes
+
+The current options are deliberately easy to compare:
+
+- [Essentials website subscription](/services/essentials-website-subscription/): £125 per month for five core pages, with no setup fee
+- [Growth website subscription](/services/growth-website-subscription/): £199 per month for seven core pages, an articles section and continued content support
+- [One-off website build](/services/one-off-website-build/): from £1,250 for five core pages, typically delivered in 4–6 weeks
+
+The subscription plans have a 12-month minimum, then become monthly rolling. The one-off route transfers the project-specific source code and relevant assets after completion and final payment.
+
+Prices are only useful alongside scope, so the [services comparison](/services/) sets out what each route includes and where separate charges may apply.
 
 
 ## The honest view
 
-For most small businesses, a [website subscription](/services/) is the more practical option. It offers predictable costs, ongoing support and fewer technical risks, all of which free up time to focus on running the business.
+Choose a subscription because you value the managed service, not only because the first payment is smaller.
 
-That said, one-off builds still have their place. The right choice depends on your budget, resources and preferences, not on a one-size-fits-all rule.
+Choose a one-off build because you are ready to take responsibility after handover, not only because you dislike monthly fees.
 
-A good website provider should be honest about which model suits you best, even if that means recommending a different approach.
-
-
-## Not sure which option fits?
-
-If you are unsure which route makes sense for your business, a short conversation is often enough to clarify things.
-
-The right website model should support your business, not complicate it.
-
-If you want an honest recommendation based on your situation, you can get in touch and talk it through without pressure.
-
-We're happy to discuss your specific situation and recommend the best approach for your business — even if that means pointing you in a different direction.
-
-[Get in touch](/contact/) and let's have an honest conversation about what makes sense for you. You can also explore our [Essentials Subscription](/services/essentials-website-subscription/), [Growth Subscription](/services/growth-website-subscription/), or [One-off Build](/services/one-off-website-build/) options.
-
+If you want help deciding, [tell me about the business and the role the website needs to play](/contact/). I will recommend the more sensible route—even if that means the smaller project or a different provider.

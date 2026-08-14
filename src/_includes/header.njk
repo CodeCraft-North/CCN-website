@@ -1,12 +1,12 @@
 <!-- Header -->
-<header class="fixed top-0 left-0 right-0 z-50 bg-bg-primary/80 dark:bg-bg-primary-dark/80 backdrop-blur-md border-b border-border-standard dark:border-border-standard-dark">
-    <nav class="max-w-6xl mx-auto px-6 flex justify-between items-center py-4">
+<header class="sticky top-0 z-50 bg-bg-primary/80 dark:bg-bg-primary-dark/80 backdrop-blur-md border-b border-border-standard dark:border-border-standard-dark">
+    <nav class="max-w-6xl mx-auto px-4 md:px-6 flex justify-between items-center py-4">
         <a href="/" class="relative block">
-            <img src="/img/logos/CCN-logo-transparent-blue.webp" alt="Code Craft North" class="h-10 w-auto transition-opacity duration-300 dark:opacity-0 absolute" width="120" height="40">
-            <img src="/img/logos/header_dark_logo.webp" alt="Code Craft North" class="h-10 w-auto transition-opacity duration-300 opacity-0 dark:opacity-100" width="120" height="40">
+            <img src="/img/logos/CCN-logo-transparent-blue.webp" alt="Code Craft North" class="h-9 md:h-10 w-auto transition-opacity duration-300 dark:opacity-0 absolute" width="120" height="40">
+            <img src="/img/logos/header_dark_logo.webp" alt="Code Craft North" class="h-9 md:h-10 w-auto transition-opacity duration-300 opacity-0 dark:opacity-100" width="120" height="40">
         </a>
         <!-- Desktop Navigation -->
-        <div class="hidden md:flex items-center space-x-8">
+        <div class="hidden lg:flex items-center space-x-8">
             <a href="/about/" class="text-text-secondary dark:text-text-secondary-dark hover:text-brand-primary transition-colors font-medium">About</a>
             
             <!-- Services Dropdown -->
@@ -33,23 +33,25 @@
             <a href="/contact/" class="text-text-secondary dark:text-text-secondary-dark hover:text-brand-primary transition-colors font-medium">Contact</a>
         </div>
         
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2 md:gap-4">
             <button class="p-2 rounded-lg border border-border-standard dark:border-border-standard-dark bg-bg-surface dark:bg-bg-surface-dark hover:bg-[--color-bg-card] dark:hover:bg-[--color-bg-card-dark] transition-colors" id="theme-toggle" aria-label="Toggle dark mode">
                 <span class="text-lg">🌙</span>
             </button>
             
+            <a href="/contact/" class="btn btn--primary hidden min-[390px]:inline-flex lg:hidden px-3 py-2 text-sm">Let's talk</a>
+
             <!-- Mobile menu button -->
-            <button class="md:hidden p-2 rounded-lg border border-border-standard dark:border-border-standard-dark bg-bg-surface dark:bg-bg-surface-dark hover:bg-[--color-bg-card] dark:hover:bg-[--color-bg-card-dark] transition-colors" id="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+            <button class="lg:hidden p-2 rounded-lg border border-border-standard dark:border-border-standard-dark bg-bg-surface dark:bg-bg-surface-dark hover:bg-[--color-bg-card] dark:hover:bg-[--color-bg-card-dark] transition-colors" id="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
             
-            <a href="/website-review/" class="btn btn--primary hidden md:inline-flex">Free website review</a>
+            <a href="/contact/" class="btn btn--primary hidden lg:inline-flex">Start a conversation</a>
         </div>
         
         <!-- Mobile Navigation -->
-        <div class="md:hidden absolute top-full left-0 right-0 bg-bg-primary dark:bg-bg-primary-dark border-b border-border-standard dark:border-border-standard-dark shadow-lg hidden" id="mobile-menu">
+        <div class="lg:hidden absolute top-full left-0 right-0 bg-bg-primary dark:bg-bg-primary-dark border-b border-border-standard dark:border-border-standard-dark shadow-lg hidden" id="mobile-menu">
             <div class="px-6 py-4 space-y-4">
                 <a href="/about/" class="block text-text-secondary dark:text-text-secondary-dark hover:text-brand-primary transition-colors font-medium py-2">About</a>
                 

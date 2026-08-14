@@ -69,9 +69,9 @@ module.exports = function(eleventyConfig) {
     return truncated.slice(0, end).trim() + "...";
   });
 
-  // Sitemap lastmod: use page.data.lastmod or page.data.date or page.date (supports Date or ISO string)
+  // Sitemap lastmod: prefer an explicit or substantive content update date.
   eleventyConfig.addFilter("sitemapLastmod", (page) => {
-    const lastmod = (page && page.data && (page.data.lastmod ?? page.data.date)) ?? (page && page.date);
+    const lastmod = (page && page.data && (page.data.lastmod ?? page.data.dateModified ?? page.data.updated ?? page.data.date)) ?? (page && page.date);
     if (!lastmod) return DateTime.now().toFormat("yyyy-LL-dd");
     if (typeof lastmod === "string") return lastmod.slice(0, 10);
     return DateTime.fromJSDate(lastmod, { zone: "utc" }).toFormat("yyyy-LL-dd");

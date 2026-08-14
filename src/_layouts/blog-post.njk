@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-description: "{{ excerpt or title }}"
+isBlogPost: true
 ---
 
 <article class="py-24 bg-bg-primary dark:bg-bg-primary-dark">
@@ -13,10 +13,16 @@ description: "{{ excerpt or title }}"
             
             <h1 class="text-4xl md:text-5xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight">{{ title }}</h1>
             
-            <div class="flex items-center justify-center gap-4 text-text-secondary dark:text-text-secondary-dark">
-                <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+            <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm md:text-base text-text-secondary dark:text-text-secondary-dark">
+                <span>By <a href="/about/" class="text-link">Carl Ball</a></span>
+                <span aria-hidden="true">·</span>
+                <time datetime="{{ date | htmlDateString }}">Published {{ date | readableDate }}</time>
+                {% if dateModified %}
+                <span aria-hidden="true">·</span>
+                <time datetime="{{ dateModified | htmlDateString }}">Updated {{ dateModified | readableDate }}</time>
+                {% endif %}
                 {% if readTime %}
-                <span>·</span>
+                <span aria-hidden="true">·</span>
                 <span>{{ readTime }}</span>
                 {% endif %}
             </div>
@@ -63,7 +69,7 @@ description: "{{ excerpt or title }}"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "CodeCraft North",
+    "name": "Code Craft North",
     "logo": {
       "@type": "ImageObject",
       "url": "https://codecraftnorth.co.uk/img/logos/CCN-logo-transparent-blue.webp"
@@ -75,4 +81,3 @@ description: "{{ excerpt or title }}"
   }
 }
 </script>
-

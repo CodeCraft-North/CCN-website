@@ -1,534 +1,233 @@
 ---
 layout: base.njk
-title: "Small Business Website Services UK"
-description: "Professional web design services UK for small businesses. Choose between fully managed website subscriptions or custom one-off builds. From £125/month or £1,250 one-off."
-date: 2026-02-01
+title: "Website design and support plans"
+description: "Compare managed website subscriptions and one-off website builds from Code Craft North. Clear pricing, clear ownership and direct support from Carl."
+date: 2026-08-14
 ---
 
-<!-- Hero Section -->
-<section class="py-24 text-center relative overflow-hidden bg-bg-primary dark:bg-bg-primary-dark">
+<!-- Services hero -->
+<section class="service-hero relative overflow-hidden bg-bg-primary dark:bg-bg-primary-dark">
     <div aria-hidden="true" class="pointer-events-none absolute inset-0">
         <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-brand-light dark:bg-brand-dark/40 blur-3xl opacity-70" style="animation: var(--animate-drift);"></div>
         <div class="absolute -bottom-40 -right-20 w-md h-112 rounded-full bg-brand-primary/10 dark:bg-brand-primary-on-dark/10 blur-3xl" style="animation: var(--animate-drift-slow); animation-delay: -5s;"></div>
     </div>
-    <div class="max-w-6xl mx-auto px-6 relative z-10">
-        <div class="max-w-4xl mx-auto hero-entry">
-            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-light dark:bg-brand-dark/50 text-brand-primary dark:text-brand-primary-on-dark text-sm font-semibold tracking-wide mb-6 mt-6">
-                <span class="w-2 h-2 rounded-full bg-brand-primary animate-pulse"></span>
-                Flexible website services
-            </span>
-            <h1 class="text-5xl md:text-6xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight">Small business website services <span class="text-brand-primary dark:text-brand-primary-on-dark">UK</span></h1>
-            <p class="text-2xl font-semibold text-text-primary dark:text-text-strong-dark mb-6 leading-snug">Professional websites for every need and budget. Choose between a fully managed subscription or a one-off custom build.</p>
-            <div class="mb-10 flex justify-center">
-                <div class="w-full max-w-md min-w-0">
-                    {% image "./src/img/services.svg", "Professional website services for UK small businesses", [400, 800, 1200], "w-full h-auto max-w-full rounded-lg" %}
+    <div class="container relative z-10 py-16 md:py-20">
+        <div class="grid xl:grid-cols-[1.08fr_0.92fr] gap-12 xl:gap-16 items-center">
+            <div class="hero-entry text-left max-w-3xl xl:max-w-none">
+                <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-light dark:bg-brand-dark/50 text-brand-primary dark:text-brand-primary-on-dark text-sm font-semibold tracking-wide mb-6">
+                    <span class="w-2 h-2 rounded-full bg-brand-primary"></span>
+                    Clear options, without the agency runaround
+                </span>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-[1.05]">A website plan that fits how you want to <span class="text-brand-primary dark:text-brand-primary-on-dark">work.</span></h1>
+                <p class="text-xl md:text-2xl font-semibold text-text-primary dark:text-text-strong-dark mb-5 leading-snug max-w-3xl">Choose ongoing, fully managed support or a one-off website you run yourself.</p>
+                <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed max-w-3xl mb-8">Whichever route you choose, I will design and build a fast, accessible website around your business. The difference is how the build is paid for and who looks after it after launch.</p>
+                <div class="flex gap-4 flex-col sm:flex-row">
+                    <a href="#compare-plans" class="btn btn--primary btn-shine justify-center">Compare the plans</a>
+                    <a href="/contact/" class="btn btn--secondary justify-center">Ask me what fits</a>
                 </div>
             </div>
-            <p class="text-lg mb-8 text-text-secondary dark:text-text-secondary-dark leading-relaxed max-w-3xl mx-auto text-left">
-                We handle everything, hosting, maintenance, updates and growth. You can focus on running your business. No inflated agency fees, no technical overwhelm, just clean, fast websites that work.
-            </p>
-            <ul class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
-                <li class="flex items-center gap-3 justify-center text-left">
-                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.745 3.745 0 013.296-1.043A3.745 3.745 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
-                    </span>
-                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">No long-term contracts</span>
-                </li>
-                <li class="flex items-center gap-3 justify-center text-left">
-                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
-                    </span>
-                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">UK based</span>
-                </li>
-                <li class="flex items-center gap-3 justify-center text-left">
-                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
-                    </span>
-                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">Hand-built, no page builders</span>
-                </li>
-                <li class="flex items-center gap-3 justify-center text-left">
-                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                    </span>
-                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">Long-term support</span>
-                </li>
-            </ul>
+
+            <figure class="hero-project reveal hidden xl:block">
+                <div class="hero-project__frame">
+                    <div class="rounded-xl overflow-hidden bg-bg-section dark:bg-bg-section-dark">
+                        {% image "./src/img/raiise.webp", "Raiise charity website created by Carl Ball", [500, 900, 1200], "w-full h-auto" %}
+                    </div>
+                </div>
+                <figcaption class="hero-project__caption">
+                    <span><strong>Raiise</strong><small>Client project</small></span>
+                    <span><strong>Clearer support journeys</strong><small>accessibility and SEO rebuilt around real users</small></span>
+                </figcaption>
+            </figure>
         </div>
     </div>
 </section>
 
-<!-- Our Approach -->
-<section class="section-padding bg-bg-section dark:bg-bg-section-dark relative">
-    <div class="container relative z-10">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="reveal text-4xl md:text-5xl font-black mb-8 text-text-primary dark:text-text-strong-dark leading-tight">Website development services built around you</h2>
-            <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-6 text-left">
-                Whether you need ongoing support or prefer to own your site outright, we offer flexible options designed for small UK businesses. Every website is hand-built for speed, security and search visibility. No templates, no page builders, no bloat.
-            </p>
-            <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed text-left">
-                Choose the service that fits your goals, budget and how involved you want to be after launch.
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- Managed Subscriptions -->
-<section class="section-padding bg-bg-primary dark:bg-bg-primary-dark relative">
-    <div class="container relative z-10">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-12">
-                <div class="inline-block px-4 py-2 bg-brand-primary/10 text-text-primary dark:text-text-strong-dark rounded-full text-sm font-semibold mb-4">
-                    Recommended for most businesses
-                </div>
-                <h2 class="reveal text-4xl md:text-5xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight">Managed website subscriptions</h2>
-                <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed max-w-3xl mx-auto text-left">
-                    Get a professional website with no upfront build fee. We design, host, secure, update and improve your site every month. You get results without the admin.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 items-stretch">
-                <!-- Essentials Subscription -->
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-xl border-2 border-border-standard dark:border-border-standard-dark hover:border-brand-primary transition-all duration-300 flex flex-col h-full">
-                    <div class="mb-6">
-                        <h3 class="text-2xl font-bold text-text-primary dark:text-text-strong-dark mb-2">Essentials website subscription</h3>
-                        <p class="text-text-secondary dark:text-text-secondary-dark mb-4">Perfect for businesses that need a professional online presence with ongoing support</p>
-                        <div class="text-5xl font-black text-brand-primary dark:text-text-strong-dark mb-2">£125<span class="text-2xl font-medium text-text-secondary dark:text-text-secondary-dark">/month</span></div>
-                        <p class="text-sm text-text-secondary dark:text-text-secondary-dark">12-month minimum, no setup fee</p>
-                    </div>
-
-                    <div class="space-y-3 mb-8 grow">
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">5 pages plus legal pages</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark    shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Hosting & security included</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Updates & fixes included</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Unlimited content changes</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Full on-page SEO optimisation</p>
-                        </div>
-                    </div>
-
-                    <a href="/services/essentials-website-subscription/" class="btn btn--primary w-full text-center mt-auto">View Essentials plan</a>
-                </div>
-
-                <!-- Growth Subscription -->
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-xl border-2 border-brand-primary relative overflow-hidden flex flex-col h-full">
-                    <div class="absolute top-0 right-0 bg-brand-primary text-white px-4 py-1 text-sm font-semibold">
-                        Most Popular
-                    </div>
-                    <div class="mb-6">
-                        <h3 class="text-2xl font-bold text-text-primary dark:text-text-strong-dark mb-2">Growth website subscription</h3>
-                        <p class="text-text-secondary dark:text-text-secondary-dark mb-4">For businesses that want to grow with content, strategy and ongoing optimisation</p>
-                        <div class="text-5xl font-black text-brand-primary dark:text-text-strong-dark mb-2">£199<span class="text-2xl font-medium text-text-secondary dark:text-text-secondary-dark">/month</span></div>
-                        <p class="text-sm text-text-secondary dark:text-text-secondary-dark">12-month minimum, no setup fee</p>
-                    </div>
-
-                    <div class="space-y-3 mb-8 grow">
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">7 pages plus articles section & legal pages</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Hosting & security included</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Updates & fixes included</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Unlimited content changes</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Fully managed blog (you provide content)</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Full on-page SEO optimisation</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Monthly advice & strategy</p>
-                        </div>
-                    </div>
-
-                    <a href="/services/growth-website-subscription/" class="inline-block w-full text-center px-6 py-3 rounded-lg font-semibold text-base transition-all duration-300 border-0 cursor-pointer bg-brand-primary text-white shadow-lg hover:shadow-xl hover:-translate-y-0.5 mt-auto">View Growth plan</a>
-                </div>
-            </div>
-
-            <p class="text-center text-text-secondary dark:text-text-secondary-dark">
-                <strong class="text-text-primary dark:text-text-strong-dark">Why choose a subscription?</strong> No large upfront costs, continuous support, and your website improves month after month.
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- One-off Builds -->
-<section class="section-padding bg-bg-section dark:bg-bg-section-dark relative">
-    <div class="container relative z-10">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="reveal text-4xl md:text-5xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight">One-off website builds</h2>
-                <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed max-w-3xl mx-auto text-left">
-                    Prefer to own your website outright? Our custom website development services deliver a professional site you control completely. Perfect for established businesses or those who want to self-host.
-                </p>
-            </div>
-
-            <div class="max-w-2xl mx-auto">
-                <!-- One-off Website Build -->
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-xl border-2 border-border-standard dark:border-border-standard-dark hover:border-brand-primary transition-all duration-300">
-                    <div class="mb-6">
-                        <h3 class="text-2xl font-bold text-text-primary dark:text-text-strong-dark mb-2">One-off website build</h3>
-                        <p class="text-text-secondary dark:text-text-secondary-dark mb-4">Own your website outright with a professional, one-time build</p>
-                        <div class="text-5xl font-black text-brand-primary dark:text-text-strong-dark mb-2">£1,250</div>
-                        <p class="text-sm text-text-secondary dark:text-text-secondary-dark">5 pages plus legal pages, you own it outright</p>
-                    </div>
-
-                    <div class="space-y-3 mb-8">
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">5 pages plus legal pages</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Full on-page SEO optimisation</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Articles/blog included (you publish posts)</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-light dark:bg-brand-dark rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">✓</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Ultra-fast, secure by design</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-bg-card dark:bg-bg-card-dark rounded-full text-text-secondary dark:text-text-secondary-dark shrink-0 mt-1">○</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Hosting & security: Optional add-on</p>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-bg-card dark:bg-bg-card-dark rounded-full text-text-secondary dark:text-text-secondary-dark shrink-0 mt-1">○</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Updates & fixes: Optional add-on</p>
-                        </div>
-                    </div>
-
-                    <a href="/services/one-off-website-build/" class="btn btn--primary w-full text-center">View One-off build</a>
-                </div>
-            </div>
-
-            <p class="text-center text-text-secondary dark:text-text-secondary-dark mt-8">
-                <strong class="text-text-primary dark:text-text-strong-dark">Why choose a one-off build?</strong> You own the site completely, no long-term commitments, and the freedom to host anywhere.
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- Comparison Table -->
-<section class="section-padding bg-bg-primary dark:bg-bg-primary-dark relative">
-    <div class="container relative z-10">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="reveal text-4xl md:text-5xl font-black mb-12 text-text-primary dark:text-text-strong-dark leading-tight text-center">Compare all web design services</h2>
-            
-            <div class="overflow-x-auto">
-                <table class="w-full bg-bg-surface dark:bg-bg-surface-dark rounded-lg shadow-xl border border-border-standard dark:border-border-standard-dark">
-                    <thead>
-                        <tr class="bg-bg-card dark:bg-bg-card-dark">
-                            <th class="px-6 py-4 text-left text-text-primary dark:text-text-strong-dark font-bold">Feature</th>
-                            <th class="px-6 py-4 text-center text-text-primary dark:text-text-strong-dark font-bold text-sm">Essentials<br>Subscription</th>
-                            <th class="px-6 py-4 text-center text-text-primary dark:text-text-strong-dark font-bold text-sm">Growth<br>Subscription</th>
-                            <th class="px-6 py-4 text-center text-text-primary dark:text-text-strong-dark font-bold text-sm">One-off<br>Build</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-border-standard dark:divide-border-standard-dark">
-                        <tr>
-                            <td class="px-6 py-4 text-text-secondary dark:text-text-secondary-dark font-medium">Pages included</td>
-                            <td class="px-6 py-4 text-center text-text-primary dark:text-text-strong-dark table-cell-nowrap">5&nbsp;pages&nbsp;+&nbsp;legal</td>
-                            <td class="px-6 py-4 text-center text-text-primary dark:text-text-strong-dark table-cell-nowrap">7&nbsp;pages&nbsp;+&nbsp;articles&nbsp;+&nbsp;legal</td>
-                            <td class="px-6 py-4 text-center text-text-primary dark:text-text-strong-dark table-cell-nowrap">5&nbsp;pages&nbsp;+&nbsp;legal</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-text-secondary dark:text-text-secondary-dark font-medium">Extra pages</td>
-                            <td class="px-6 py-4 text-center text-text-secondary dark:text-text-secondary-dark text-sm">£10/month</td>
-                            <td class="px-6 py-4 text-center text-text-secondary dark:text-text-secondary-dark text-sm">£10/month</td>
-                            <td class="px-6 py-4 text-center text-text-secondary dark:text-text-secondary-dark text-sm">£150 each</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-text-secondary dark:text-text-secondary-dark font-medium">Hosting & security</td>
-                            <td class="px-6 py-4 text-center text-brand-primary dark:text-text-strong-dark text-2xl">✓</td>
-                            <td class="px-6 py-4 text-center text-brand-primary dark:text-text-strong-dark text-2xl">✓</td>
-                            <td class="px-6 py-4 text-center text-text-secondary dark:text-text-secondary-dark text-sm">Optional add-on</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-text-secondary dark:text-text-secondary-dark font-medium">Updates & fixes</td>
-                            <td class="px-6 py-4 text-center text-brand-primary dark:text-text-strong-dark text-2xl">✓</td>
-                            <td class="px-6 py-4 text-center text-brand-primary dark:text-text-strong-dark text-2xl">✓</td>
-                            <td class="px-6 py-4 text-center text-text-secondary dark:text-text-secondary-dark text-sm">Optional add-on</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-text-secondary dark:text-text-secondary-dark font-medium">Content changes</td>
-                            <td class="px-6 py-4 text-center text-text-secondary dark:text-text-strong-dark text-sm">Unlimited small</td>
-                            <td class="px-6 py-4 text-center text-text-primary dark:text-text-strong-dark font-semibold">Unlimited</td>
-                            <td class="px-6 py-4 text-center text-text-secondary dark:text-text-secondary-dark text-sm">You manage</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-text-secondary dark:text-text-secondary-dark font-medium">Articles / Blog</td>
-                            <td class="px-6 py-4 text-center text-text-light text-2xl">×</td>
-                            <td class="px-6 py-4 text-center text-brand-primary dark:text-text-strong-dark text-2xl">✓</td>
-                            <td class="px-6 py-4 text-center text-brand-primary dark:text-text-strong-dark text-2xl">✓</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-text-secondary dark:text-text-secondary-dark font-medium">SEO</td>
-                            <td class="px-6 py-4 text-center text-text-secondary dark:text-text-secondary-dark text-sm">Full on-page</td>
-                            <td class="px-6 py-4 text-center text-text-secondary dark:text-text-secondary-dark text-sm">Full on-page</td>
-                            <td class="px-6 py-4 text-center text-text-secondary dark:text-text-secondary-dark text-sm">Full on-page</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-text-secondary dark:text-text-secondary-dark font-medium">Monthly advice</td>
-                            <td class="px-6 py-4 text-center text-text-light text-2xl">×</td>
-                            <td class="px-6 py-4 text-center text-brand-primary dark:text-text-strong-dark text-2xl">✓</td>
-                            <td class="px-6 py-4 text-center text-text-light text-2xl">×</td>
-                        </tr>
-                        <tr class="bg-bg-card dark:bg-bg-card-dark">
-                            <td class="px-6 py-6 text-text-primary dark:text-text-strong-dark font-bold text-lg">Price</td>
-                            <td class="px-6 py-6 text-center text-brand-primary dark:text-text-strong-dark font-bold text-xl">from&nbsp;£125<span class="text-sm block text-text-secondary dark:text-text-secondary-dark font-normal">/month</span></td>
-                            <td class="px-6 py-6 text-center text-brand-primary dark:text-text-strong-dark font-bold text-xl">from&nbsp;£199<span class="text-sm block text-text-secondary dark:text-text-secondary-dark font-normal">/month</span></td>
-                            <td class="px-6 py-6 text-center text-brand-primary dark:text-text-strong-dark font-bold text-xl">from&nbsp;£1,250<span class="text-sm block text-text-secondary dark:text-text-secondary-dark font-normal">one-off</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Which Service Guide -->
-<section class="section-padding bg-bg-section dark:bg-bg-section-dark relative">
-    <div class="container relative z-10">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="reveal text-4xl md:text-5xl font-black mb-12 text-text-primary dark:text-text-strong-dark leading-tight text-center">Which service is right for me?</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border-2 border-brand-primary">
-                    <div class="w-16 h-16 flex items-center justify-center bg-brand-primary rounded-full text-white text-2xl font-bold  mb-4">?</div>
-                    <h3 class="text-2xl font-bold mb-4 text-text-primary dark:text-text-strong-dark ">Choose a subscription if you:</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-primary/10 rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">→</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Want no upfront build costs</p>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-primary/10 rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">→</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Need ongoing support and updates</p>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-primary/10 rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">→</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Don't have time for technical maintenance</p>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-primary/10 rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">→</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Want your website to improve over time</p>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-primary/10 rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">→</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Value having a partner, not just a supplier</p>
-                        </li>
-                    </ul>
-                    <div class="mt-8 flex gap-3">
-                        <a href="/services/essentials-website-subscription/" class="btn btn--primary flex-1 text-center text-sm">Essentials</a>
-                        <a href="/services/growth-website-subscription/" class="btn btn--secondary flex-1 text-center text-sm">Growth</a>
-                    </div>
-                </div>
-
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border-2 border-brand-primary">
-                    <div class="w-16 h-16 flex items-center justify-center bg-brand-primary rounded-full text-white text-2xl font-bold  mb-4">?</div>
-                    <h3 class="text-2xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">Choose a one-off build if you:</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-primary/10 rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">→</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Prefer to own your site outright</p>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-primary/10 rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">→</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Have technical staff or existing hosting</p>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-primary/10 rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">→</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Want maximum performance (static)</p>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-primary/10 rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">→</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Need full content control (CMS)</p>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-6 h-6 flex items-center justify-center bg-brand-primary/10 rounded-full text-brand-primary dark:text-text-strong-dark shrink-0 mt-1">→</div>
-                            <p class="text-text-secondary dark:text-text-secondary-dark">Don't need regular content updates</p>
-                        </li>
-                    </ul>
-                    <div class="mt-8">
-                        <a href="/services/one-off-website-build/" class="btn btn--secondary w-full text-center text-sm">View One-off build</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- What Happens Next -->
-<section class="section-padding bg-bg-primary dark:bg-bg-primary-dark relative">
-    <div class="container relative z-10">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="reveal text-4xl md:text-5xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight text-center">What happens next?</h2>
-            <p class="reveal text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed text-center mb-16 max-w-3xl mx-auto">
-                Once you choose a service, here's how we work together to get your website live and helping your business grow.
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-6">
-                <div class="reveal reveal--delay-1 group relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 pt-10 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="absolute -top-6 left-6 w-14 h-14 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-primary dark:ring-bg-primary-dark transition-transform duration-300 group-hover:scale-110">01</div>
-                    <h3 class="text-xl font-bold mb-2 text-text-primary dark:text-text-strong-dark">Initial conversation</h3>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">
-                        A short call to understand your business, goals, and what you want your website to achieve. We'll discuss structure, content and timeline.
-                    </p>
-                </div>
-                <div class="reveal reveal--delay-2 group relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 pt-10 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="absolute -top-6 left-6 w-14 h-14 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-primary dark:ring-bg-primary-dark transition-transform duration-300 group-hover:scale-110">02</div>
-                    <h3 class="text-xl font-bold mb-2 text-text-primary dark:text-text-strong-dark">Build and refine</h3>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">
-                        We design the site structure, hand-build your pages and refine based on your feedback, with clear communication throughout.
-                    </p>
-                </div>
-                <div class="reveal reveal--delay-3 group relative bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 pt-10 border border-border-standard dark:border-border-standard-dark shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="absolute -top-6 left-6 w-14 h-14 rounded-full bg-brand-primary text-white flex items-center justify-center text-xl font-black shadow-lg ring-4 ring-bg-primary dark:ring-bg-primary-dark transition-transform duration-300 group-hover:scale-110">03</div>
-                    <h3 class="text-xl font-bold mb-2 text-text-primary dark:text-text-strong-dark">Launch and support</h3>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">
-                        Your site goes live on fast UK hosting. For subscriptions, we handle updates and monthly check-ins. For one-off builds, you own everything.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Working with charities and trust-led organisations -->
-<section class="section-padding bg-bg-section dark:bg-bg-section-dark">
+<!-- Three options -->
+<section class="section-padding-lg bg-bg-section dark:bg-bg-section-dark" id="compare-plans">
     <div class="container">
-        <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4 text-text-primary dark:text-text-strong-dark leading-tight">Working with charities and trust-led organisations</h2>
-            <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-4">
-                We also work with charities, non-profits and organisations where trust, accessibility and long-term support are essential.
-            </p>
-            <a href="/services/websites-for-charities/" class="text-brand-primary dark:text-brand-primary-on-dark hover:underline font-medium">Learn how we support trust-led organisations</a>
+        <div class="section-intro">
+            <p class="eyebrow">Three straightforward options</p>
+            <h2>Start with the level of support you need</h2>
+            <p>The subscription plans spread the build cost over 12 months and include ongoing management. The one-off option is paid as a project and handed over at launch.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <article class="offer-card reveal">
+                <p class="eyebrow">Managed starter</p>
+                <h3>Essentials</h3>
+                <p class="offer-card__price">From £125 <span>/ month</span></p>
+                <p>A professionally managed website for a small service business that does not need regular articles.</p>
+                <ul class="check-list">
+                    <li>Five core pages plus legal pages</li>
+                    <li>Hosting, SSL, backups and security</li>
+                    <li>Reasonable updates to existing pages</li>
+                    <li>Direct support from me</li>
+                </ul>
+                <p class="offer-card__note">12-month minimum, then monthly rolling with 30 days’ notice</p>
+                <a href="/services/essentials-website-subscription/" class="btn btn--secondary justify-center w-full">Explore Essentials</a>
+            </article>
+
+            <article class="offer-card offer-card--featured reveal reveal--delay-1">
+                <div class="offer-card__flag">Best for ongoing visibility</div>
+                <p class="eyebrow">Managed growth</p>
+                <h3>Growth</h3>
+                <p class="offer-card__price">From £199 <span>/ month</span></p>
+                <p>Managed website support plus help publishing and optimising articles supplied by your business.</p>
+                <ul class="check-list">
+                    <li>Seven core pages plus articles section</li>
+                    <li>Hosting, SSL, backups and security</li>
+                    <li>Your articles formatted and SEO-reviewed</li>
+                    <li>Monthly reporting and practical advice</li>
+                </ul>
+                <p class="offer-card__note">12-month minimum, then monthly rolling with 30 days’ notice</p>
+                <a href="/services/growth-website-subscription/" class="btn btn--primary btn-shine justify-center w-full">Explore Growth</a>
+            </article>
+
+            <article class="offer-card reveal reveal--delay-2">
+                <p class="eyebrow">Own it from launch</p>
+                <h3>One-off build</h3>
+                <p class="offer-card__price">From £1,250</p>
+                <p>A complete website project for businesses that want to arrange hosting and future support separately.</p>
+                <ul class="check-list">
+                    <li>Five core pages plus legal pages</li>
+                    <li>Project-specific source code and assets</li>
+                    <li>Full ownership after final payment</li>
+                    <li>Optional hosting and support</li>
+                </ul>
+                <p class="offer-card__note">Typically delivered in 4–6 weeks</p>
+                <a href="/services/one-off-website-build/" class="btn btn--secondary justify-center w-full">Explore one-off builds</a>
+            </article>
         </div>
     </div>
 </section>
 
-<!-- FAQ Section -->
-<section class="faq section-padding bg-bg-section dark:bg-bg-section-dark relative" id="faq" aria-labelledby="faq-heading">
-    <div class="container relative z-10">
-        <h2 id="faq-heading" class="reveal faq__title text-4xl md:text-5xl font-black text-center mb-6 text-text-primary dark:text-text-strong-dark leading-tight">Frequently asked questions</h2>
-    
-        <div class="faq__list max-w-4xl mx-auto space-y-4">
-            <div class="faq__item bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <h3 class="faq__question text-xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">Which option is right for my business?</h3>
-                <p class="faq__answer text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">If you want a website that is built, hosted and managed for you, a subscription is usually the best fit. If you want full control and prefer to manage updates yourself, a one-off build may be a better option.</p>
+<!-- Plain-English comparison -->
+<section class="section-padding-lg bg-bg-primary dark:bg-bg-primary-dark">
+    <div class="container">
+        <div class="section-intro">
+            <p class="eyebrow">The practical differences</p>
+            <h2>Compare what happens during and after the build</h2>
+        </div>
+
+        <div class="comparison-wrap reveal">
+            <table class="service-comparison">
+                <thead>
+                    <tr>
+                        <th scope="col">What to compare</th>
+                        <th scope="col">Essentials</th>
+                        <th scope="col">Growth</th>
+                        <th scope="col">One-off</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><th scope="row">Starting price</th><td>£125/month</td><td>£199/month</td><td>£1,250</td></tr>
+                    <tr><th scope="row">Minimum term</th><td>12 months</td><td>12 months</td><td>None</td></tr>
+                    <tr><th scope="row">Core pages</th><td>Five</td><td>Seven</td><td>Five</td></tr>
+                    <tr><th scope="row">Hosting and maintenance</th><td>Included</td><td>Included</td><td>Optional</td></tr>
+                    <tr><th scope="row">Existing-page updates</th><td>Included</td><td>Included</td><td>Quoted separately</td></tr>
+                    <tr><th scope="row">Article support</th><td>Not included</td><td>Formatting, publishing and SEO advice</td><td>Optional</td></tr>
+                    <tr><th scope="row">Website ownership</th><td>After minimum term</td><td>After minimum term</td><td>After final payment</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="comparison-note">Updates to existing pages are included on managed plans. New pages, substantial redesigns, new functionality and third-party costs are scoped and quoted separately.</p>
+    </div>
+</section>
+
+<!-- Ownership reassurance -->
+<section class="section-padding-lg bg-bg-section dark:bg-bg-section-dark">
+    <div class="container">
+        <div class="ownership-panel reveal">
+            <div>
+                <p class="eyebrow">No lock-in after the minimum term</p>
+                <h2>Your website can leave with you</h2>
+                <p>After completing a subscription’s 12-month minimum term, the plan becomes monthly rolling. You can cancel with 30 days’ written notice.</p>
+                <p>If you leave, I will provide a portable copy of the project-specific website source code, content and relevant assets. You can then arrange hosting elsewhere without rebuilding the site.</p>
             </div>
-            <div class="faq__item bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <h3 class="faq__question text-xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">What is the difference between a subscription and a one-off build?</h3>
-                <p class="faq__answer text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">Subscriptions spread the cost of building your website over time and include hosting, updates and support. One-off builds are paid upfront and handed over once complete.</p>
-            </div>
-            <div class="faq__item bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <h3 class="faq__question text-xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">Is there a minimum term?</h3>
-                <p class="faq__answer text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">Subscription websites have a 12-month minimum term. One-off builds do not.</p>
+            <div class="ownership-panel__aside">
+                <h3>What is not transferred</h3>
+                <ul class="check-list">
+                    <li>Hosting accounts and security credentials</li>
+                    <li>Reusable internal tools and deployment systems</li>
+                    <li>Third-party licences or services you do not own</li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Final CTA Showcase -->
-{% set ctaEyebrow = "Choose a service that fits" %}
-{% set ctaTitle = "Let's find the right website service for your business" %}
-{% set ctaDescription = "Tell us a little about your business and what you want your website to do. You'll get a short, practical response with a clear recommendation, no sales pitch and no pressure." %}
-{% set ctaPrimary = { href: "/contact/", label: "Get in touch" } %}
-{% set ctaSecondary = { href: "/website-review/", label: "Free website review" } %}
+<!-- Decision guide -->
+<section class="section-padding-lg bg-bg-primary dark:bg-bg-primary-dark">
+    <div class="container">
+        <div class="section-intro">
+            <p class="eyebrow">A quick way to decide</p>
+            <h2>Which route sounds most like your business?</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <article class="decision-card reveal"><h3>Choose Essentials if…</h3><p>You want a dependable website and ongoing help, but do not plan to publish articles regularly.</p></article>
+            <article class="decision-card reveal reveal--delay-1"><h3>Choose Growth if…</h3><p>You can supply useful articles and want help turning them into well-structured, search-friendly content.</p></article>
+            <article class="decision-card reveal reveal--delay-2"><h3>Choose one-off if…</h3><p>You prefer a project fee and are comfortable arranging hosting, maintenance and future updates separately.</p></article>
+        </div>
+    </div>
+</section>
+
+<!-- Process -->
+<section class="section-padding-lg bg-bg-section dark:bg-bg-section-dark">
+    <div class="container">
+        <div class="section-intro">
+            <p class="eyebrow">The same careful process</p>
+            <h2>Whichever plan you choose, the build stays personal</h2>
+        </div>
+        <ol class="grid grid-cols-1 md:grid-cols-3 gap-6 process-list">
+            <li class="reveal"><span>01</span><h3>Clarify the scope</h3><p>We discuss your customers, goals, pages and content before I recommend the most suitable route.</p></li>
+            <li class="reveal reveal--delay-1"><span>02</span><h3>Design and build</h3><p>I structure and hand-build the site, with clear review points and no account-manager handoffs.</p></li>
+            <li class="reveal reveal--delay-2"><span>03</span><h3>Launch with clarity</h3><p>You know what is included, what happens next and who owns what before the website goes live.</p></li>
+        </ol>
+    </div>
+</section>
+
+<!-- FAQs -->
+<section class="section-padding bg-bg-primary dark:bg-bg-primary-dark">
+    <div class="container">
+        <div class="section-intro">
+            <p class="eyebrow">Common questions</p>
+            <h2>The details people usually want clarified</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <article class="faq-card"><h3>What happens after the first 12 months?</h3><p>Your subscription becomes monthly rolling at the same service level. You can continue for as long as it remains useful or cancel with 30 days’ written notice.</p></article>
+            <article class="faq-card"><h3>What does an included update cover?</h3><p>Reasonable changes to content and layouts on existing pages are included. New pages, major redesigns, new functionality and third-party costs are quoted separately.</p></article>
+            <article class="faq-card"><h3>Can I move a subscription website elsewhere?</h3><p>Yes, after the minimum term. I will provide the project-specific source code, content and relevant assets so another suitable host or developer can run it.</p></article>
+            <article class="faq-card"><h3>Do you write Growth-plan articles?</h3><p>You provide the knowledge and initial content. I help with structure, formatting, publishing and practical on-page SEO advice.</p></article>
+        </div>
+    </div>
+</section>
+
+<!-- Specialist route -->
+<section class="py-10 bg-bg-section dark:bg-bg-section-dark border-y border-border-standard dark:border-border-standard-dark">
+    <div class="container flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+        <div>
+            <p class="font-bold text-text-primary dark:text-text-strong-dark mb-1">Looking for a charity or non-profit website?</p>
+            <p class="text-text-secondary dark:text-text-secondary-dark">I also offer a considered approach for organisations where accessibility, governance and trust matter.</p>
+        </div>
+        <a href="/services/websites-for-charities/" class="btn btn--secondary justify-center shrink-0">Websites for charities</a>
+    </div>
+</section>
+
+{% set ctaEyebrow = "Not sure which option fits?" %}
+{% set ctaTitle = "Tell me how you want the website to work for your business" %}
+{% set ctaDescription = "I will ask a few sensible questions and recommend the simplest suitable route. No pressure and no attempt to push you into the most expensive plan." %}
+{% set ctaPrimary = { href: "/contact/", label: "Ask me what fits" } %}
+{% set ctaSecondary = { href: "/website-review/", label: "Get a free website review" } %}
 {% set ctaBullets = [
-    "Managed subscriptions from £125 per month, no setup fee",
-    "One-off builds from £1,250, you own it outright",
-    "UK hosting, SSL and daily backups on subscription plans",
-    "Straightforward onboarding, usually live within weeks"
+    "Clear pricing and ownership before work begins",
+    "Direct contact with the developer doing the work",
+    "A portable website after the subscription minimum term",
+    "Straightforward support without an agency layer"
 ] %}
-{% set ctaTrustBadges = ["No long-term contracts", "UK based", "Hand-built", "Long-term support"] %}
+{% set ctaTrustBadges = ["Clear 12-month minimum", "UK based", "Hand-built", "Portable website"] %}
 {% include "cta-showcase.njk" %}
 
-<!-- Testimonials -->
-{# <section class="section-padding bg-bg-primary dark:bg-bg-primary-dark relative">
-    <div class="container relative z-10">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-black mb-12 text-text-primary dark:text-text-strong-dark leading-tight text-center">What our clients say</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                    <div class="flex items-center gap-1 mb-4">
-                        <span class="text-text-primary dark:text-text-strong-dark text-xl">★★★★★</span>
-                    </div>
-                    <p class="text-text-secondary dark:text-text-secondary-dark italic mb-6 leading-relaxed">
-                        "Working with CodeCraft North has been brilliant. Our website is fast, looks professional and we never have to worry about the technical side. Carl handles everything."
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <div>
-                            <p class="text-text-primary dark:text-text-strong-dark font-bold">Sarah Mitchell</p>
-                            <p class="text-text-secondary dark:text-text-secondary-dark text-sm">Director, Thrive Wellness</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                    <div class="flex items-center gap-1 mb-4">
-                        <span class="text-text-primary dark:text-text-strong-dark text-xl">★★★★★</span>
-                    </div>
-                    <p class="text-text-secondary dark:text-text-secondary-dark italic mb-6 leading-relaxed">
-                        "We needed a site that performed well in search and loaded quickly. Carl built exactly that. Our enquiries have doubled since launch."
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <div>
-                            <p class="text-text-primary dark:text-text-strong-dark font-bold">James Richardson</p>
-                            <p class="text-text-secondary dark:text-text-secondary-dark text-sm">Owner, Richardson Consulting</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark">
-                    <div class="flex items-center gap-1 mb-4">
-                        <span class="text-text-primary dark:text-text-strong-dark text-xl">★★★★★</span>
-                    </div>
-                    <p class="text-text-secondary dark:text-text-secondary-dark italic mb-6 leading-relaxed">
-                        "The Growth plan has been perfect for us. We send Carl content ideas and he handles the rest. Having that support is invaluable for a small team."
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <div>
-                            <p class="text-text-primary dark:text-text-strong-dark font-bold">Emma Davies</p>
-                            <p class="text-text-secondary dark:text-text-secondary-dark text-sm">Marketing Manager, Peak Performance</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> #}
-
-<!-- FAQ Structured Data (Schema.org) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -536,29 +235,19 @@ date: 2026-02-01
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Which option is right for my business?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "If you want a website that is built, hosted and managed for you, a subscription is usually the best fit. If you want full control and prefer to manage updates yourself, a one-off build may be a better option."
-      }
+      "name": "What happens after the first 12 months?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The subscription becomes monthly rolling. Clients may continue or cancel with 30 days' written notice." }
     },
     {
       "@type": "Question",
-      "name": "What is the difference between a subscription and a one-off build?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Subscriptions spread the cost of building your website over time and include hosting, updates and support. One-off builds are paid upfront and handed over once complete."
-      }
+      "name": "Can I move a subscription website elsewhere?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. After the minimum term, Code Craft North provides the project-specific source code, content and relevant assets so the website can be hosted elsewhere." }
     },
     {
       "@type": "Question",
-      "name": "Is there a minimum term?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Subscription websites have a 12-month minimum term. One-off builds do not."
-      }
+      "name": "Do you write Growth plan articles?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The client supplies the knowledge and initial content. Code Craft North helps with structure, formatting, publishing and on-page SEO advice." }
     }
   ]
 }
 </script>
-

@@ -1,204 +1,66 @@
 ---
 layout: base.njk
 title: "Free Website Review"
-description: "Get a short, practical review of your website. No sales pitch, no obligation. Clarity, accessibility basics and trust signals. Delivered within 48 hours."
-date: 2026-02-01
+description: "Get a short, practical website review covering clarity, usability, accessibility basics and trust signals. No sales pitch or obligation."
+date: 2026-08-14
 ---
 
-<!-- Hero -->
-<section class="py-24 text-center relative overflow-hidden bg-bg-primary dark:bg-bg-primary-dark">
-    <div aria-hidden="true" class="pointer-events-none absolute inset-0">
-        <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-brand-light dark:bg-brand-dark/40 blur-3xl opacity-70" style="animation: var(--animate-drift);"></div>
-        <div class="absolute -bottom-40 -right-20 w-md h-112 rounded-full bg-brand-primary/10 dark:bg-brand-primary-on-dark/10 blur-3xl" style="animation: var(--animate-drift-slow); animation-delay: -3s;"></div>
-    </div>
-    <div class="container relative z-10">
-        <div class="max-w-4xl mx-auto hero-entry">
-            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-light dark:bg-brand-dark/50 text-brand-primary dark:text-brand-primary-on-dark text-sm font-semibold tracking-wide mb-6 mt-6">
-                <span class="w-2 h-2 rounded-full bg-brand-primary animate-pulse"></span>
-                Free, no obligation
-            </span>
-            <h1 class="text-5xl md:text-6xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-tight">Free <span class="text-brand-primary dark:text-brand-primary-on-dark">website review</span></h1>
-            <p class="text-xl mb-8 text-text-secondary dark:text-text-secondary-dark leading-relaxed max-w-3xl mx-auto text-left">
-                If you are unsure whether your website is helping or holding you back, this is a simple way to get a second opinion.
-            </p>
-            <div class="mb-10 flex justify-center">
-                <div class="w-full max-w-md min-w-0">
-                    {% image "./src/img/website-review.svg", "Free website review – get a short, practical assessment of your site", [400, 800, 1200], "w-full h-auto max-w-full rounded-lg" %}
-                </div>
-            </div>
-            <div class="max-w-3xl mx-auto text-left space-y-4 mb-10">
-                <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">
-                    We will review your website and share a short, practical assessment covering clarity, accessibility basics, trust signals and anything that may be undermining confidence or usability.
-                </p>
-                <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">
-                    There is no sales pitch and no obligation to take things further.
-                </p>
-            </div>
-            <ul class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
-                <li class="flex items-center gap-3 justify-center text-left">
-                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    </span>
-                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">Delivered in 48 hours</span>
-                </li>
-                <li class="flex items-center gap-3 justify-center text-left">
-                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
-                    </span>
-                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">No sales pitch</span>
-                </li>
-                <li class="flex items-center gap-3 justify-center text-left">
-                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
-                    </span>
-                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">Plain-English advice</span>
-                </li>
-                <li class="flex items-center gap-3 justify-center text-left">
-                    <span class="shrink-0 w-9 h-9 rounded-lg bg-brand-light dark:bg-brand-dark/50 flex items-center justify-center text-brand-primary dark:text-brand-primary-on-dark">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.745 3.745 0 013.296-1.043A3.745 3.745 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
-                    </span>
-                    <span class="text-sm font-semibold text-text-primary dark:text-text-strong-dark leading-tight">No obligation</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
+<section class="contact-hero bg-bg-primary dark:bg-bg-primary-dark">
+    <div class="container py-12 md:py-16">
+        <div class="grid lg:grid-cols-[0.85fr_1.15fr] gap-10 lg:gap-16 items-start">
+            <div class="hero-entry lg:sticky lg:top-28">
+                <p class="eyebrow">Free, practical second opinion</p>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-text-primary dark:text-text-strong-dark leading-[1.02]">Is your website helping—or quietly getting in the way?</h1>
+                <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed mb-6">Send me the address and I will review the parts most likely to affect understanding, confidence and usability. You will receive a short, plain-English response within 48 hours.</p>
+                <p class="plan-notice"><strong>This is not a disguised sales call.</strong> If the website is doing its job, I will say so. If something stands out, I will explain the most useful next step.</p>
 
-<!-- What you receive / What this is not -->
-<section class="section-padding bg-bg-section dark:bg-bg-section-dark">
-    <div class="container">
-        <div class="max-w-5xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                <div class="reveal reveal--delay-1 bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="w-12 h-12 flex items-center justify-center bg-brand-primary/10 dark:bg-text-strong-dark/10 rounded-lg text-brand-primary dark:text-brand-primary-on-dark mb-6">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                    </div>
-                    <h2 class="text-2xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">What you will receive</h2>
-                    <ul class="space-y-3 text-text-secondary dark:text-text-secondary-dark leading-relaxed">
-                        <li class="flex items-start gap-2"><span class="text-text-primary dark:text-text-strong-dark font-bold shrink-0">•</span> A short, practical review of your website</li>
-                        <li class="flex items-start gap-2"><span class="text-text-primary dark:text-text-strong-dark font-bold shrink-0">•</span> Clear observations in plain English</li>
-                        <li class="flex items-start gap-2"><span class="text-text-primary dark:text-text-strong-dark font-bold shrink-0">•</span> Sensible next steps, if anything stands out</li>
-                    </ul>
+                <div class="hidden lg:grid grid-cols-2 gap-4 mt-8">
+                    <article class="decision-card"><h3>What I look at</h3><p>Clarity, calls to action, trust signals, mobile usability, accessibility basics and obvious performance concerns.</p></article>
+                    <article class="decision-card"><h3>What you receive</h3><p>A focused response with useful observations and priorities—not a lengthy automated report full of unexplained scores.</p></article>
                 </div>
-                <div class="reveal reveal--delay-2 bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 shadow-lg border border-border-standard dark:border-border-standard-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div class="w-12 h-12 flex items-center justify-center bg-brand-primary/10 dark:bg-text-strong-dark/10 rounded-lg text-brand-primary dark:text-brand-primary-on-dark mb-6">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="12" y1="8" x2="12" y2="12"></line>
-                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                        </svg>
-                    </div>
-                    <h2 class="text-2xl font-bold mb-4 text-text-primary dark:text-text-strong-dark">What this is not</h2>
-                    <p class="text-text-secondary dark:text-text-secondary-dark leading-relaxed">
-                        This is not a full audit, a design critique, or a long report. It is a focused, honest review intended to be helpful and easy to act on.
-                    </p>
-                </div>
-            </div>
-            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-6 rounded-xl bg-bg-surface dark:bg-bg-surface-dark border border-border-standard dark:border-border-standard-dark">
-                <p class="text-lg text-text-secondary dark:text-text-secondary-dark leading-relaxed">
-                    <strong class="text-text-primary dark:text-text-strong-dark">Reviews are delivered within 48 hours.</strong>
-                </p>
-                <p class="text-sm text-text-secondary dark:text-text-secondary-dark leading-relaxed">
-                    Your email address will only be used to send your website review and to reply if you contact us again.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Form -->
-<section class="section-padding bg-bg-primary dark:bg-bg-primary-dark">
-    <div class="container">
-        <div class="max-w-2xl mx-auto">
-            <div class="reveal bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-8 md:p-10 shadow-xl border border-border-standard dark:border-border-standard-dark">
-                <h2 class="text-3xl md:text-4xl font-bold mb-2 text-text-primary dark:text-text-strong-dark">Request your free website review</h2>
-                <p class="text-text-secondary dark:text-text-secondary-dark mb-8 leading-relaxed">
-                    Fill in the form below and we will send your review by email within 48 hours.
-                </p>
+                <p class="hidden lg:block mt-6 text-sm text-text-secondary dark:text-text-secondary-dark">A review is a high-level assessment, not a full accessibility, SEO, security or technical audit.</p>
+            </div>
+
+            <div class="bg-bg-surface dark:bg-bg-surface-dark rounded-xl p-6 md:p-8 shadow-lg border border-border-standard dark:border-border-standard-dark">
+                <p class="eyebrow">Usually takes two minutes</p>
+                <h2 class="text-3xl font-black mb-3 text-text-primary dark:text-text-strong-dark">Request your free review</h2>
+                <p class="text-text-secondary dark:text-text-secondary-dark mb-8 leading-relaxed">Three details are required. Add context only if there is something specific you want me to consider.</p>
 
                 <form id="website-review-form" name="website-review" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6">
                     <input type="hidden" name="form-name" value="website-review">
-                    <p class="hidden">
-                        <label>Don't fill this out if you're human: <input name="bot-field" maxlength="50" /></label>
-                    </p>
+                    <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field" maxlength="50"></label></p>
 
                     <div>
-                        <label for="review-name" class="block text-sm font-semibold text-text-primary dark:text-text-strong-dark mb-2">Full name <span class="text-red-600 dark:text-red-400">*</span></label>
-                        <input
-                            type="text"
-                            id="review-name"
-                            name="name"
-                            required
-                            maxlength="100"
-                            autocomplete="name"
-                            class="w-full px-4 py-3 rounded-lg border border-border-standard dark:border-border-standard-dark bg-bg-surface dark:bg-bg-surface-dark text-text-primary dark:text-text-strong-dark focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition-all"
-                            placeholder="Your full name"
-                        >
+                        <label for="review-name" class="block text-sm font-semibold text-text-primary dark:text-text-strong-dark mb-2">Your name *</label>
+                        <input type="text" id="review-name" name="name" required maxlength="100" autocomplete="name" class="w-full px-4 py-3 rounded-lg border border-border-standard dark:border-border-standard-dark bg-bg-surface dark:bg-bg-surface-dark text-text-primary dark:text-text-strong-dark focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition-all" placeholder="Your name">
                     </div>
 
                     <div>
-                        <label for="review-website" class="block text-sm font-semibold text-text-primary dark:text-text-strong-dark mb-2">Website URL <span class="text-red-600 dark:text-red-400">*</span></label>
-                        <p class="text-sm text-text-secondary dark:text-text-secondary-dark mb-2">You can enter your domain with or without <code class="text-xs bg-bg-section dark:bg-bg-section-dark px-1.5 py-0.5 rounded">https://</code>.</p>
-                        <input
-                            type="text"
-                            id="review-website"
-                            name="website_url"
-                            required
-                            maxlength="500"
-                            autocomplete="url"
-                            inputmode="url"
-                            class="w-full px-4 py-3 rounded-lg border border-border-standard dark:border-border-standard-dark bg-bg-surface dark:bg-bg-surface-dark text-text-primary dark:text-text-strong-dark focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition-all"
-                            placeholder="e.g. yourwebsite.com or https://yourwebsite.com"
-                        >
-                        <p id="review-website-error" class="mt-1.5 text-sm text-red-600 dark:text-red-400 hidden" role="alert">Please enter a valid domain (e.g. yourwebsite.com or https://yourwebsite.com).</p>
+                        <label for="review-email" class="block text-sm font-semibold text-text-primary dark:text-text-strong-dark mb-2">Email address *</label>
+                        <input type="email" id="review-email" name="email" required maxlength="254" autocomplete="email" class="w-full px-4 py-3 rounded-lg border border-border-standard dark:border-border-standard-dark bg-bg-surface dark:bg-bg-surface-dark text-text-primary dark:text-text-strong-dark focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition-all" placeholder="you@example.com">
                     </div>
 
                     <div>
-                        <label for="review-email" class="block text-sm font-semibold text-text-primary dark:text-text-strong-dark mb-2">Email address <span class="text-red-600 dark:text-red-400">*</span></label>
-                        <input
-                            type="email"
-                            id="review-email"
-                            name="email"
-                            required
-                            maxlength="254"
-                            autocomplete="email"
-                            class="w-full px-4 py-3 rounded-lg border border-border-standard dark:border-border-standard-dark bg-bg-surface dark:bg-bg-surface-dark text-text-primary dark:text-text-strong-dark focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition-all"
-                            placeholder="your@email.com"
-                        >
+                        <label for="review-website" class="block text-sm font-semibold text-text-primary dark:text-text-strong-dark mb-2">Website address *</label>
+                        <input type="text" id="review-website" name="website_url" required maxlength="500" autocomplete="url" inputmode="url" aria-describedby="review-website-hint review-website-error" class="w-full px-4 py-3 rounded-lg border border-border-standard dark:border-border-standard-dark bg-bg-surface dark:bg-bg-surface-dark text-text-primary dark:text-text-strong-dark focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition-all" placeholder="yourwebsite.co.uk">
+                        <p id="review-website-hint" class="mt-2 text-xs text-text-secondary dark:text-text-secondary-dark">With or without https:// is fine.</p>
+                        <p id="review-website-error" class="mt-2 text-sm text-red-600 dark:text-red-400 hidden" role="alert">Please enter a valid website address, such as yourwebsite.co.uk.</p>
                     </div>
 
                     <div>
-                        <label for="review-organisation" class="block text-sm font-semibold text-text-primary dark:text-text-strong-dark mb-2">Organisation (optional)</label>
-                        <input
-                            type="text"
-                            id="review-organisation"
-                            name="organisation"
-                            maxlength="150"
-                            class="w-full px-4 py-3 rounded-lg border border-border-standard dark:border-border-standard-dark bg-bg-surface dark:bg-bg-surface-dark text-text-primary dark:text-text-strong-dark focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition-all"
-                            placeholder="Your organisation name"
-                        >
+                        <label for="review-organisation" class="block text-sm font-semibold text-text-primary dark:text-text-strong-dark mb-2">Organisation name <span class="font-normal text-text-secondary dark:text-text-secondary-dark">(optional)</span></label>
+                        <input type="text" id="review-organisation" name="organisation" maxlength="150" autocomplete="organization" class="w-full px-4 py-3 rounded-lg border border-border-standard dark:border-border-standard-dark bg-bg-surface dark:bg-bg-surface-dark text-text-primary dark:text-text-strong-dark focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition-all" placeholder="Business, charity or organisation">
                     </div>
 
                     <div>
-                        <label for="review-focus" class="block text-sm font-semibold text-text-primary dark:text-text-strong-dark mb-2">Is there anything specific you would like us to look at? (optional)</label>
-                        <textarea
-                            id="review-focus"
-                            name="focus"
-                            maxlength="1000"
-                            rows="4"
-                            class="w-full px-4 py-3 rounded-lg border border-border-standard dark:border-border-standard-dark bg-bg-surface dark:bg-bg-surface-dark text-text-primary dark:text-text-strong-dark focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition-all resize-vertical"
-                            placeholder="Any particular pages, concerns, or areas you'd like feedback on..."
-                        ></textarea>
+                        <label for="review-focus" class="block text-sm font-semibold text-text-primary dark:text-text-strong-dark mb-2">Anything specific to review? <span class="font-normal text-text-secondary dark:text-text-secondary-dark">(optional)</span></label>
+                        <textarea id="review-focus" name="focus" maxlength="1000" rows="4" class="w-full px-4 py-3 rounded-lg border border-border-standard dark:border-border-standard-dark bg-bg-surface dark:bg-bg-surface-dark text-text-primary dark:text-text-strong-dark focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 outline-none transition-all resize-vertical" placeholder="For example: people struggle to find the right service..."></textarea>
                         <p class="mt-1 text-xs text-text-light text-right" id="review-focus-counter">0 / 1000 characters</p>
                     </div>
 
-                    <button type="submit" class="btn btn--primary btn-shine w-full text-lg py-4">
-                        Request my free review
-                    </button>
-
+                    <button type="submit" class="btn btn--primary btn-shine justify-center w-full text-lg py-4">Request my free review</button>
+                    <p class="text-xs text-text-secondary dark:text-text-secondary-dark leading-relaxed text-center">I will only use these details to prepare your review and respond to you. See the <a href="/privacy-policy/" class="text-link">Privacy Policy</a>.</p>
                     <div id="review-form-message" class="hidden p-4 rounded-lg text-center" role="alert" aria-live="assertive"></div>
                 </form>
             </div>
@@ -206,27 +68,16 @@ date: 2026-02-01
     </div>
 </section>
 
-<!-- Breadcrumb Structured Data (Schema.org) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://codecraftnorth.co.uk/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Free website review",
-      "item": "https://codecraftnorth.co.uk/website-review/"
-    }
-  ]
-}
-</script>
+<section class="section-padding bg-bg-section dark:bg-bg-section-dark">
+    <div class="container">
+        <div class="section-intro"><p class="eyebrow">What happens next</p><h2>A useful response, without the awkward follow-up</h2></div>
+        <ol class="grid grid-cols-1 md:grid-cols-3 gap-6 process-list max-w-5xl mx-auto">
+            <li><span>01</span><h3>You send the website</h3><p>Share the address and any concern you already have. No lengthy brief is required.</p></li>
+            <li><span>02</span><h3>I review it personally</h3><p>I look through the key pages on desktop and mobile and note the most useful observations.</p></li>
+            <li><span>03</span><h3>You decide what to do</h3><p>Use the advice yourself, ask your existing provider or talk to me. There is no obligation.</p></li>
+        </ol>
+    </div>
+</section>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -235,19 +86,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const focusField = document.getElementById('review-focus');
     const focusCounter = document.getElementById('review-focus-counter');
 
-    // Character counter for optional textarea (1000 limit helps reduce spam)
     if (focusField && focusCounter) {
         function updateFocusCounter() {
             const length = focusField.value.length;
-            const maxLength = 1000;
-            focusCounter.textContent = length + ' / ' + maxLength + ' characters';
-            if (length > maxLength * 0.9) {
-                focusCounter.classList.add('text-red-600', 'dark:text-red-400');
-                focusCounter.classList.remove('text-text-light');
-            } else {
-                focusCounter.classList.remove('text-red-600', 'dark:text-red-400');
-                focusCounter.classList.add('text-text-light');
-            }
+            focusCounter.textContent = length + ' / 1000 characters';
+            focusCounter.classList.toggle('text-red-600', length > 900);
+            focusCounter.classList.toggle('dark:text-red-400', length > 900);
         }
         focusField.addEventListener('input', updateFocusCounter);
         updateFocusCounter();
@@ -260,17 +104,13 @@ document.addEventListener('DOMContentLoaded', function() {
         function normaliseWebsiteUrl(value) {
             const trimmed = (value || '').trim();
             if (!trimmed) return '';
-            if (/^https?:\/\//i.test(trimmed)) return trimmed;
-            return 'https://' + trimmed;
+            return /^https?:\/\//i.test(trimmed) ? trimmed : 'https://' + trimmed;
         }
 
         function isValidWebsiteUrl(value) {
             try {
                 const url = new URL(value);
-                if (url.protocol !== 'http:' && url.protocol !== 'https:') return false;
-                const host = url.hostname.toLowerCase();
-                if (host === 'localhost') return true;
-                return host.includes('.');
+                return ['http:', 'https:'].includes(url.protocol) && (url.hostname === 'localhost' || url.hostname.includes('.'));
             } catch {
                 return false;
             }
@@ -278,21 +118,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
         form.addEventListener('submit', async function(e) {
             e.preventDefault();
+            const normalised = normaliseWebsiteUrl(websiteInput.value);
+            websiteError.classList.add('hidden');
+            websiteInput.setAttribute('aria-invalid', 'false');
 
-            if (websiteInput && websiteError) {
-                const raw = websiteInput.value.trim();
-                const normalised = normaliseWebsiteUrl(raw);
-                websiteError.classList.add('hidden');
-                websiteInput.setAttribute('aria-invalid', 'false');
-
-                if (!normalised || !isValidWebsiteUrl(normalised)) {
-                    websiteError.classList.remove('hidden');
-                    websiteInput.setAttribute('aria-invalid', 'true');
-                    websiteInput.focus();
-                    return;
-                }
-                websiteInput.value = normalised;
+            if (!normalised || !isValidWebsiteUrl(normalised)) {
+                websiteError.classList.remove('hidden');
+                websiteInput.setAttribute('aria-invalid', 'true');
+                websiteInput.focus();
+                return;
             }
+            websiteInput.value = normalised;
 
             const submitButton = form.querySelector('button[type="submit"]');
             const originalText = submitButton.textContent;
@@ -301,21 +137,16 @@ document.addEventListener('DOMContentLoaded', function() {
             formMessage.classList.add('hidden');
 
             try {
-                const formData = new FormData(form);
                 const response = await fetch('/', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                    body: new URLSearchParams(formData).toString()
+                    body: new URLSearchParams(new FormData(form)).toString()
                 });
-
-                if (response.ok) {
-                    window.location.href = '/website-review-thanks/';
-                } else {
-                    throw new Error('Form submission failed');
-                }
+                if (!response.ok) throw new Error('Form submission failed');
+                window.location.href = '/website-review-thanks/';
             } catch (error) {
                 formMessage.className = 'p-4 rounded-lg text-center bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 border border-red-200 dark:border-red-800';
-                formMessage.innerHTML = 'Sorry, there was an error sending your request. Please try again or email us at <a href="mailto:hello@codecraftnorth.co.uk" class="underline font-semibold">hello@codecraftnorth.co.uk</a>.';
+                formMessage.innerHTML = 'Sorry, there was an error sending your request. Please try again or email <a href="mailto:hello@codecraftnorth.co.uk" class="underline font-semibold">hello@codecraftnorth.co.uk</a>.';
                 formMessage.classList.remove('hidden');
             } finally {
                 submitButton.disabled = false;
@@ -324,4 +155,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Free Website Review",
+  "description": "A short, practical website review covering clarity, usability, accessibility basics and trust signals.",
+  "provider": { "@type": "LocalBusiness", "name": "Code Craft North" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" }
+}
 </script>
